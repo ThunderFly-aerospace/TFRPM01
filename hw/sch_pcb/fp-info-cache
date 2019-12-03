@@ -1,4 +1,4 @@
-17366280658684140
+17367856050230141
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin{space}Battery{space}Holder,{space}BX0036,{space}Battery{space}Type{space}C{space}(https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -52002,6 +52002,13 @@ SOT553
 0
 5
 5
+Mlab_IO
+SOT176-1
+SO-8{space}Surface{space}Mount{space}Small{space}Outline{space}150mil{space}8pin{space}Package
+
+0
+8
+8
 Mlab_IO
 SSOP-20_5.3x7.2mm_Pitch0.65mm
 20-Lead{space}Plastic{space}Shrink{space}Small{space}Outline{space}(SS)-5.30{space}mm{space}Body{space}[SSOP]{space}(see{space}Microchip{space}Packaging{space}Specification{space}00000049BS.pdf)

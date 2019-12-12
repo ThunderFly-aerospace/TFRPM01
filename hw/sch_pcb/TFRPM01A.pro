@@ -1,4 +1,4 @@
-update=11.12.2019 10:57:55
+update=12.12.2019 10:48:39
 version=1
 last_client=kicad
 [general]
@@ -225,9 +225,9 @@ Enabled=1
 [pcbnew/Layer.F.Mask]
 Enabled=1
 [pcbnew/Layer.Dwgs.User]
-Enabled=0
-[pcbnew/Layer.Cmts.User]
 Enabled=1
+[pcbnew/Layer.Cmts.User]
+Enabled=0
 [pcbnew/Layer.Eco1.User]
 Enabled=0
 [pcbnew/Layer.Eco2.User]

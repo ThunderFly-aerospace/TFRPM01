@@ -2,8 +2,8 @@
 case_brim = 0.82;  // limec okolo PCB
 case_wall = 0.41*3;
 
-pcb_l = 37.47 + 0.4;
-pcb_w = 19.09 + 0.4;
+pcb_l = 37.5 + 0.4;
+pcb_w = 19.0 + 0.4;
 pcb_t = 1.6;
 
 M3_screw_diameter = 3.3;
@@ -40,13 +40,13 @@ module rpm_case_top(){
             cube([pcb_l, pcb_w, 10]);
         
         // Otvory pro sroubek
-        translate([21.59, 9.522, -0.8+0.2])
+        translate([21.59, pcb_w/2, -0.8+0.2])
             cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
-        translate([21.59, 9.522, -0.8-10])
+        translate([21.59, pcb_w/2, -0.8-10])
             cylinder(d = M3_nut_diameter, h = 10, $fn = 50);
         
         // Otvor pro LED
-        translate([21.76, 16.9, -M3_screw_head_height-0.8+0.4])
+        translate([21.5, 16.9, -M3_screw_head_height-0.8+0.4])
             cylinder(d = 2, h = 20, $fn = 50);
         
         // Vyrez pro hrebinek
@@ -54,7 +54,7 @@ module rpm_case_top(){
             cube([3, 10, 2*2], center=true);
         
         
-        translate([21.76, 16.9, -M3_screw_head_height-.8-.1])
+        translate([21.5, 16.9, -M3_screw_head_height-.8-.1])
         difference(){
             cylinder(d = 3, h = 0.3, $fn = 50);
             cylinder(d = 3-.4, h = 0.3, $fn = 50);
@@ -133,13 +133,13 @@ module rpm_case_bottom(){
         difference(){
             translate([0, 0, -2])
                 cube([pcb_l, pcb_w, 10]);
-            translate([21.59, 9.522, -5])
+            translate([21.59, pcb_w/2, -5])
                 cylinder(d = M3_nut_diameter+2, h = 10, $fn = 50);
             translate([31, 0, -2])
                 cube([pcb_l, pcb_w, 3]);
         }
         // Vyrez pro hrebinek
-        translate([27.3+10, 9.525,-2])
+        translate([27.3+10, pcb_w/2,-2])
             cube([20, 8, 4], center=true);
         
         // Vyrez pro autopiloti konektory
@@ -159,9 +159,21 @@ module rpm_case_bottom(){
     }
 }
 
-rpm_case_top();
+if(1){
+    rpm_case_top();
+    
+    translate([0, -30, 3])
+        rpm_case_bottom();
+}
 
-translate([0, -30, 3])
-rpm_case_bottom();
+if(0){
+    rpm_case_top();
+
+    translate([0, pcb_w, pcb_t+0.1])
+        rotate([180, 0, 0])
+            rpm_case_bottom();
+}
+
+//translate([21.59, pcb_w/2, -0.8+0.2])  cylinder(d = M3_screw_diameter, h = 100, $fn = 50, center = true);
 
 // translate([0, -30, 0])  color([0.1, 0.1, 0.1, 0.5]) translate([0, 0, 0]) cube([pcb_l, pcb_w, pcb_t]);

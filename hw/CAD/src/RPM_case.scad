@@ -1,4 +1,6 @@
 
+use<TFlogo.scad>
+
 case_brim = 0.82;  // limec okolo PCB
 case_wall = 0.41*3;
 
@@ -56,22 +58,27 @@ module rpm_case_top(){
         
         translate([21.5, 16.9, -M3_screw_head_height-.8-.1])
         difference(){
-            cylinder(d = 3, h = 0.3, $fn = 50);
-            cylinder(d = 3-.4, h = 0.3, $fn = 50);
+            cylinder(d = 3, h = 0.5, $fn = 50);
+            cylinder(d = 3-.6, h = 0.5, $fn = 50);
         }
         
         
         translate([pcb_l-32, pcb_w/2, -M3_screw_head_height-.8-.1])
             mirror([1, 1, 0])
-                linear_extrude(0.3) text("TFRPM", valign = "center", halign = "center", size=4);
+                linear_extrude(0.5) text("TFRPM", valign = "center", halign = "center", size=4);
         
         translate([pcb_l-28, pcb_w/2, -M3_screw_head_height-.8-.1])
             mirror([1, 1, 0])
-                linear_extrude(0.3) text("01B", valign = "center", halign = "center", size=2);
+                linear_extrude(0.4) text("01B", valign = "center", halign = "center", size=2);
         
-        translate([pcb_l-2, pcb_w/2, -M3_screw_head_height-.8-.1])
+       // translate([pcb_l-2, pcb_w/2, -M3_screw_head_height-.8-.1])
+       //     mirror([1, 1, 0])
+       //         linear_extrude(0.5) text("ThunderFly", valign = "center", halign = "center", size=2.8);
+        translate([pcb_l-7, pcb_w/2, -M3_screw_head_height-.8-.1])
             mirror([1, 1, 0])
-                linear_extrude(0.3) text("ThunderFly", valign = "center", halign = "center", size=2.8);
+              scale([0.15, 0.15, 1])
+                TF_logo(0.5);
+
         
         
        /* 
@@ -94,10 +101,10 @@ module rpm_case_top(){
         rotate([0, 90, 0])
             mirror([-1, 1, 0])
                 linear_extrude(0.3) text("I2C", valign = "center", halign = "center", size=2.6);
-        translate([pcb_l+2.1, pcb_w/2, -M3_screw_head_height/2])
+        translate([pcb_l+2.1, pcb_w/2, -M3_screw_head_height/2+.1])
         rotate([0, -90, 0])
             mirror([1, 1, 0])
-                linear_extrude(0.3) text("s + -", valign = "center", halign = "center", size=3);
+                linear_extrude(0.4) text("s + -", valign = "center", halign = "center", size=3.4);
                
     }
 
@@ -131,16 +138,16 @@ module rpm_case_bottom(){
         }
         // Otvor pro PCB
         difference(){
-            translate([0, 0, -2])
+            translate([0, 0, -4])
                 cube([pcb_l, pcb_w, 10]);
-            translate([21.59, pcb_w/2, -5])
+            translate([21.59, pcb_w/2, -10])
                 cylinder(d = M3_nut_diameter+2, h = 10, $fn = 50);
-            translate([31, 0, -2])
-                cube([pcb_l, pcb_w, 3]);
+            translate([31, 0, -5])
+                cube([pcb_l, pcb_w, 6]);
         }
         // Vyrez pro hrebinek
-        translate([27.3+10, pcb_w/2,-2])
-            cube([20, 8, 4], center=true);
+        translate([27.3+10, pcb_w/2,-1.55])
+            cube([20, 8, 3.2], center=true);
         
         // Vyrez pro autopiloti konektory
         translate([-6, 0, -4.35-0.15])

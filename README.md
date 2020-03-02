@@ -7,3 +7,6 @@ The hardware is inteded to be used for helicopter and autogyro rotor RPM measure
 ![Top view on I2C RPM sensor](/doc/img/TFRPM01A_top_big.png)
 
 ![Bottom view on I2C RPM sensor](/doc/img/TFRPM01A_bot_big.png)
+
+
+![TFRPM01A sensor in the 3D printed box](/doc/img/TFRPM01A_box.jpg)

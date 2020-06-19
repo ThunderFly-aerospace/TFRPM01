@@ -1,4 +1,4 @@
-17367856050230141
+17388966613453919
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin{space}Battery{space}Holder,{space}BX0036,{space}Battery{space}Type{space}C{space}(https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -55397,6 +55397,13 @@ Maxim_WLP-12
 0
 12
 12
+Package_BGA
+Microchip_TFBGA-196_11x11mm_Layout14x14_P0.75mm_SMD
+TFBGA-196,{space}11.0x11.0mm,{space}196{space}Ball,{space}14x14{space}Layout,{space}0.75mm{space}Pitch,{space}http://ww1.microchip.com/downloads/en/DeviceDoc/SAMA5D2-Series-Data-Sheet-DS60001476C.pdf#page=2956
+BGA{space}196{space}0.75
+0
+196
+196
 Package_BGA
 TFBGA-64_5x5mm_Layout8x8_P0.5mm
 TFBGA-64,{space}8x8{space}raster,{space}5x5mm{space}package,{space}pitch{space}0.5mm;{space}see{space}section{space}6.3{space}of{space}http://www.st.com/resource/en/datasheet/stm32f100v8.pdf

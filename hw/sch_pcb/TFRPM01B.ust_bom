@@ -191,7 +191,7 @@
     }, 
     {
         "Datasheet": "http://www.ti.com/lit/gpn/sn74HC14", 
-        "Footprint": "Package_SO:TSOP-5_1.65x3.05mm_P0.95mm", 
+        "Footprint": "Package_TO_SOT_SMD:SOT-353_SC-70-5", 
         "Ref": "U2", 
         "Tstamp": "5B1B4DEA", 
         "UST_ID": "5c70984712875079b91f8b5e", 

@@ -28,7 +28,7 @@ Correct connection of the probe could be check by magnet, the PULSE LED switch o
 
 ## Parameters
 
-  * Pulse frequency range  0-20kHz (maximum RPM value* varies by pulse number per revolution)
+  * Pulse frequency range  0-20kHz (maximum RPM value varies by pulse number per revolution)
   * Operating and storage temperature range -20 °C  to +40 °C (limited by case material)
   * Operating input voltage range 3.6-5 V 
 

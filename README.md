@@ -26,6 +26,13 @@ The probe should be connected to the sensor board as follows
 
 Correct connection of the probe could be check by magnet, the PULSE LED switch on and off according to magnet presence. The sensor board needs to be powered from at least one I²C port during the test.
 
+## Parameters
+
+  * Pulse frequency range  0-20kHz (maximum RPM value* varies by pulse number per revolution)
+  * Operating and storage temperature range -20 °C  to +40 °C (limited by case material)
+  * Operating input voltage range 3.6-5 V 
+
+
 
 ## Where to get it?
 

@@ -1,3 +1,6 @@
 [submodule "doc/TFPROBE01"]
 	path = doc/TFPROBE01
 	url = https://github.com/ThunderFly-aerospace/TFPROBE01.git
+[submodule "hw/CAD/src/lib/stdlib"]
+	path = hw/CAD/src/lib/stdlib
+	url = git@github.com:ThunderFly-aerospace/Openscad_stdlib.git

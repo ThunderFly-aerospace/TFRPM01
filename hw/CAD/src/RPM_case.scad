@@ -87,20 +87,23 @@ module rpm_case_top(){
                 linear_extrude(0.3) text("S + -", valign = "center", halign = "center", size=3);
          */
 
-        translate([-2.1, pcb_w/4, -1.5])
-        rotate([0, 90, 0])
-            mirror([-1, 1, 0])
-                linear_extrude(0.3) text("I2C", valign = "center", halign = "center", size=2.6);
-        translate([-2.1, pcb_w/4*3, -1.5])
-        rotate([0, 90, 0])
-            mirror([-1, 1, 0])
-                linear_extrude(0.3) text("I2C", valign = "center", halign = "center", size=2.6);
-        translate([pcb_l+2.1, pcb_w/2, -M3_screw_head_height/2+.1])
-        rotate([0, -90, 0])
-            mirror([1, 1, 0])
-                linear_extrude(0.4) text("s + -", valign = "center", halign = "center", size=3.4);
-
     }
+
+    translate([-2.2, pcb_w/4, -1.5])
+      rotate([0, 90, 0])
+          mirror([-1, 1, 0])
+              linear_extrude(0.5) text("I2C", valign = "center", halign = "center", size=2.6);
+
+    translate([-2.2, pcb_w/4*3, -1.5])
+      rotate([0, 90, 0])
+          mirror([-1, 1, 0])
+              linear_extrude(0.5) text("I2C", valign = "center", halign = "center", size=2.6);
+
+    translate([pcb_l+2.2, pcb_w/2, -M3_screw_head_height/2+.1])
+    rotate([0, -90, 0])
+        mirror([1, 1, 0])
+            linear_extrude(0.5) text("s + -", valign = "center", halign = "center", size=3.4);
+
 
 }
 

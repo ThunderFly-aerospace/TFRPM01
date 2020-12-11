@@ -41,65 +41,70 @@ module rpm_case_top(){
             //#bolt(3, length = 10, pocket = false);
             cylinder(d = M3_nut_diameter, h = M3_screw_head_height, $fn = 50);
 
-        // Otvor pro LED
+        // LED hole
         translate([21.5, 16.9, -M3_screw_head_height-0.8+0.4])
             cylinder(d = 2, h = 20, $fn = 50);
+
+        // LED flashing circle
+        translate([21.5, 16.9, -M3_screw_head_height-.8 - layer_thickness])
+            difference(){
+                cylinder(d = 3, h = 3*layer_thickness, $fn = 50);
+                cylinder(d = 3-.6, h = 3*layer_thickness, $fn = 50);
+            }
+
 
         // Vyrez pro hrebinek
         translate([27.3, 9.525,0])
             cube([3, 10, 2*2], center=true);
 
 
-        translate([21.5, 16.9, -M3_screw_head_height-.8-.1])
-        difference(){
-            cylinder(d = 3, h = 0.5, $fn = 50);
-            cylinder(d = 3-.6, h = 0.5, $fn = 50);
-        }
 
 
-        translate([pcb_l-32, pcb_w/2, -M3_screw_head_height-.8-.1])
+        translate([pcb_l-30, pcb_w/2, -M3_screw_head_height - 4*layer_thickness - layer_thickness])
             mirror([1, 1, 0])
-                linear_extrude(0.5) text("TFRPM", valign = "center", halign = "center", size=4);
+                linear_extrude(3*layer_thickness) text("TFRPM", valign = "center", halign = "center", size=4);
 
-        translate([pcb_l-28, pcb_w/2, -M3_screw_head_height-.8-.1])
+        translate([pcb_l-26, pcb_w/2, -M3_screw_head_height - 4*layer_thickness - layer_thickness])
             mirror([1, 1, 0])
-                linear_extrude(0.4) text("01B", valign = "center", halign = "center", size=2);
+                linear_extrude(3*layer_thickness) text("01B", valign = "center", halign = "center", size=2);
 
        // translate([pcb_l-2, pcb_w/2, -M3_screw_head_height-.8-.1])
        //     mirror([1, 1, 0])
        //         linear_extrude(0.5) text("ThunderFly", valign = "center", halign = "center", size=2.8);
-        translate([pcb_l-7, pcb_w/2, -M3_screw_head_height-.8-.1])
+        translate([pcb_l - 8.5, pcb_w/2, -M3_screw_head_height- 4*layer_thickness - layer_thickness + 0.1])
             mirror([1, 1, 0])
               scale([0.15, 0.15, 1])
                 TF_logo(0.5);
 
 
 
-       /*
-        translate([2, pcb_w/4, -M3_screw_head_height-.8-.1])
+
+        translate([2, pcb_w/4, -M3_screw_head_height - 4*layer_thickness - layer_thickness])
             mirror([1, 1, 0])
-                linear_extrude(0.3) text("I2C", valign = "center", halign = "center", size=3);
-        translate([2, pcb_w/4*3, -M3_screw_head_height-.8-.1])
+                linear_extrude(3*layer_thickness) text("I2C", valign = "center", halign = "center", size=3);
+
+        translate([2, pcb_w/4*3, -M3_screw_head_height - 4*layer_thickness - layer_thickness])
             mirror([1, 1, 0])
-                linear_extrude(0.3) text("I2C", valign = "center", halign = "center", size=3);
-        translate([pcb_l-2, pcb_w/2, -M3_screw_head_height-.8-.1])
+                linear_extrude(3*layer_thickness) text("I2C", valign = "center", halign = "center", size=3);
+
+        translate([pcb_l -2 , pcb_w/2, -M3_screw_head_height - 4*layer_thickness - layer_thickness])
             mirror([1, 1, 0])
-                linear_extrude(0.3) text("S + -", valign = "center", halign = "center", size=3);
-         */
+                linear_extrude(3*layer_thickness) text("S + -", valign = "center", halign = "center", size=3);
+
 
     }
 
-    translate([-2.2, pcb_w/4, -1.5])
+    translate([-2 - 2*layer_thickness, pcb_w/4, -1.5])
       rotate([0, 90, 0])
           mirror([-1, 1, 0])
               linear_extrude(0.5) text("I2C", valign = "center", halign = "center", size=2.6);
 
-    translate([-2.2, pcb_w/4*3, -1.5])
+    translate([-2 - 2*layer_thickness, pcb_w/4*3, -1.5])
       rotate([0, 90, 0])
           mirror([-1, 1, 0])
               linear_extrude(0.5) text("I2C", valign = "center", halign = "center", size=2.6);
 
-    translate([pcb_l+2.2, pcb_w/2, -M3_screw_head_height/2+.1])
+    translate([pcb_l + 2 + 2*layer_thickness, pcb_w/2, -M3_screw_head_height/2])
     rotate([0, -90, 0])
         mirror([1, 1, 0])
             linear_extrude(0.5) text("s + -", valign = "center", halign = "center", size=3.4);

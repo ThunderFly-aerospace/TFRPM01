@@ -143,7 +143,7 @@ module rpm_case_bottom(){
             translate([0, 0, -4])
                 cube([pcb_l, pcb_w, 10]);
             translate([21.59, pcb_w/2, -10])
-                cylinder(d = M3_nut_diameter+2, h = 10, $fn = 50);
+                cylinder(d1 = M3_nut_diameter*1.6, d2 = 6.2, h = 10, $fn = 50);
             translate([31, 0, -5])
                 cube([pcb_l, pcb_w, 6]);
         }
@@ -152,10 +152,10 @@ module rpm_case_bottom(){
             cube([20, 8, 3.2], center=true);
 
         // I2C connectors
-        translate([-6, 0, -4.35-0.15])
-            cube([12, 8.8, 4.35+0.15]);
-        translate([-6, pcb_w-8.8, -4.35-0.15])
-            cube([12, 8.8, 4.35+0.15]);
+        translate([-6, 0.1, -4.35 - 0.15])
+            cube([12, 9, 4.35 + 0.15]);
+        translate([-6, pcb_w - 9.1, -4.35 - 0.15])
+            cube([12, 9, 4.35+0.15]);
 
         // screw
         translate([21.59, 9.522, -2]){

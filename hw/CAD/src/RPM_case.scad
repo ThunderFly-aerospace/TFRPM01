@@ -34,10 +34,10 @@ module rpm_case_top(){
             cube([pcb_l, pcb_w, 10]);
 
         // Otvory pro sroubek
-        translate([21.59, pcb_w/2, - 4*layer_thickness])
+        translate([21.79, pcb_w/2, - 4*layer_thickness])
             cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
             //bolt(3, length = 10, pocket = false);
-        translate([21.59, pcb_w/2, - M3_screw_head_height - 5*layer_thickness])
+        translate([21.79, pcb_w/2, - M3_screw_head_height - 5*layer_thickness])
             //#bolt(3, length = 10, pocket = false);
             cylinder(d = M3_nut_diameter, h = M3_screw_head_height, $fn = 50);
 
@@ -52,12 +52,9 @@ module rpm_case_top(){
                 cylinder(d = 3-.6, h = 3*layer_thickness, $fn = 50);
             }
 
-
-        // Vyrez pro hrebinek
+        // pinheader hole
         translate([27.3, 9.525,0])
             cube([3, 10, 2*2], center=true);
-
-
 
 
         translate([pcb_l-30, pcb_w/2, -M3_screw_head_height - 4*layer_thickness - layer_thickness])
@@ -144,7 +141,7 @@ module rpm_case_bottom(){
         difference(){
             translate([0, 0, -3.5])
                 cube([pcb_l, pcb_w, 10]);
-            translate([21.59, pcb_w/2, -10])
+            translate([21.79, pcb_w/2, -10])
                 cylinder(d1 = M3_nut_diameter*1.5, d2 = 6.2, h = 10, $fn = 50);
             translate([31, 0, -5])
                 cube([pcb_l, pcb_w, 6]);
@@ -160,7 +157,7 @@ module rpm_case_bottom(){
             cube([12, 9, 4.35 + 0.3]);
 
         // screw
-        translate([21.59, 9.522, -2]){
+        translate([21.79, pcb_w/2, -2]){
               translate([0, 0, -M3_screw_head_height -  3*layer_thickness - 1 + M3_nut_height])
                 cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
               translate([0, 0, -M3_screw_head_height -  4*layer_thickness - 1])

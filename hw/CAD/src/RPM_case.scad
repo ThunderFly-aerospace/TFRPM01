@@ -94,17 +94,17 @@ module rpm_case_top(){
 
     }
 
-    translate([-2 - 2*layer_thickness, pcb_w/4, -1.5])
+    translate([-2 - layer_thickness, pcb_w/4, -1.5])
       rotate([0, 90, 0])
           mirror([-1, 1, 0])
               linear_extrude(0.5) text("I2C", valign = "center", halign = "center", size=2.6);
 
-    translate([-2 - 2*layer_thickness, pcb_w/4*3, -1.5])
+    translate([-2 - layer_thickness, pcb_w/4*3, -1.5])
       rotate([0, 90, 0])
           mirror([-1, 1, 0])
               linear_extrude(0.5) text("I2C", valign = "center", halign = "center", size=2.6);
 
-    translate([pcb_l + 2 + 2*layer_thickness, pcb_w/2, -M3_screw_head_height/2])
+    translate([pcb_l + 2 + layer_thickness, pcb_w/2, -M3_screw_head_height/2])
     rotate([0, -90, 0])
         mirror([1, 1, 0])
             linear_extrude(0.5) text("s + -", valign = "center", halign = "center", size=3.4);
@@ -121,7 +121,7 @@ module rpm_case_bottom(){
                 translate([0,0, -M3_screw_head_height-3])
                     minkowski(){
                        cube([pcb_l, pcb_w, 1+3]);
-                       cylinder(d=2*case_wall+2*case_brim, h = M3_screw_head_height-1+pcb_t, $fn=50);
+                       cylinder(d=2*case_wall + 2*case_brim, h = M3_screw_head_height-1+pcb_t, $fn=50);
                     }
 
                 translate([0, 0, -M3_screw_head_height -  4*layer_thickness - 3])
@@ -140,10 +140,10 @@ module rpm_case_bottom(){
         }
         // sensor PCB
         difference(){
-            translate([0, 0, -4])
+            translate([0, 0, -3.5])
                 cube([pcb_l, pcb_w, 10]);
             translate([21.59, pcb_w/2, -10])
-                cylinder(d1 = M3_nut_diameter*1.6, d2 = 6.2, h = 10, $fn = 50);
+                cylinder(d1 = M3_nut_diameter*1.5, d2 = 6.2, h = 10, $fn = 50);
             translate([31, 0, -5])
                 cube([pcb_l, pcb_w, 6]);
         }
@@ -159,10 +159,10 @@ module rpm_case_bottom(){
 
         // screw
         translate([21.59, 9.522, -2]){
-              translate([0, 0, layer_thickness])
+              translate([0, 0, -M3_screw_head_height -  3*layer_thickness - 1 + M3_nut_height])
                 cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
-              translate([0, 0, -2*M3_nut_height ])
-                cylinder(d = M3_nut_diameter, h = 2*M3_nut_height, $fn = 6);
+              translate([0, 0, -M3_screw_head_height -  4*layer_thickness - 1])
+                cylinder(d = M3_nut_diameter, h = M3_nut_height, $fn = 6);
 
          }
     }

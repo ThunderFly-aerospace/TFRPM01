@@ -12,13 +12,13 @@ module rpm_case_top(){
                 translate([0,0, -M3_screw_head_height])
                     minkowski(){
                        cube([pcb_l, pcb_w, 1]);
-                       cylinder(d=2*case_wall+2*case_brim, h = M3_screw_head_height-1, $fn=50);
+                       cylinder(d= 2*case_wall + 2*case_brim, h = M3_screw_head_height-1, $fn=50);
                     }
 
                 translate([0, 0, -M3_screw_head_height - 4*layer_thickness])
                     minkowski(){
                        cube([pcb_l, pcb_w, 1]);
-                       cylinder(d=2*case_brim, h = 2-1, $fn=50);
+                       cylinder( d=2*case_brim , h = 2-1, $fn=50);
                     }
             }
 
@@ -34,10 +34,10 @@ module rpm_case_top(){
             cube([pcb_l, pcb_w, 10]);
 
         // Otvory pro sroubek
-        translate([21.59, pcb_w/2, - 3*layer_thickness])
+        translate([21.59, pcb_w/2, - 4*layer_thickness])
             cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
             //bolt(3, length = 10, pocket = false);
-        translate([21.59, pcb_w/2, - M3_screw_head_height - 4*layer_thickness])
+        translate([21.59, pcb_w/2, - M3_screw_head_height - 5*layer_thickness])
             //#bolt(3, length = 10, pocket = false);
             cylinder(d = M3_nut_diameter, h = M3_screw_head_height, $fn = 50);
 
@@ -73,7 +73,7 @@ module rpm_case_top(){
        //         linear_extrude(0.5) text("ThunderFly", valign = "center", halign = "center", size=2.8);
         translate([pcb_l - 8.5, pcb_w/2, -M3_screw_head_height- 4*layer_thickness - layer_thickness + 0.1])
             mirror([1, 1, 0])
-              scale([0.15, 0.15, 1])
+              scale([0.16, 0.16, 1])
                 TF_logo(0.5);
 
 
@@ -94,6 +94,8 @@ module rpm_case_top(){
 
     }
 
+  /*  Text relief at side of the box
+
     translate([-2 - layer_thickness, pcb_w/4, -1.5])
       rotate([0, 90, 0])
           mirror([-1, 1, 0])
@@ -108,7 +110,7 @@ module rpm_case_top(){
     rotate([0, -90, 0])
         mirror([1, 1, 0])
             linear_extrude(0.5) text("s + -", valign = "center", halign = "center", size=3.4);
-
+*/
 
 }
 
@@ -153,9 +155,9 @@ module rpm_case_bottom(){
 
         // I2C connectors
         translate([-6, 0.1, -4.35 - 0.15])
-            cube([12, 9, 4.35 + 0.15]);
+            cube([12, 9, 4.35 + 0.3]);
         translate([-6, pcb_w - 9.1, -4.35 - 0.15])
-            cube([12, 9, 4.35+0.15]);
+            cube([12, 9, 4.35 + 0.3]);
 
         // screw
         translate([21.59, 9.522, -2]){

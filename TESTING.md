@@ -1,6 +1,8 @@
-#Testování TFRPM01
+# Testování TFRPM01
 
-Testování TFRPM01 po výrobě lze provést pomocí python [skriptu](/sw/pymlab/) postaveném na knihovně [PyMLAB](). 
+
+## Základní (manuální) testování
+Základní testování TFRPM01 po výrobě lze provést pomocí python [skriptu](/sw/pymlab/) postaveném na knihovně [PyMLAB](). 
 
 
 Skript spustíte příkazem:
@@ -43,4 +45,4 @@ counter module example
 V prvním sloupci je čas. Následuje počet detekovaných signálů, určená frekvence a čas po kterou je frekvence počitána. 
 
 
-
+## Automatické testování

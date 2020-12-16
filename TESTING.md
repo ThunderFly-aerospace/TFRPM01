@@ -2,7 +2,7 @@
 
 
 ## Základní (manuální) testování
-Základní testování TFRPM01 po výrobě lze provést pomocí python [skriptu](/sw/pymlab/TFRPM_readout.py) postaveném na knihovně [PyMLAB](). 
+Základní testování TFRPM01 po výrobě lze provést pomocí python [skriptu](/sw/pymlab/TFRPM_readout.py) postaveném na knihovně [PyMLAB](https://github.com/MLAB-project/pymlab). 
 
 
 Skript ze složky `/sw/pymlab/` spustíte příkazem:

@@ -11,7 +11,7 @@ Skript ze složky `/sw/pymlab/` spustíte příkazem:
 python3 TFRPM_readout.py 0 0x50
 ```
 
-Po úspěšném spuštění by se měly objevit měřené hodnoty. Nyní buď pomocí nějaké sondy nebo uzeměním signálového pinu simulujte čitací signál. Hodnota count by měla růst. 
+Po úspěšném spuštění by se měly objevit měřené hodnoty. Nyní, pomocí nějaké sondy nebo uzeměním signálového pinu, simulujte čitací signál. Hodnota `count` by měla růst. 
 
 
 Výstup pak může vypadat následovně: 

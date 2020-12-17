@@ -8,7 +8,7 @@ Základní testování TFRPM01 po výrobě lze provést pomocí python [skriptu]
 Skript ze složky `/sw/pymlab/` spustíte příkazem:
 
 ```
-python3 TFRPM_readout.py 0 0x50
+sudo python3 TFRPM_readout.py 0 0x50
 ```
 
 Po úspěšném spuštění by se měly objevit měřené hodnoty. Nyní, pomocí nějaké sondy nebo uzeměním signálového pinu, simulujte čitací signál. Hodnota `count` by měla růst. Pro přesnější měření lze použit signál generovaný osciloskopem nebo jiným zdrojem pilového signálu. 

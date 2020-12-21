@@ -57,6 +57,7 @@ module rpm_case_top(){
             cube([3, 10, 2*2], center=true);
 
 
+/*
         translate([pcb_l-30, pcb_w/2, -M3_screw_head_height - 4*layer_thickness - layer_thickness])
             mirror([1, 1, 0])
                 linear_extrude(3*layer_thickness) text("TFRPM", valign = "center", halign = "center", size=4);
@@ -88,7 +89,7 @@ module rpm_case_top(){
             mirror([1, 1, 0])
                 linear_extrude(3*layer_thickness) text("S + -", valign = "center", halign = "center", size=3);
 
-
+*/
     }
 
   /*  Text relief at side of the box

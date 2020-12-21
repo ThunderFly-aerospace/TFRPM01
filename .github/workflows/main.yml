@@ -1,0 +1,41 @@
+name: Slicing
+
+on:
+  push:
+    paths:
+    - '**.stl'
+    - '**.amf'
+    - '**.STL'
+    - '**.AMF'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        printer: ['3d']
+    
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Slicovani pro ${{ matrix.printer }}
+        uses: roman-dvorak/Slice@master
+        with:
+          printer: ${{ matrix.printer }}
+
+      - name: Upload
+        uses: plocket/push-generated-file@master
+        with:
+          source_file_path: 'out'
+          destination_repo: 'ThunderFly-aerospace/TFRPM01'
+          target_branch:  TFRPM01B/print_${{ matrix.printer }}
+          token: ${{ secrets.API_TOKEN_GITHUB }}
+      
+      - name: Artifact
+        uses: actions/upload-artifact@v2.2.1
+        with:
+          name: "out"
+          path: "."

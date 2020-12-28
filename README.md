@@ -4,6 +4,21 @@ It is designed to direct connection to Pixhawk controller (CUAV V5+) trough stan
 At the input of meter is supposed a pulse signal from optical encoder, hall sensor etc.
 The hardware is inteded to be used for helicopter and autogyro rotor RPM measurement, but its counting capability is up to 20 kHz therefore it should be used for propeller or engine RPM measurement.
 
+
+## Parameters
+
+| Parameter | Value | Description |
+|-----------|-------|-------------|
+| Pulse frequency range | 0 - 20 kHz | Maximum RPM value varies by pulse number per revolution |
+| I2C Connector | 2x 4-pin JST-GH | Connected in parallel |
+| RPM connector | 3-pin header | internal pullup resistor | 
+| Operating and storage temperature | -20 - +40°C | Limited by case material | 
+| Operational input voltage | 3.6 - 5V ||
+| Mass | 4 g + 8 g | PCB + case |
+| Dimensions | 23.5x42x12.5mm / 37.5x19mm | Case / PCB |
+| Short circuit protection on probe connector | | |
+
+
 ![Top view on I2C RPM sensor](/doc/img/TFRPM01B_top_big.jpg)
 
 ![Bottom view on I2C RPM sensor](/doc/img/TFRPM01B_bot_big.jpg)
@@ -12,6 +27,9 @@ The 3Pin probe connector is powered from I²C bus trough RC filter which limits 
 Therefore sensor is resistant to short circuit at the probe connector power.
 
 The two I²C Pixhawk connectors are connected to each other. This feature allows easily nesting with other I²C devices to single Pixhawks I²C port.
+
+PCB size:
+![PCB size](doc/img/tfrpm01B_PCBSize.png)
 
 ### Sensor options
 
@@ -31,16 +49,6 @@ The sensor could also be used with other probe types. The one example is [TFPROB
 ![TFRPM01B probe input circuit](/doc/img/TFRPM01_pulse_counter_input.png)
 
 As can be seen from the schematics the default probe power selection is +5V, protected by resistor R10 to about 50 mA short-circuit current. The pull-up resistor R1 with default value 470 Ohm is quite hard and it is generally unsuitable to most optical probes with open-collector outputs. Therefore the resistor R1 should be interchanged to the more suitable value (That could be requested during the order process).
-
-
-## Parameters
-
-  * Pulse frequency range  0-20kHz (maximum RPM value varies by pulse number per revolution)
-  * Operating and storage temperature range -20 °C  to +40 °C (limited by case material)
-  * Operating input voltage range 3.6-5 V
-  * Short circuit protection on probe connector.
-
-
 
 ## Where to get it?
 

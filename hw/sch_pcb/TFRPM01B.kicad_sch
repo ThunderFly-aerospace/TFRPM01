@@ -1,16 +1,13 @@
 (kicad_sch (version 20201015) (generator eeschema)
 
-  (page 1 1)
-
   (paper "A4")
 
   (title_block
-    (title "RTC03A")
-    (date "%F")
-    (company "Mlab www.mlab.cz")
-    (comment 1 "RTC module with counter mode")
-    (comment 2 "romandvorak@mlab.cz")
-    (comment 4 "Open-source")
+    (title "TFRPM01B")
+    (date "2021-01-23")
+    (company "ThunderFly s.r.o.")
+    (comment 1 "RPM measuring device")
+    (comment 2 "Jacho  <info@thunderfly.cz>")
   )
 
   (lib_symbols
@@ -403,11 +400,6 @@
       (property "ki_fp_filters" "DIP*W7.62mm*" (id 7) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "74AHC1G14GV_2_1"
-        (rectangle (start -3.81 5.08) (end 3.81 -5.08)
-          (stroke (width 0)) (fill (type none))
-        )
-      )
       (symbol "74AHC1G14GV_1_0"
         (polyline
           (pts
@@ -454,6 +446,11 @@
         (pin input line (at 0 8.89 270) (length 3.81)
           (name "VCC" (effects (font (size 1.27 1.27))))
           (number "5" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "74AHC1G14GV_2_1"
+        (rectangle (start -3.81 5.08) (end 3.81 -5.08)
+          (stroke (width 0)) (fill (type none))
         )
       )
     )

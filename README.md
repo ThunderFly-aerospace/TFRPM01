@@ -1,8 +1,13 @@
-# TFRPM01B sensor
+# TFRPM01B - RPM measuring device 
+
 Revolutions per minute meter for UAV.
 It is designed to direct connection to Pixhawk controller (CUAV V5+) trough standard I²C connector. The device [is supported by PX4 firmware](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html).
 At the input of meter is supposed a pulse signal from optical encoder, hall sensor etc.
 The hardware is inteded to be used for helicopter and autogyro rotor RPM measurement, but its counting capability is up to 20 kHz therefore it should be used for propeller or engine RPM measurement.
+
+## Where to get it?
+
+ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https://www.thunderfly.cz/), write an email to info@thunderfly.cz or shop at [Tindie store](https://www.tindie.com/products/thunderfly/tfrpm01-drone-rpm-tachometer-sensor/).
 
 
 ## Parameters
@@ -49,7 +54,3 @@ The sensor could also be used with other probe types. The one example is [TFPROB
 ![TFRPM01B probe input circuit](/doc/img/TFRPM01_pulse_counter_input.png)
 
 As can be seen from the schematics the default probe power selection is +5V, protected by resistor R10 to about 50 mA short-circuit current. The pull-up resistor R1 with default value 470 Ohm is quite hard and it is generally unsuitable to most optical probes with open-collector outputs. Therefore the resistor R1 should be interchanged to the more suitable value (That could be requested during the order process).
-
-## Where to get it?
-
-ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https://www.thunderfly.cz/), write an email to info@thunderfly.cz or shop at [Tindie store](https://www.tindie.com/products/thunderfly/tfrpm01-drone-rpm-tachometer-sensor/).

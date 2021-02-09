@@ -1,6 +1,27 @@
 # Testování TFRPM01
 
 
+## Testování s PX4 autopilotem
+
+### Pomocí QGroundControlu
+V QGC přejdete do menu > Analyze tools > Mavlink Inspector
+
+Zde v levém sloupci najděte zprávu `raw_rpm`. Pokud neexistuje, je potřeba zjistit, jestli je dobře spuštěný driver. 
+Pokud se tam zpráva vyskytuje, klikněte na ní. V pravé části pak uvidíte živá data. 
+
+### Pomocí PX4 (NuttX) konzole
+Jestli máte spuštěný driver zjistíte příkazem: 
+```
+pcf8583 status
+```
+Pokud je driver spuštěn, bude vypsán port a základní nastavení spuštěné instance. 
+
+**Vypsání posledních měřených hodnot**
+```
+listener raw_rpm -n 100
+```
+_parametr `-n` nastavuje počet vypsaných zpráv_
+
 ## Základní (manuální) testování
 Základní testování TFRPM01 po výrobě lze provést pomocí python [skriptu](/sw/pymlab/TFRPM_readout.py) postaveném na knihovně [PyMLAB](https://github.com/MLAB-project/pymlab). 
 

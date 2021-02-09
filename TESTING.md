@@ -4,9 +4,9 @@
 ## Testování s PX4 autopilotem
 
 ### Pomocí QGroundControlu
-V QGC přejdete do menu > Analyze tools > Mavlink Inspector
+V QGC přejdete do `menu` > `Analyze tools` > `Mavlink Inspector`
 
-Zde v levém sloupci najděte zprávu `raw_rpm`. Pokud neexistuje, je potřeba zjistit, jestli je dobře spuštěný driver. 
+Zde v levém sloupci najděte zprávu `raw_rpm`. Pokud neexistuje, je potřeba zjistit, jestli je driver senzoru spuštěný. 
 Pokud se tam zpráva vyskytuje, klikněte na ní. V pravé části pak uvidíte živá data. 
 
 ### Pomocí PX4 (NuttX) konzole

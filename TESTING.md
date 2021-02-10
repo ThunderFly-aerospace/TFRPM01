@@ -14,7 +14,29 @@ Jestli máte spuštěný driver zjistíte příkazem:
 ```
 pcf8583 status
 ```
-Pokud je driver spuštěn, bude vypsán port a základní nastavení spuštěné instance. 
+Pokud je driver spuštěn, bude vypsán port a základní nastavení spuštěné instance.  V případě že driver neběží, tak je potřeba jej spustit
+
+The driver does not start automatically in any airframes. You can start it manually from the console or add it to the [startup script](../concept/system_startup.md#customizing-the-system-startup) on SD card.
+
+#### Start driver from console
+Start driver from the [console](https://docs.qgroundcontrol.com/master/en/analyze_view/mavlink_console.html) with the command:
+```
+pcf8583 start -X -b <bus number>
+```
+insted of `<bus number>` you must specify the bus number to which the device is connected. `-X` means that it is external bus.
+
+:::note
+Bus number `-b <bus number>` does not match the bus numbering on the autopilot. After running the command, the driver shows the bus number corresponding to the label on the box.
+
+When using CUAV V5+ or CUAV Nano:
+
+| bus label | -b number |
+|-----------|-----------|
+| 1    |  -X -b 4  |
+| 2    |  -X -b 2  |
+| 3    |  -X -b 1  |
+
+:::
 
 **Vypsání posledních měřených hodnot**
 ```

@@ -18,7 +18,7 @@ Pokud je driver spuštěn, bude vypsán port a základní nastavení spuštěné
 
 **Vypsání posledních měřených hodnot**
 ```
-listener raw_rpm -n 100
+listener rpm -n 100
 ```
 _parametr `-n` nastavuje počet vypsaných zpráv_
 

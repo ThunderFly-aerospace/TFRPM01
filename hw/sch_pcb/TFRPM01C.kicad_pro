@@ -111,7 +111,7 @@
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.19999999999999998,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.39999999999999997,
         "solder_mask_clearance": 0.19999999999999998,
@@ -421,7 +421,7 @@
   },
   "sheets": [
     [
-      "739d852a-a50a-4a7c-9a83-00028bcb5200",
+      "7b3f7277-c710-45d7-83ef-c9ae202a154d",
       ""
     ]
   ],

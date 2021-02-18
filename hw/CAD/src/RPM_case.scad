@@ -15,7 +15,7 @@ module rpm_case_top(){
                        cylinder(d= 2*case_wall + 2*case_brim, h = M3_screw_head_height-1, $fn=50);
                     }
 
-                translate([0, 0, -M3_screw_head_height - 4*layer_thickness])
+                translate([0, 0, -M3_screw_head_height - 6*layer_thickness])
                     minkowski(){
                        cube([pcb_l, pcb_w, 1]);
                        cylinder( d=2*case_brim , h = 2-1, $fn=50);
@@ -34,10 +34,10 @@ module rpm_case_top(){
             cube([pcb_l, pcb_w, 10]);
 
         // Otvory pro sroubek
-        translate([21.79, pcb_w/2, - 4*layer_thickness])
+        translate([21.79, pcb_w/2, - 6*layer_thickness])
             cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
             //bolt(3, length = 10, pocket = false);
-        translate([21.79, pcb_w/2, - M3_screw_head_height - 5*layer_thickness])
+        #translate([21.79, pcb_w/2, - M3_screw_head_height - 7*layer_thickness])
             //#bolt(3, length = 10, pocket = false);
             cylinder(d = M3_nut_diameter, h = M3_screw_head_height, $fn = 50);
 
@@ -124,7 +124,7 @@ module rpm_case_bottom(){
                        cylinder(d=2*case_wall + 2*case_brim, h = M3_screw_head_height-1+pcb_t, $fn=50);
                     }
 
-                translate([0, 0, -M3_screw_head_height -  4*layer_thickness - 3])
+                translate([0, 0, -M3_screw_head_height -  6*layer_thickness - 3])
                     minkowski(){
                        cube([pcb_l, pcb_w, 1]);
                        cylinder(d=2*case_brim, h = 2-1, $fn=50);
@@ -159,10 +159,10 @@ module rpm_case_bottom(){
 
         // screw
         translate([21.79, pcb_w/2, -2]){
-              translate([0, 0, -M3_screw_head_height -  3*layer_thickness - 1 + M3_nut_height])
+              translate([0, 0, -M3_screw_head_height + 4*layer_thickness - 1 + M3_nut_height])
                 cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
-              translate([0, 0, -M3_screw_head_height -  4*layer_thickness - 1])
-                cylinder(d = M3_nut_diameter, h = M3_nut_height, $fn = 6);
+              translate([0, 0, -M3_screw_head_height -  7*layer_thickness - 1])
+                cylinder(d = M3_nut_diameter, h = M3_nut_height+10*layer_thickness, $fn = 6);
 
          }
     }

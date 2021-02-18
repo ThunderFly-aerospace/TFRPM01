@@ -64,7 +64,7 @@
       40
     ],
     "visible_layers": "fffffff_ffffffff",
-    "zone_display_mode": 2
+    "zone_display_mode": 0
   },
   "meta": {
     "filename": "TFRPM01C.kicad_prl",

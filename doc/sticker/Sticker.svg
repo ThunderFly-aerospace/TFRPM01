@@ -24,10 +24,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4"
-     inkscape:cx="89.338467"
-     inkscape:cy="95.782347"
+     inkscape:cx="61.062711"
+     inkscape:cy="123.56459"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g1068"
      inkscape:document-rotation="0"
      showgrid="false"
      lock-margins="true"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -177,72 +177,85 @@
       </g>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:1.41111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-         x="63.092079"
-         y="-35.058445"
+         style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="62.074459"
+         y="-35.780571"
          id="text936"
          transform="rotate(90)"><tspan
            sodipodi:role="line"
            id="tspan934"
-           x="63.092079"
-           y="-35.058445"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;font-family:Cabin;-inkscape-font-specification:Cabin;fill:#a6a6a6;fill-opacity:1;stroke-width:0.264583">I2C</tspan></text>
+           x="62.074459"
+           y="-35.780571"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Cabin;-inkscape-font-specification:Cabin;fill:#a6a6a6;fill-opacity:1;stroke-width:0.264583">I2C</tspan></text>
       <g
          id="g1068"
-         transform="translate(0.91234741,-0.07244289)">
+         transform="translate(0.91234741,-0.86927785)">
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:1.41111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-           x="62.750832"
-           y="-65.795341"
+           style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+           x="62.142624"
+           y="-65.329552"
            id="text936-6"
            transform="rotate(90)"><tspan
              sodipodi:role="line"
              id="tspan934-7"
-             x="62.750832"
-             y="-65.795341"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;font-family:Cabin;-inkscape-font-specification:Cabin;fill:#a6a6a6;fill-opacity:1;stroke-width:0.264583">RPM</tspan></text>
+             x="62.142624"
+             y="-65.329552"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:Cabin;-inkscape-font-specification:Cabin;fill:#a6a6a6;fill-opacity:1;stroke-width:0.264583">RPM</tspan></text>
         <g
-           id="g1060">
+           id="g1060"
+           transform="matrix(1.1625313,0,0,1.1625313,-10.525478,-9.7442544)"
+           style="stroke-width:0.860192">
           <path
              d="m 67.768778,62.605186 v 0.371381 h -0.112999 v -0.371381 z"
-             style="font-style:normal;font-weight:normal;font-size:1.41111px;line-height:1.25;font-family:sans-serif;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.264583"
+             style="font-style:normal;font-weight:normal;font-size:1.41111px;line-height:1.25;font-family:sans-serif;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.227592"
              id="path994" />
           <path
              d="m 68.154628,64.148506 h -0.383783 v 0.383784 h -0.117133 v -0.383784 h -0.383784 v -0.115755 h 0.383784 v -0.383783 h 0.117133 v 0.383783 h 0.383783 z"
-             style="font-style:normal;font-weight:normal;font-size:1.41111px;line-height:1.25;font-family:sans-serif;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.264583"
+             style="font-style:normal;font-weight:normal;font-size:1.41111px;line-height:1.25;font-family:sans-serif;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.227592"
              id="path996" />
           <path
              id="path994-6"
-             style="font-style:normal;font-weight:normal;font-size:1.41111px;line-height:1.25;font-family:sans-serif;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.264583"
+             style="font-style:normal;font-weight:normal;font-size:1.41111px;line-height:1.25;font-family:sans-serif;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.227592"
              d="m 67.481214,65.94745 v -0.264583 h 0.5753 v -0.106971 -0.371037 -0.113173 h -0.5753 v -0.258381 h -0.113171 v 0.371554 h 0.113171 0.462646 v 0.371037 h -0.462646 -0.113171 v 0.371554 z"
              sodipodi:nodetypes="ccccccccccccccccc" />
         </g>
       </g>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:1.41111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-         x="61.230728"
-         y="-33.921829"
+         style="font-style:normal;font-weight:normal;font-size:1.76389px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="59.569172"
+         y="-33.992794"
          id="text936-0"
          transform="rotate(90)"><tspan
            sodipodi:role="line"
            id="tspan934-9"
-           x="61.230728"
-           y="-33.921829"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;font-family:Cabin;-inkscape-font-specification:Cabin;fill:#808080;fill-opacity:1;stroke-width:0.264583">-<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833px;font-family:Cabin;-inkscape-font-specification:Cabin;fill:#808080;fill-opacity:1"
-   id="tspan1088"> CLK SDA </tspan>+</tspan></text>
-      <path
-         id="rect1092"
-         style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.566929;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 134.50586,236.74286 v -9.05664 c 0,-2.09387 -1.68544,-3.7793 -3.7793,-3.7793 h -7.68164"
-         transform="scale(0.26458333)" />
-      <path
-         id="path1104"
-         style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.566929;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 123.04492,260.70183 h 7.68164 c 2.09386,0 3.7793,-1.68544 3.7793,-3.77929 v -9.05468"
-         transform="scale(0.26458333)" />
+           x="59.569172"
+           y="-33.992794"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.76389px;font-family:Cabin;-inkscape-font-specification:Cabin;fill:#808080;fill-opacity:1;stroke-width:0.264583">- CLK SDA +</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="56.432892"
+         y="72.155479"
+         id="text936-6-6-3-3"><tspan
+           sodipodi:role="line"
+           id="tspan934-7-3-6-6"
+           x="56.432892"
+           y="72.155479"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:Cabin;-inkscape-font-specification:Cabin;fill:#a6a6a6;fill-opacity:1;stroke-width:0.264583">Pulse</tspan></text>
+      <g
+         id="g922"
+         transform="translate(0.20925521,-0.38176125)">
+        <path
+           id="rect1092"
+           style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.15;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 36.266828,62.167004 V 59.19535 c 0,-0.687038 -0.553302,-1.24006 -1.240682,-1.24006 H 32.50439" />
+        <path
+           id="rect1092-3"
+           style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:0.15;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 36.266828,66.815917 v 2.971654 c 0,0.687038 -0.553302,1.24006 -1.240682,1.24006 H 32.50439" />
+      </g>
     </g>
     <g
        id="g1177-6"
@@ -267,7 +280,7 @@
          rx="1.9961659" />
       <g
          id="g932-1"
-         transform="translate(-5.9805236,-4.0912353)">
+         transform="translate(-5.4513569,-4.0912353)">
         <g
            id="g12-8"
            transform="matrix(0.00554209,0,0,-0.00554209,55.068988,68.537602)">
@@ -355,17 +368,39 @@
       </g>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:1.41111px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-         x="35.426624"
-         y="71.382668"
+         style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="34.897457"
+         y="71.652763"
          id="text936-6-6"><tspan
            sodipodi:role="line"
            id="tspan934-7-3"
-           x="35.426624"
-           y="71.382668"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;font-family:Cabin;-inkscape-font-specification:Cabin;fill:#a6a6a6;fill-opacity:1;stroke-width:0.264583">Made with love in the <tspan
-   style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Cabin;-inkscape-font-specification:'Cabin Semi-Bold';fill:#d5d5d5;fill-opacity:1"
-   id="tspan1346">Czech Republic</tspan>, Europe</tspan></text>
+           x="34.897457"
+           y="71.652763"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:Cabin;-inkscape-font-specification:Cabin;fill:#a6a6a6;fill-opacity:1;stroke-width:0.264583">Made with <tspan
+   style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.11667px;font-family:Cabin;-inkscape-font-specification:'Cabin Semi-Bold'"
+   id="tspan895">love</tspan> in the <tspan
+   style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.11667px;font-family:Cabin;-inkscape-font-specification:'Cabin Semi-Bold';fill:#d5d5d5;fill-opacity:1"
+   id="tspan1346">Czech Republic</tspan></tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="52.006863"
+         y="69.272568"
+         id="text936-6-6-3"><tspan
+           sodipodi:role="line"
+           id="tspan934-7-3-6"
+           x="52.006863"
+           y="69.272568"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;font-family:Cabin;-inkscape-font-specification:Cabin;fill:#a6a6a6;fill-opacity:1;stroke-width:0.264583">I2C address: <tspan
+   style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.11667px;font-family:Cabin;-inkscape-font-specification:'Cabin Semi-Bold';fill:#d7d7d7;fill-opacity:1"
+   id="tspan921">0x50</tspan></tspan></text>
+      <rect
+         style="fill:#d7d7d7;fill-opacity:1;stroke:#808080;stroke-width:0.150001"
+         id="rect939"
+         width="12.197756"
+         height="12.197756"
+         x="35.112976"
+         y="56.50169" />
     </g>
   </g>
   <g
@@ -373,8 +408,8 @@
      id="layer2"
      inkscape:label="Obrys"
      style="display:inline"
-     sodipodi:insensitive="true"
-     transform="translate(-27.155895,-48.609699)">
+     transform="translate(-27.155895,-48.609699)"
+     sodipodi:insensitive="true">
     <rect
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect833-3"
@@ -400,5 +435,12 @@
        y="79.610001"
        ry="2.0684698"
        rx="1.9961659" />
+    <ellipse
+       style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264582;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path954-6"
+       cx="51.655895"
+       cy="89.110001"
+       rx="2.8677084"
+       ry="2.8677092" />
   </g>
 </svg>

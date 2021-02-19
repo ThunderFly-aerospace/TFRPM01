@@ -159,9 +159,9 @@ module rpm_case_bottom(){
 
         // screw
         translate([21.79, pcb_w/2, -2]){
-              translate([0, 0, -M3_screw_head_height + 4*layer_thickness - 1 + M3_nut_height])
+              translate([0, 0, -M3_screw_head_height + 1*layer_thickness - 1 + M3_nut_height])
                 cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
-              translate([0, 0, -M3_screw_head_height -  7*layer_thickness - 1])
+              translate([0, 0, -M3_screw_head_height -  10*layer_thickness - 1])
                 cylinder(d = M3_nut_diameter, h = M3_nut_height+10*layer_thickness, $fn = 6);
 
          }

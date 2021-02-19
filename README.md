@@ -17,6 +17,7 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 | Pulse frequency range | 0 - 20 kHz | Maximum RPM value varies by pulse number per revolution |
 | I2C Connector | 2x 4-pin JST-GH | Connected in parallel |
 | RPM connector | 3-pin header | internal pullup resistor | 
+| I2C adress | 0x50 default | By switching JP1 possible change to 0x51 | 
 | Operating and storage temperature | -20 - +40°C | Limited by case material | 
 | Operational input voltage | 3.6 - 5V ||
 | Mass | 4 g + 8 g | PCB + case |

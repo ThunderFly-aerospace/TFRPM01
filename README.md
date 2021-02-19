@@ -1,4 +1,4 @@
-# TFRPM01B - RPM measuring device 
+# TFRPM01C - RPM measuring device 
 
 Revolutions per minute meter for UAV.
 It is designed to direct connection to Pixhawk controller (CUAV V5+) trough standard I²C connector. The device [is supported by PX4 firmware](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html).
@@ -17,6 +17,7 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 | Pulse frequency range | 0 - 20 kHz | Maximum RPM value varies by pulse number per revolution |
 | I2C Connector | 2x 4-pin JST-GH | Connected in parallel |
 | RPM connector | 3-pin header | internal pullup resistor | 
+| I2C adress | 0x50 default | By switching JP1 possible change to 0x51 | 
 | Operating and storage temperature | -20 - +40°C | Limited by case material | 
 | Operational input voltage | 3.6 - 5V ||
 | Mass | 4 g + 8 g | PCB + case |
@@ -33,7 +34,7 @@ Therefore sensor is resistant to short circuit at the probe connector power.
 
 The two I²C Pixhawk connectors are connected to each other. This feature allows easily nesting with other I²C devices to single Pixhawks I²C port.
 
-PCB size:
+### PCB size:
 ![PCB size](doc/img/tfrpm01B_PCBSize.png)
 
 ### Sensor options

@@ -34,7 +34,7 @@ Therefore sensor is resistant to short circuit at the probe connector power.
 
 The two I²C Pixhawk connectors are connected to each other. This feature allows easily nesting with other I²C devices to single Pixhawks I²C port.
 
-PCB size:
+### PCB size:
 ![PCB size](doc/img/tfrpm01B_PCBSize.png)
 
 ### Sensor options

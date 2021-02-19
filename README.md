@@ -1,4 +1,4 @@
-# TFRPM01C - RPM measuring device 
+# TFRPM01B - RPM measuring device 
 
 Revolutions per minute meter for UAV.
 It is designed to direct connection to Pixhawk controller (CUAV V5+) trough standard I²C connector. The device [is supported by PX4 firmware](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html).

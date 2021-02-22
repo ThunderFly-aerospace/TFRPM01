@@ -63,4 +63,4 @@ The sensor could also be used with other probe types. The one example is [TFPROB
 
 ![TFRPM01B probe input circuit](/doc/img/TFRPM01_pulse_counter_input.png)
 
-As can be seen from the schematics the default probe power selection is +5V, protected by resistor R10 to about 50 mA short-circuit current. The pull-up resistor R1 with default value 470 Ohm is quite hard and it is generally unsuitable to most optical probes with open-collector outputs. Therefore the resistor R1 should be interchanged to the more suitable value (That could be requested during the order process).
+As can be seen from the schematics the default probe power selection is +5V, protected by resistor R10 to about 50 mA short-circuit current. The pull-up resistor R1 with default value 470 Ohm is quite hard and it is generally unsuitable to most optical probes with open-collector outputs. Therefore the resistor R1 should be interchanged to the more suitable value. It is depending on the selected material for the optical sensor this value might need further fine-tuning. (The specific resistor value could be requested during the order process in case of ordering larger quanitity). 

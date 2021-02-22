@@ -1,4 +1,4 @@
-# TFRPM01C - RPM measuring device 
+# TFRPM01C - RPM measuring device
 
 Revolutions per minute meter for UAV.
 It is designed to direct connection to Pixhawk controller (CUAV V5+) trough standard I²C connector. The device [is supported by PX4 firmware](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html).
@@ -16,9 +16,9 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 |-----------|-------|-------------|
 | Pulse frequency range | 0 - 20 kHz | Maximum RPM value varies by pulse number per revolution |
 | I2C Connector | 2x 4-pin JST-GH | Connected in parallel |
-| RPM connector | 3-pin header | internal pullup resistor | 
-| I2C adress | 0x50 default | By switching JP1 possible change to 0x51 | 
-| Operating and storage temperature | -20 - +40°C | Limited by case material | 
+| RPM connector | 3-pin header | internal pullup resistor |
+| I2C adress | 0x50 default | By switching JP1 possible change to 0x51 |
+| Operating and storage temperature | -20 - +40°C | Limited by case material |
 | Operational input voltage | 3.6 - 5V ||
 | Mass | 4 g + 8 g | PCB + case |
 | Dimensions | 23.5x42x12.5mm / 37.5x19mm | Case / PCB |
@@ -33,6 +33,15 @@ The 3Pin probe connector is powered from I²C bus trough RC filter which limits 
 Therefore sensor is resistant to short circuit at the probe connector power.
 
 The two I²C Pixhawk connectors are connected to each other. This feature allows easily nesting with other I²C devices to single Pixhawks I²C port.
+
+### I²C Address configuration
+
+By default the TFRPM01C sensor is manufactured with 0x50 I²C address. This address is possible to change to 0x51 by altering the JP1 solder junction. The junction connection to GND needs to be cut by knife and then soldered to opposite side Vcc.
+
+The default configuration of the junction corresponds to following picture, where center pin is connected to GND by copper trace.
+
+![The default 0x50 address setup](/doc/img/JP1_address_0x50_config.png)
+
 
 ### PCB size:
 ![PCB size](doc/img/tfrpm01B_PCBSize.png)

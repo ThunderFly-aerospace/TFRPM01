@@ -3,7 +3,7 @@
         "Datasheet": "~", 
         "Footprint": "Mlab_R:SMD-0603", 
         "Ref": "C1", 
-        "Tstamp": "5DEBF498", 
+        "Tstamp": "00000000-0000-0000-0000-00005debf498", 
         "UST_ID": "5c70984812875079b91f8bc2", 
         "UST_id": "5c70984812875079b91f8bc2", 
         "Value": "1uF"
@@ -12,7 +12,7 @@
         "Datasheet": "~", 
         "Footprint": "Mlab_R:SMD-0805", 
         "Ref": "C2", 
-        "Tstamp": "5DE9100E", 
+        "Tstamp": "00000000-0000-0000-0000-00005de9100e", 
         "UST_ID": "5c70984812875079b91f8bbd", 
         "UST_id": "5c70984812875079b91f8bbd", 
         "Value": "10uF"
@@ -21,7 +21,7 @@
         "Datasheet": "~", 
         "Footprint": "Mlab_R:SMD-0805", 
         "Ref": "C3", 
-        "Tstamp": "59FFC6A8", 
+        "Tstamp": "00000000-0000-0000-0000-000059ffc6a8", 
         "UST_ID": "5c70984812875079b91f8bbd", 
         "UST_id": "5c70984812875079b91f8bbd", 
         "Value": "10uF"
@@ -30,7 +30,7 @@
         "Datasheet": "~", 
         "Footprint": "Mlab_R:SMD-0603", 
         "Ref": "C4", 
-        "Tstamp": "5562302C", 
+        "Tstamp": "00000000-0000-0000-0000-00005562302c", 
         "UST_ID": "5c70984812875079b91f8bf2", 
         "UST_id": "5c70984812875079b91f8bf2", 
         "Value": "100nF"
@@ -39,7 +39,7 @@
         "Datasheet": "~", 
         "Footprint": "Mlab_R:SMD-0603", 
         "Ref": "C5", 
-        "Tstamp": "5DEABD1A", 
+        "Tstamp": "00000000-0000-0000-0000-00005deabd1a", 
         "UST_ID": "5c70984812875079b91f8bf2", 
         "UST_id": "5c70984812875079b91f8bf2", 
         "Value": "100nF"
@@ -48,7 +48,7 @@
         "Datasheet": "~", 
         "Footprint": "Mlab_R:SMD-0603", 
         "Ref": "C6", 
-        "Tstamp": "5DEBA31C", 
+        "Tstamp": "00000000-0000-0000-0000-00005deba31c", 
         "UST_ID": "5c70984812875079b91f8bf2", 
         "UST_id": "5c70984812875079b91f8bf2", 
         "Value": "100nF"
@@ -57,16 +57,15 @@
         "Datasheet": "", 
         "Footprint": "Mlab_D:Diode-MiniMELF_Standard", 
         "Ref": "D1", 
-        "Tstamp": "59FFCB7D", 
-        "UST_ID": "5c70984512875079b91f88b2", 
+        "Tstamp": "00000000-0000-0000-0000-000059ffcb7d", 
         "UST_id": "5c70984512875079b91f88b2", 
-        "Value": "ZENER-5.6V"
+        "Value": "ZENER-6.2V"
     }, 
     {
         "Datasheet": "~", 
         "Footprint": "Mlab_D:LED_1206", 
         "Ref": "D2", 
-        "Tstamp": "5B1BC617", 
+        "Tstamp": "00000000-0000-0000-0000-00005b1bc617", 
         "UST_ID": "5c70984412875079b91f8896", 
         "UST_id": "5c70984412875079b91f8896", 
         "Value": "LED RED"
@@ -75,14 +74,14 @@
         "Datasheet": "", 
         "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal", 
         "Ref": "J1", 
-        "Tstamp": "5DE84EFB", 
+        "Tstamp": "00000000-0000-0000-0000-00005de84efb", 
         "Value": "HEADER_1x03"
     }, 
     {
         "Datasheet": "", 
         "Footprint": "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal", 
         "Ref": "J2", 
-        "Tstamp": "5DEB9C07", 
+        "Tstamp": "00000000-0000-0000-0000-00005deb9c07", 
         "UST_ID": "5c86273d1287500b4e0280be", 
         "UST_id": "5c86273d1287500b4e0280be", 
         "Value": "SM04B-GHS-TB"
@@ -91,42 +90,56 @@
         "Datasheet": "", 
         "Footprint": "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal", 
         "Ref": "J3", 
-        "Tstamp": "5DE8841C", 
+        "Tstamp": "00000000-0000-0000-0000-00005de8841c", 
         "UST_ID": "5c86273d1287500b4e0280be", 
         "UST_id": "5c86273d1287500b4e0280be", 
         "Value": "SM04B-GHS-TB"
     }, 
     {
+        "Datasheet": "~", 
+        "Footprint": "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm", 
+        "Ref": "JP1", 
+        "Tstamp": "5ba25741-4f4a-4722-840d-a318fd156e0e", 
+        "Value": "SolderJumper_3_Bridged12"
+    }, 
+    {
+        "Datasheet": "~", 
+        "Footprint": "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm", 
+        "Ref": "JP2", 
+        "Tstamp": "3e698e44-302e-427a-b240-48a7133a82dd", 
+        "Value": "SolderJumper_3_Bridged12"
+    }, 
+    {
         "Datasheet": "", 
         "Footprint": "Mlab_Mechanical:MountingHole_3mm", 
         "Ref": "M2", 
-        "Tstamp": "549D7628", 
+        "Tstamp": "00000000-0000-0000-0000-0000549d7628", 
         "Value": "M3"
     }, 
     {
         "Datasheet": "~", 
-        "Footprint": "Mlab_R:SMD-0603", 
+        "Footprint": "Mlab_R:SMD-0805", 
         "Ref": "R1", 
-        "Tstamp": "5B1C4727", 
+        "Tstamp": "00000000-0000-0000-0000-00005b1c4727", 
         "UST_ID": "5c70984512875079b91f8959", 
         "UST_id": "5c70984512875079b91f8959", 
         "Value": "470R"
     }, 
     {
         "Datasheet": "~", 
-        "Footprint": "Mlab_R:SMD-0603", 
+        "Footprint": "Mlab_R:SMD-0805", 
         "Ref": "R2", 
-        "Tstamp": "59FFB1AA", 
-        "UST_ID": "5c70984512875079b91f8962", 
-        "UST_id": "5c70984512875079b91f8962", 
-        "Value": "10k"
+        "Tstamp": "00000000-0000-0000-0000-00005ded9c2d", 
+        "UST_ID": "5c70984512875079b91f8977", 
+        "UST_id": "5c70984512875079b91f8956", 
+        "Value": "100R"
     }, 
     {
         "Datasheet": "~", 
         "Footprint": "Mlab_R:SMD-0603", 
         "Ref": "R3", 
-        "Tstamp": "59FFB143", 
-        "UST_ID": "5c70984512875079b91f8962", 
+        "Tstamp": "00000000-0000-0000-0000-000059ffb143", 
+        "UST_ID": "5c70984612875079b91f899f", 
         "UST_id": "5c70984512875079b91f8962", 
         "Value": "10k"
     }, 
@@ -134,7 +147,7 @@
         "Datasheet": "~", 
         "Footprint": "Mlab_R:SMD-0603", 
         "Ref": "R4", 
-        "Tstamp": "5B1D2DC1", 
+        "Tstamp": "00000000-0000-0000-0000-00005b1d2dc1", 
         "UST_ID": "5c70984512875079b91f8957", 
         "UST_id": "5c70984512875079b91f8957", 
         "Value": "180R"
@@ -142,49 +155,17 @@
     {
         "Datasheet": "~", 
         "Footprint": "Mlab_R:SMD-0603", 
-        "Ref": "R5", 
-        "Tstamp": "5B2680DA", 
-        "UST_ID": "5c70984512875079b91f8962", 
+        "Ref": "R10", 
+        "Tstamp": "00000000-0000-0000-0000-000059ffb1aa", 
+        "UST_ID": "5c70984612875079b91f899f", 
         "UST_id": "5c70984512875079b91f8962", 
         "Value": "10k"
-    }, 
-    {
-        "Datasheet": "~", 
-        "Footprint": "Mlab_R:SMD-0603", 
-        "Ref": "R6", 
-        "Tstamp": "5DE83C83", 
-        "UST_ID": "5c70984512875079b91f894e", 
-        "UST_id": "5c70984512875079b91f894e", 
-        "Value": "0R"
-    }, 
-    {
-        "Datasheet": "~", 
-        "Footprint": "Mlab_R:SMD-0603", 
-        "Ref": "R7", 
-        "Tstamp": "5DE656B9", 
-        "Value": "-"
-    }, 
-    {
-        "Datasheet": "~", 
-        "Footprint": "Mlab_R:SMD-0603", 
-        "Ref": "R8", 
-        "Tstamp": "5DED9C2C", 
-        "Value": "-"
-    }, 
-    {
-        "Datasheet": "~", 
-        "Footprint": "Mlab_R:SMD-0603", 
-        "Ref": "R10", 
-        "Tstamp": "5DED9C2D", 
-        "UST_ID": "5c70984512875079b91f8956", 
-        "UST_id": "5c70984512875079b91f8956", 
-        "Value": "100R"
     }, 
     {
         "Datasheet": "", 
         "Footprint": "Mlab_IO:SOT176-1", 
         "Ref": "U1", 
-        "Tstamp": "59FF55BA", 
+        "Tstamp": "00000000-0000-0000-0000-000059ff55ba", 
         "UST_ID": "5c70984712875079b91f8b59", 
         "UST_id": "5c70984712875079b91f8b59", 
         "Value": "PCF8583"
@@ -193,16 +174,15 @@
         "Datasheet": "http://www.ti.com/lit/gpn/sn74HC14", 
         "Footprint": "Package_TO_SOT_SMD:SOT-353_SC-70-5", 
         "Ref": "U2", 
-        "Tstamp": "5B1B4DEA", 
-        "UST_ID": "5c70984712875079b91f8b5e", 
+        "Tstamp": "00000000-0000-0000-0000-00005b1b4dea", 
         "UST_id": "5c70984712875079b91f8b5e", 
-        "Value": "74AHC1G14GV"
+        "Value": "SN74LVC1G14-Q1"
     }, 
     {
         "Datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf", 
         "Footprint": "Package_TO_SOT_SMD:SOT-23-5", 
         "Ref": "U3", 
-        "Tstamp": "5DE928CF", 
+        "Tstamp": "00000000-0000-0000-0000-00005de928cf", 
         "UST_ID": "5c7255e81287500b4e112ea2", 
         "UST_id": "5c7255e81287500b4e112ea2", 
         "Value": "MIC5504-3.3YM5"

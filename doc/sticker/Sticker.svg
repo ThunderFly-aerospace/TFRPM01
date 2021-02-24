@@ -36,11 +36,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="104.71456"
-     inkscape:cy="100.00525"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="110.23942"
+     inkscape:cy="74.064205"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g932"
      inkscape:document-rotation="0"
      showgrid="false"
      lock-margins="true"
@@ -48,11 +48,11 @@
      fit-margin-left="5"
      fit-margin-right="5"
      fit-margin-bottom="5"
-     inkscape:window-width="1870"
+     inkscape:window-width="935"
      inkscape:window-height="1016"
      inkscape:window-x="50"
      inkscape:window-y="27"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -181,7 +181,7 @@
         </g>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:2.82223px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.219192"
+           style="font-style:normal;font-weight:normal;font-size:2.82223px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.219192;letter-spacing:0px"
            x="42.373299"
            y="66.945953"
            id="text893"><tspan
@@ -189,7 +189,7 @@
              id="tspan891"
              x="42.373299"
              y="66.945953"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;font-family:Cabin;-inkscape-font-specification:'Cabin Bold';fill:#a6a6a6;fill-opacity:1;stroke-width:0.219192">TFRPM01</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82223px;font-family:Cabin;-inkscape-font-specification:'Cabin Bold';fill:#a6a6a6;fill-opacity:1;stroke-width:0.219192;">TFRPM01</tspan></text>
       </g>
       <text
          xml:space="preserve"

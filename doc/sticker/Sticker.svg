@@ -25,10 +25,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
-     inkscape:cx="-27.248846"
+     inkscape:cx="29.319697"
      inkscape:cy="105.29861"
      inkscape:document-units="mm"
-     inkscape:current-layer="g3023"
+     inkscape:current-layer="g1177"
      inkscape:document-rotation="0"
      showgrid="false"
      lock-margins="true"
@@ -235,7 +235,7 @@
              style="font-size:2.46943998px"
              id="tspan2981">-</tspan><tspan
              style="font-size:1.76389003px"
-             id="tspan2977">  SCL  SDA  </tspan><tspan
+             id="tspan2977">  SDA  SCL  </tspan><tspan
              style="font-size:2.46943998px"
              id="tspan2983">+</tspan></tspan></text>
       <text

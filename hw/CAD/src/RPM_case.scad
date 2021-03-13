@@ -105,7 +105,7 @@ module rpm_case_bottom(){
             cube([12, 9, 4.35 + 0.3]);
 
         // screw
-        #translate([21.79, pcb_w/2, -2]){
+        translate([21.79, pcb_w/2, -2]){
               translate([0, 0, -M3_screw_head_height + 1*layer_thickness - 1 + M3_nut_height])
                 cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
               translate([0, 0, -M3_screw_head_height -  10*layer_thickness - 1])
@@ -132,7 +132,7 @@ if(0){
 
 use <../../../doc/sticker/sticker_outline.scad>
 
-translate([19, -32.8, -4.25]) %poly_rect1948(0.1);
+translate([19, -32.8, -4.25]) color("green") %poly_rect1948(0.1);
 translate([19, 22.2, -4.25]) %poly_rect1944(0.1);
 
 

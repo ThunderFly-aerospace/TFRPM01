@@ -136,8 +136,8 @@
         "Footprint": "Mlab_R:SMD-0603", 
         "Ref": "R4", 
         "Tstamp": "", 
-        "UST_ID": "5c70984512875079b91f8974", 
-        "Value": "62R"
+        "UST_ID": "5c70984512875079b91f8953", 
+        "Value": "51R"
     }, 
     {
         "Datasheet": "~", 

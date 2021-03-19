@@ -1757,7 +1757,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005b1d2dc1)
     (property "Reference" "R4" (id 0) (at 111.76 58.2422 90))
-    (property "Value" "62R" (id 1) (at 111.76 60.554 90))
+    (property "Value" "51R" (id 1) (at 111.76 60.554 90))
     (property "Footprint" "Mlab_R:SMD-0603" (id 2) (at 111.76 61.722 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1767,7 +1767,7 @@
     (property "UST_id" "" (id 4) (at 111.76 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "UST_ID" "5c70984512875079b91f8974" (id 5) (at 111.76 63.5 0)
+    (property "UST_ID" "5c70984512875079b91f8953" (id 5) (at 111.76 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d02412d2-3955-42e8-84ad-c96e112b4af5))
@@ -2420,7 +2420,7 @@
       (reference "R3") (unit 1) (value "10k") (footprint "Mlab_R:SMD-0603")
     )
     (path "/00000000-0000-0000-0000-00005b1d2dc1"
-      (reference "R4") (unit 1) (value "62R") (footprint "Mlab_R:SMD-0603")
+      (reference "R4") (unit 1) (value "51R") (footprint "Mlab_R:SMD-0603")
     )
     (path "/00000000-0000-0000-0000-000059ffb1aa"
       (reference "R10") (unit 1) (value "10k") (footprint "Mlab_R:SMD-0603")

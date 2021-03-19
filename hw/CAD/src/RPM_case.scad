@@ -40,8 +40,8 @@ module rpm_case_top(){
             cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
 
         // LED hole
-        translate([21.5, 16.9, -M3_screw_head_height-0.8+0.4-5])
-            cylinder(d = 2, h = 20, $fn = 50);
+        translate([21.5, 16.9, -5.5])
+            cylinder(d1 = 3, d2 = 4, h = 6, $fn = 50);
 
         // pinheader hole
         translate([27.3, 9.525,0])
@@ -81,7 +81,7 @@ module rpm_case_bottom(){
             translate([0, 0, -3.5])
                 cube([pcb_l, pcb_w, 10]);
             translate([21.79, pcb_w/2, -10])
-                cylinder(d1 = M3_nut_diameter*1.5, d2 = 6.2, h = 10, $fn = 50);
+                cylinder(d1 = M3_nut_diameter*1.5, d2 = 6.2, h = 10-0.75, $fn = 50);
             translate([31, 0, -5])
                 cube([pcb_l, pcb_w, 6]);
         }
@@ -105,11 +105,12 @@ module rpm_case_bottom(){
             cube([12, 9, 4.35 + 0.3]);
 
         // screw
-        translate([21.79, pcb_w/2, -2]){
+        translate([21.79, pcb_w/2, -2+0.3]){
             translate([0, 0,  -M3_screw_head_height -  6*layer_thickness -3 + 2 - layer_thickness]){
               translate([0, 0, M3_screw_head_height])
                 cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
-                cylinder(d = M3_nut_diameter, h = M3_nut_height + layer_thickness, $fn = 50);
+              translate([0, 0, -10]) cylinder(d = M3_nut_diameter, h = M3_nut_height + layer_thickness+10, $fn = 50);
+              translate([0, 0, -0]) cylinder(d1 = M3_nut_diameter+1, d2 = M3_nut_diameter, h = 0.5, $fn = 50);
             }
 
          }

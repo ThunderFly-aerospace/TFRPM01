@@ -114,7 +114,7 @@ module rpm_case_bottom(){
               translate([0, 0, M3_screw_head_height])
                 cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
               translate([0, 0, -10]) cylinder(d = M3_nut_diameter, h = M3_nut_height + layer_thickness+10, $fn = 50);
-              translate([0, 0, -0.1]) cylinder(d1 = M3_nut_diameter+1, d2 = M3_nut_diameter, h = 0.6, $fn = 50);
+              translate([0, 0, -0.15]) cylinder(d1 = M3_nut_diameter+1, d2 = M3_nut_diameter, h = 0.6, $fn = 50);
             }
 
          }

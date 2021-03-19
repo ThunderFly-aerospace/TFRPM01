@@ -76,16 +76,17 @@ module rpm_case_bottom(){
 
         }
 
-        minkowski(){
-           cube([pcb_l, pcb_w, 1]);
-           cylinder(d=2*case_brim+2*0.15, h = pcb_t-0.5+0.1, $fn=50);
-        }
+        translate([0, 0, -layer_thickness])
+          minkowski(){
+             cube([pcb_l, pcb_w, 1]);
+             cylinder(d=2*case_brim+2*0.15, h = pcb_t, $fn=50);
+          }
         // sensor PCB
         difference(){
             translate([0, 0, -3.5])
                 cube([pcb_l, pcb_w, 10]);
             translate([21.79, pcb_w/2, -10])
-                cylinder(d1 = M3_nut_diameter*1.5, d2 = 6.2, h = 10-0.75, $fn = 50);
+                cylinder(d1 = M3_nut_diameter*1.5, d2 = 6.2, h = 10 - layer_thickness, $fn = 50);
             translate([31, 0, -5])
                 cube([pcb_l, pcb_w, 6]);
         }

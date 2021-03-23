@@ -43,8 +43,12 @@ The default configuration of the junction corresponds to following picture, wher
 ![The default 0x50 address setup](/doc/img/JP1_address_0x50_config.png)
 
 
-### PCB size:
-![PCB size](doc/img/tfrpm01B_PCBSize.png)
+### PCB dimensions
+
+![PCB dimensions](doc/img/TFRPM01C_PCB_dimensions.png)
+
+The PCB is designed to be mounted on flat surface by center screw hole. The supposed screw diameter is metric 3mm e.g. DIN 912 M3 Hexagon socket Head Cap Screws. 
+
 
 ### Sensor options
 
@@ -63,4 +67,4 @@ The sensor could also be used with other probe types. The one example is [TFPROB
 
 ![TFRPM01B probe input circuit](/doc/img/TFRPM01_pulse_counter_input.png)
 
-As can be seen from the schematics the default probe power selection is +5V, protected by resistor R2 to about 61 mA short-circuit current. The pull-up resistor R1 with default value 22 kOhm is quite hard and it is generally unsuitable to most optical probes with open-collector outputs. Therefore the resistor R1 should be interchanged to a more suitable value. It is depending on the selected material for the optical sensor this value might need further fine-tuning. (The specific resistor value could be requested during the order process in case of ordering a larger quantity). 
+As can be seen from the schematics the default probe power selection is +5V, protected by resistor R2 to about 61 mA short-circuit current. The pull-up resistor R1 with default value 22 kOhm is quite hard and it is generally unsuitable to most optical probes with open-collector outputs. Therefore the resistor R1 should be interchanged to a more suitable value. It is depending on the selected material for the optical sensor this value might need further fine-tuning. (The specific resistor value could be requested during the order process in case of ordering a larger quantity).

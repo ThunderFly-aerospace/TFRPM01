@@ -22,7 +22,12 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 | Operational input voltage | 3.6 - 5V ||
 | Mass | 4 g + 8 g | PCB + case |
 | Dimensions | 23.5x42x12.5mm / 37.5x19mm | Case / PCB |
-| Short circuit protection on probe connector | | |
+
+## Features
+
+  * Short circuit protection on probe connector
+  * Input status LED indicator - [optionally visible at daylight](/doc/README.md)
+  * Pass-trough I²C connectors to allow daisy chain of different sensors
 
 
 ![Top view on I2C RPM sensor](/doc/img/TFRPM01B_top_big.jpg)

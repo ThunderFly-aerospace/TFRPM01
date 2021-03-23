@@ -53,7 +53,7 @@ The sensor could be used with multiple sensor probes. The most used one is a hal
 
 ![TFRPM01B hall effect magnetic sensor](/doc/img/TFRPM01B_hall_sensor.jpg)
 
-The probe should be connected to the sensor board as follows
+The probe should be connected to the sensor board as follows (- Black, + RED, Pulse Blue)
 
 ![TFRPM01B hall effect magnetic sensor connection](/doc/img/TFRPM01B_hall_connection.jpg)
 

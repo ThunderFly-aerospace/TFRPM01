@@ -22,6 +22,7 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 | Operational input voltage | 3.6 - 5V ||
 | Mass | 4 g + 8 g | PCB + case |
 | Dimensions | 23.5x42x12.5mm / 37.5x19mm | Case / PCB |
+| Weather resistance | IP40 | Except the external connectors |
 
 ## Features
 

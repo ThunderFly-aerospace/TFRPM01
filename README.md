@@ -31,9 +31,9 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
   * Pass-trough I²C connectors to allow daisy chain of different sensors
 
 
-![Top view on I2C RPM sensor](/doc/img/TFRPM01C_top_big.jpg)
+![Top view on I2C RPM sensor](/doc/img/TFRPM01C_case.jpg)
 
-![Bottom view on I2C RPM sensor](/doc/img/TFRPM01C_bot_big.jpg)
+![Bottom view on I2C RPM sensor](/doc/img/TFRPM01C_pcb.jpg)
 
 The 3Pin probe connector is powered from I²C bus trough RC filter which limits current and voltage spikes to sensor probe.
 Therefore sensor is resistant to short circuit at the probe connector power.

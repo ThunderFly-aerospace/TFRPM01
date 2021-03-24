@@ -9,13 +9,13 @@ module rpm_case_top(){
     difference(){
         union(){
             hull(){
-                translate([0,0, -M3_screw_head_height-1])
+                translate([0,0, -M3_screw_head_height])
                     minkowski(){
                        cube([pcb_l, pcb_w, 2]);
-                       cylinder(d= 2*case_wall + 2*case_brim, h = M3_screw_head_height-1, $fn=50);
+                       cylinder(d= 2*case_wall + 2*case_brim, h = M3_screw_head_height-2, $fn=50);
                     }
 
-                translate([0, 0, -M3_screw_head_height - 6*layer_thickness-1])
+                translate([0, 0, -M3_screw_head_height - 6*layer_thickness])
                     minkowski(){
                        cube([pcb_l, pcb_w, 1]);
                        cylinder( d=2*case_brim , h = 2-1, $fn=50);
@@ -36,16 +36,16 @@ module rpm_case_top(){
         // Otvory pro sroubek
         translate([21.79, pcb_w/2, - M3_screw_head_height - 7*layer_thickness -5])
             rotate(30) cylinder(d = M3_nut_diameter, h = M3_screw_head_height+0.5+5, $fn = 6);
-        translate([21.79, pcb_w/2, - M3_screw_head_height - 7*layer_thickness-1])
+        translate([21.79, pcb_w/2, - M3_screw_head_height - 7*layer_thickness])
             rotate(30) cylinder(d1 = M3_nut_diameter +1, d2 = M3_nut_diameter, h = 0.5, $fn = 6);
         translate([21.79, pcb_w/2, - 6*layer_thickness+0.5])
             cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
 
         // LED hole
-        translate([21.5, 16.9, -5.5])
-            cylinder(d1 = 3, d2 = 4, h = 6, $fn = 50);
-        translate([21.5, 16.9, -5.5])
-            cylinder(d1 = 4, d2 = 3, h = 0.5, $fn = 50);
+        translate([21.5, 16.9, -4.5])
+            cylinder(d1 = 2.7, d2 = 4, h = 5, $fn = 50);
+        translate([21.5, 16.9, -4.5])
+            cylinder(d1 = 2.7+0.8, d2 = 2.7, h = 0.6, $fn = 50);
 
         // pinheader hole
         translate([27.3, 9.525,0])
@@ -87,7 +87,7 @@ module rpm_case_bottom(){
                 cube([pcb_l, pcb_w, 10]);
             translate([21.79, pcb_w/2, -10])
                 cylinder(d1 = M3_nut_diameter*1.5, d2 = 6.2, h = 10 - layer_thickness, $fn = 50);
-            translate([31, 0, -5])
+            translate([33, 0, -5])
                 cube([pcb_l, pcb_w, 6]);
         }
         // Pinheader
@@ -125,7 +125,7 @@ module rpm_case_bottom(){
 if(1){
     rpm_case_top();
 
-    translate([0, -30, 2])
+    translate([0, -30, 3])
         rpm_case_bottom();
 }
 

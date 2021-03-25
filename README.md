@@ -29,7 +29,7 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
   * Short circuit protection on probe connector
   * Input status LED indicator - [optionally visible at daylight](/doc/README.md)
   * Pass-trough I²C connectors to allow daisy chain of different sensors
-  * Offload MCU, by storing the number of counted pulses in internal memory
+  * Offload flight controller's MCU, by storing the number of counted pulses in internal memory
 
 
 ![Top view on I2C RPM sensor](/doc/img/TFRPM01C_case.jpg)

@@ -32,11 +32,11 @@ module rpm_case_top(){
             cube([pcb_l, pcb_w, 10]);
 
         // Otvory pro sroubek
-        translate([21.79, pcb_w/2, - M3_screw_head_height - 7*layer_thickness -5])
-            rotate(30) cylinder(d = M3_nut_diameter, h = M3_screw_head_height+0.5+5, $fn = 6);
+        translate([21.79, pcb_w/2, - M3_screw_head_height - 8*layer_thickness - 5])
+            rotate(30) cylinder(d = M3_nut_diameter, h = M3_screw_head_height+5, $fn = 6);
         translate([21.79, pcb_w/2, - M3_screw_head_height - 7*layer_thickness])
             rotate(30) cylinder(d1 = M3_nut_diameter +1, d2 = M3_nut_diameter, h = 0.5, $fn = 6);
-        translate([21.79, pcb_w/2, - 6*layer_thickness+0.5])
+        translate([21.79, pcb_w/2, - 7*layer_thickness])
             cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
 
         // LED hole

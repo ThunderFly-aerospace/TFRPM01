@@ -409,7 +409,13 @@
       "version": 0
     },
     "net_format_name": "",
-    "page_layout_descr_file": "../../../PromoDoc/templates/KiCAD/page_layout.kicad_wks",
+    "ngspice": {
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0
+    },
+    "page_layout_descr_file": "../../doc/assets/templates/KiCAD/page_layout.kicad_wks",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
@@ -418,7 +424,7 @@
   },
   "sheets": [
     [
-      "5a0d71ce-c56d-4c03-a2e0-b7569ddfd1df",
+      "a9cfffe9-9cf0-4b7f-8ffc-023dc0e90fd4",
       ""
     ]
   ],

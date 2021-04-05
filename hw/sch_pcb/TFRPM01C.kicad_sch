@@ -4,9 +4,9 @@
 
   (title_block
     (title "TFRPM01C")
-    (date "2021-01-23")
+    (date "2021-04-05")
     (company "ThunderFly s.r.o.")
-    (comment 1 "RPM measuring device")
+    (comment 1 "RPM measuring device for UAVs")
     (comment 2 "Jacho  <info@thunderfly.cz>")
   )
 

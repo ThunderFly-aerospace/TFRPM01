@@ -41,6 +41,28 @@ Therefore sensor is resistant to short circuit at the probe connector power.
 
 The two I²C Pixhawk connectors are connected to each other. This feature allows easily nesting with other I²C devices to single Pixhawks I²C port.
 
+### Connection to the Pixhawk autopilot
+
+The I²C interface connectors respects the [Pixhawk connector standard](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf). The signal and color coding of the connector and supplied cable are described by following table: 
+
+|Signal | Pixhawk Color | ThunderFly color |
+|--------|------------------|---------------------|
+| +5V    | Red | ![red](https://user-images.githubusercontent.com/5196729/102204855-ab1c3300-3eca-11eb-8083-646d633e3aef.png) Red |
+| SCL  | Black |  ![yellow](https://user-images.githubusercontent.com/5196729/102204908-bc653f80-3eca-11eb-9a1d-a02ea5481c03.png) Yellow  |
+| SDA  | Black |  ![green](https://user-images.githubusercontent.com/5196729/102205114-04846200-3ecb-11eb-8eb8-251c7e564707.png) Green |
+| GND | Black  | ![black](https://user-images.githubusercontent.com/5196729/102204896-b8d1b880-3eca-11eb-8b73-656cac9104e4.png) Black | 
+
+The conductor colors in the cable are different to Pixhawk standard to increase the visual distinction between multiple cables in the UAV.
+
+#### Cable turnig 
+
+To improve I2C bus reliability, the supplied cable is specifically turned by following scheme
+
+- 10 turns for each pair SCL/+5V and SDA/GND per 30cm cable length
+- The two pairs are turned again by 4 turns of pairs per 30cm cable length. 
+
+This special cable conductors winding method, greatly improves the signal integrity by minimising of the crosstalk between the SDA and SCL signals. 
+
 ### I²C Address configuration
 
 By default the TFRPM01C sensor is manufactured with 0x50 I²C address. This address is possible to change to 0x51 by altering the JP1 solder junction. The junction connection to GND needs to be cut by knife and then soldered to opposite side Vcc.
@@ -49,8 +71,14 @@ The default configuration of the junction corresponds to following picture, wher
 
 ![The default 0x50 address setup](/doc/img/JP1_address_0x50_config.png)
 
+### Mounting options
 
-### PCB dimensions
+The device is designed to be mouted with or without plastic case. The 3D printed case is intended to be modifable to particular sensor mount options. The supplied variant of 3D printed case supports two mount options:
+
+  * By default the case could be mounted by screw on flat sulface (the original screew need to be replaced by longer one)
+  * The second option is use of [double sided adhesive tape](https://www.3m.com/3M/en_US/vhb-tapes-us/) or [reclosable fastener](https://www.3m.com/3M/en_US/dual-lock-reclosable-fasteners-us/) sticked on the side of the TFRPM01 case. 
+
+#### PCB dimensions
 
 ![PCB dimensions](doc/img/TFRPM01C_PCB_dimensions.png)
 

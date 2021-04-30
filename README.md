@@ -43,7 +43,7 @@ The two I²C Pixhawk connectors are connected to each other. This feature allows
 
 ### Connection to the Pixhawk autopilot
 
-The I²C interface connectors respects the [Pixhawk connector standard](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf). The signal and color coding of the connector and supplied cable are described by following table: 
+The I²C interface connectors respects the [Pixhawk connector standard](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf). The signal and color coding of the connector and supplied cable are described by following table (ThunderFly color scheme): 
 
 |Signal | Pixhawk Color | ThunderFly color |
 |--------|------------------|---------------------|

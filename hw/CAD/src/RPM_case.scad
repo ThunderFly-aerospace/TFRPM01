@@ -19,12 +19,10 @@ module rpm_case_top(){
                        cylinder( d=2*case_brim , h = 2-1, $fn=50);
                     }
             }
-
-            translate([0, 0, 0])
-                minkowski(){
-                   cube([pcb_l, pcb_w, 0.5]);
-                   cylinder(d=2*case_brim, h = pcb_t-0.5, $fn=50);
-                }
+            minkowski(){
+               cube([pcb_l, pcb_w, 0.5]);
+               cylinder(d=2*case_brim + global_clearance/7, h = pcb_t-0.5, $fn=50); // global_clearance/7 improve fit of case top and bottom.
+            }
         }
 
         // Otvor pro PCB
@@ -110,9 +108,9 @@ module rpm_case_bottom(){
         // screw
         translate([21.79, pcb_w/2, -2 + 0.15]){
             translate([0, 0,  -M3_screw_head_height -  6*layer_thickness -3 + 2 - layer_thickness]){
-              translate([0, 0, M3_screw_head_height]) cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
-              translate([0, 0, -10]) cylinder(d = M3_nut_diameter, h = M3_nut_height + layer_thickness + 10, $fn = 50);
-              translate([0, 0, 0]) cylinder(d1 = M3_nut_diameter+1, d2 = M3_nut_diameter, h = 0.6, $fn = 50);
+                translate([0, 0, M3_screw_head_height]) cylinder(d = M3_screw_diameter, h = 10, $fn = 50); // screw hole
+                translate([0, 0, 0]) cylinder(d = M3_nut_diameter, h = M3_screw_head_height - layer_thickness, $fn = 50); // screw head hole
+                translate([0, 0, 0]) cylinder(d1 = M3_nut_diameter+1, d2 = M3_nut_diameter, h = 0.6, $fn = 50); // hole bevel
             }
 
          }
@@ -136,5 +134,5 @@ if(0){
 
 use <../../../doc/sticker/sticker_outline.scad>
 
-translate([19, -32.8, -5.25]) color("green", 0.5) %poly_rect1948(0.1);
-translate([19, 22.2, -5.25]) color("green", 0.5) %poly_rect1944(0.1);
+//translate([19, -32.8, -5.25]) color("green", 0.5) %poly_rect1948(0.1);
+//translate([19, 22.2, -5.25]) color("green", 0.5) %poly_rect1944(0.1);

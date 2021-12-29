@@ -20,8 +20,8 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 | I2C adress | 0x50 default | By switching JP1 possible change to 0x51 |
 | I2C SCL clock frequency | Max 100 kHz | Operation on 400 kHz is possible, but unreliable|
 | Operating and storage temperature | −20°C to +40°C | Limited by case material |
-| Operational input voltage | 3.6 to 5.4V | Overvoltage internally protected by zener diode, undervoltage is not treated |
-| Mass | 4 g + 8 g | PCB + case |
+| Operational input voltage | +3.6V to +5.4V | Overvoltage internally protected by zener diode, undervoltage is not treated |
+| Mass | 4g PCB + 8g case | Printed case gcode included in docs |
 | Dimensions | 23.5x42x12.5mm / 37.5x19mm | Case / PCB |
 | Weather resistance | IP40 | External connectors fully occupied |
 

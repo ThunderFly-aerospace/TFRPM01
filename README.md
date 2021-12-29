@@ -23,7 +23,7 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 | Operational input voltage | +3.6V to +5.4V | Overvoltage internally protected by zener diode, undervoltage is not treated |
 | Mass | 4g PCB + 8g case | Printed case gcode included in docs |
 | Dimensions | 23.5x42x12.5mm / 37.5x19mm | Case / PCB |
-| Weather resistance | IP40 | External connectors fully occupied |
+| Weather resistance | [IP40](https://en.wikipedia.org/wiki/IP_Code) | External connectors fully occupied |
 
 ## Features
 

@@ -8,6 +8,7 @@
 *.kicad_pcb-bak
 *~
 _autosave-*
+*-backup*
 *.tmp
 *-cache.lib
 *-rescue.lib

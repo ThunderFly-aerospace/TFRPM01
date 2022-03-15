@@ -125,7 +125,7 @@ jobs:
         with:
           commit_message: Fabrication outputs
           commit_options: '--no-verify --signoff'
-          file_pattern: ${{ env.dir }}_gerbers/gerbers/**
+          file_pattern: ${{ env.dir }}_gerbers/** *_pos.csv
           push_options: '--force'
           skip_dirty_check: false
           skip_fetch: false

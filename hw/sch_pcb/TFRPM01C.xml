@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>D:\TF_G\TFRPM01\hw\sch_pcb\TFRPM01C.kicad_sch</source>
-    <date>19.03.2021 10:45:23</date>
+    <date>Date1</date>
     <tool>Eeschema (5.99.0-9763-gb71ab01de4)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>TFRPM01C</title>
         <company>ThunderFly s.r.o.</company>
         <rev/>
-        <date>2021-01-23</date>
+        <date>Date2</date>
         <source>TFRPM01C.kicad_sch</source>
         <comment number="1" value="RPM measuring device"/>
         <comment number="2" value="Jacho  &lt;info@thunderfly.cz&gt;"/>

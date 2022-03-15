@@ -66,7 +66,7 @@ jobs:
 # documentation
   docs:
     runs-on: ubuntu-latest
-    #needs: [ERC]
+    needs: [ERC]
     steps:
       - uses: actions/checkout@v3
         with:
@@ -100,18 +100,6 @@ jobs:
           skip_checkout: false
           create_branch: true
           
-#       - uses: EndBug/add-and-commit@v9
-#         with:
-#           pull: '--rebase --autostash'
-#           push: true
-#           #push-options: '--force'
-#           file_pattern: ${{ env.dir }}_docs/**
-          
-
-#       - uses: stefanzweifel/git-auto-commit-action@v4
-#         with:
-#           commit_message: DOC
-          
 # fabrications
   gerbers:
     runs-on: ubuntu-latest
@@ -137,21 +125,19 @@ jobs:
           
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automated Change
+          commit_message: Fabrication outputs
           commit_options: '--no-verify --signoff'
-          file_pattern: .
-          repository: .
+          file_pattern: ${{ env.dir }}_gerbers/gerbers/**
           add_options: '-u'
           push_options: '--force'
           skip_dirty_check: false
           skip_fetch: false
           skip_checkout: false
-          create_branch: true
           
 # cad
   cad:
     runs-on: ubuntu-latest
-    #needs: [DRC]
+    needs: [DRC]
     steps:
       - uses: actions/checkout@v3
         with:
@@ -174,16 +160,14 @@ jobs:
       
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automated Change
+          commit_message: CAD outputs
           commit_options: '--no-verify --signoff'
-          file_pattern: .
-          repository: .
+          file_pattern: ${{ env.dir }}_cad/**
           add_options: '-u'
           push_options: '--force'
           skip_dirty_check: false
           skip_fetch: false
           skip_checkout: false
-          create_branch: true
           
 # render
   render:
@@ -212,13 +196,11 @@ jobs:
       
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automated Change
+          commit_message: Render output
           commit_options: '--no-verify --signoff'
-          file_pattern: .
-          repository: .
+          file_pattern: ${{ env.dir }}_img/img/**
           add_options: '-u'
           push_options: '--force'
           skip_dirty_check: false
           skip_fetch: false
           skip_checkout: false
-          create_branch: true

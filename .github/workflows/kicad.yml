@@ -92,8 +92,6 @@ jobs:
           commit_message: Automated Change
           commit_options: '--no-verify --signoff'
           file_pattern: .
-          repository: .
-          add_options: '-u'
           push_options: '--force'
           skip_dirty_check: false
           skip_fetch: false
@@ -128,7 +126,6 @@ jobs:
           commit_message: Fabrication outputs
           commit_options: '--no-verify --signoff'
           file_pattern: ${{ env.dir }}_gerbers/gerbers/**
-          add_options: '-u'
           push_options: '--force'
           skip_dirty_check: false
           skip_fetch: false
@@ -162,8 +159,7 @@ jobs:
         with:
           commit_message: CAD outputs
           commit_options: '--no-verify --signoff'
-          file_pattern: ${{ env.dir }}_cad/**
-          add_options: '-u'
+          file_pattern: hw/out
           push_options: '--force'
           skip_dirty_check: false
           skip_fetch: false
@@ -199,7 +195,6 @@ jobs:
           commit_message: Render output
           commit_options: '--no-verify --signoff'
           file_pattern: ${{ env.dir }}_img/img/**
-          add_options: '-u'
           push_options: '--force'
           skip_dirty_check: false
           skip_fetch: false

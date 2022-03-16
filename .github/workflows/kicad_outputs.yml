@@ -1,4 +1,4 @@
-name: Kicad
+name: Kicad- production files generator
 
 on:
   push:

@@ -7,7 +7,7 @@
 // fudge value is used to ensure that subtracted solids are a tad taller
 // in the z dimension than the polygon being subtracted from.  This helps
 // keep the resulting .stl file manifold.
-fudge = 0.1;
+fudge = 1;
 
 module poly_rect1948(h)
 { union()

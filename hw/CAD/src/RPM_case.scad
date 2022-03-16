@@ -30,7 +30,7 @@ module rpm_case_top(){
             cube([pcb_l, pcb_w, 10]);
 
         // Otvory pro sroubek
-        translate([21.79, pcb_w/2, - M3_screw_head_height - 8*layer_thickness - 5])
+        #translate([21.79, pcb_w/2, - M3_screw_head_height - 8*layer_thickness - 5])
             rotate(30) cylinder(d = M3_nut_diameter, h = M3_screw_head_height+5, $fn = 6);
         translate([21.79, pcb_w/2, - M3_screw_head_height - 7*layer_thickness])
             rotate(30) cylinder(d1 = M3_nut_diameter +1, d2 = M3_nut_diameter, h = 0.5, $fn = 6);
@@ -134,5 +134,5 @@ if(0){
 
 use <../../../doc/sticker/sticker_outline.scad>
 
-//translate([19, -32.8, -5.25]) color("green", 0.5) %poly_rect1948(0.1);
-//translate([19, 22.2, -5.25]) color("green", 0.5) %poly_rect1944(0.1);
+translate([19, -32.8, -5.25]) color("green", 0.5) %poly_rect1948(0.1);
+translate([19, 22.2, -5.25]) color("green", 0.5) %poly_rect1944(0.1);

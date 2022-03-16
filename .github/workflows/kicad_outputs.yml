@@ -1,8 +1,8 @@
 name: Kicad
 
 on:
-  workflow_dispatch:
   push:
+  workflow_dispatch:
   
 env:
   schema: "hw/sch_pcb/*.kicad_sch"

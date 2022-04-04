@@ -155,7 +155,7 @@ jobs:
           
       - uses: MLAB-project/KiBot@master
         with:
-          config: doc/report.kibot.yaml
+          config: ${{ env.kibot }}/report.kibot.yaml
           schema: ${{ env.schema }}
           board: ${{ env.board }}
           dir: ${{ env.dir }}_report

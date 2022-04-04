@@ -1,0 +1,11 @@
+
+kibot:
+  version: 1
+
+global:
+   kiauto_time_out_scale: 10
+
+outputs:
+  - name: 'Report'
+    type: report
+    dir: 'docs'

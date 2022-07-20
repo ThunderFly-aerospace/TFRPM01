@@ -29,6 +29,7 @@ Stackup:
 | dielectric 1         | core                 |          |      1510 | FR4             |       4.5 |         0.02 |
 | B.Cu                 | copper               |          |        35 |                 |           |              |
 | B.Mask               | Bottom Solder Mask   | Green    |        10 |                 |           |              |
+| B.Paste              | Bottom Solder Paste  |          |           |                 |           |              |
 | B.SilkS              | Bottom Silk Screen   |          |           |                 |           |              |
 
 # Important sizes
@@ -86,6 +87,7 @@ Used vias:
 Holes (excluding vias):
 
 - 1.0 mm (39 mils) (3)
+- 2.7 mm (106 mils) (2)
 - 3.0 mm (118 mils) (1)
 
 

@@ -2469,7 +2469,7 @@
     (property "Value" "Fiducial" (id 1) (at 218.694 24.0916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 216.535 22.225 0)
+    (property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1.5mm" (id 2) (at 216.535 22.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 216.535 22.225 0)
@@ -2486,7 +2486,7 @@
     (property "Value" "Fiducial" (id 1) (at 230.759 24.0916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 228.6 22.225 0)
+    (property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1.5mm" (id 2) (at 228.6 22.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 228.6 22.225 0)
@@ -2537,7 +2537,7 @@
     (property "Value" "Fiducial" (id 1) (at 243.459 24.0916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 241.3 22.225 0)
+    (property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1.5mm" (id 2) (at 241.3 22.225 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 241.3 22.225 0)
@@ -2668,13 +2668,13 @@
       (reference "D3") (unit 1) (value "LED GREEN") (footprint "Mlab_D:LED_1206_2")
     )
     (path "/457f929f-17ed-4eee-8eba-3af909e8c516"
-      (reference "FID1") (unit 1) (value "Fiducial") (footprint "")
+      (reference "FID1") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_0.5mm_Mask1.5mm")
     )
     (path "/5552a350-225a-4c3c-8643-df2be6c7b9a2"
-      (reference "FID2") (unit 1) (value "Fiducial") (footprint "")
+      (reference "FID2") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_0.5mm_Mask1.5mm")
     )
     (path "/80ac0b57-0388-409c-bf8b-2ee44690ae03"
-      (reference "FID3") (unit 1) (value "Fiducial") (footprint "")
+      (reference "FID3") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_0.5mm_Mask1.5mm")
     )
     (path "/00000000-0000-0000-0000-00005de84efb"
       (reference "J1") (unit 1) (value "HEADER_1x03") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal")

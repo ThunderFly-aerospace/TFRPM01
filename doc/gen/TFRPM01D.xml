@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFRPM01D.kicad_sch</source>
-    <date>Mon Sep 19 09:17:22 2022</date>
+    <date>Mon Sep 26 12:11:21 2022</date>
     <tool>Eeschema 6.0.4-6f826c9f35~116~ubuntu20.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -40,13 +40,10 @@
     </comp>
     <comp ref="C2">
       <value>10uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
-      <fields>
-        <field name="UST_ID">5c70984812875079b91f8bbd</field>
-      </fields>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="UST_id" value=""/>
-      <property name="UST_ID" value="5c70984812875079b91f8bbd"/>
+      <property name="UST_ID" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -54,13 +51,10 @@
     </comp>
     <comp ref="C3">
       <value>10uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
-      <fields>
-        <field name="UST_ID">5c70984812875079b91f8bbd</field>
-      </fields>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="UST_id" value=""/>
-      <property name="UST_ID" value="5c70984812875079b91f8bbd"/>
+      <property name="UST_ID" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -124,7 +118,7 @@
     </comp>
     <comp ref="D2">
       <value>LED RED</value>
-      <footprint>Mlab_D:LED_1206</footprint>
+      <footprint>Mlab_D:LED_1206_2</footprint>
       <fields>
         <field name="UST_ID">5c70984412875079b91f8896</field>
       </fields>
@@ -138,7 +132,7 @@
     </comp>
     <comp ref="D3">
       <value>LED GREEN</value>
-      <footprint>Mlab_D:LED_1206</footprint>
+      <footprint>Mlab_D:LED_1206_2</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="UST_id" value=""/>
       <property name="UST_ID" value=""/>
@@ -146,6 +140,30 @@
       <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>158af5df-cc1b-4506-bbe6-cb7505295b5b</tstamps>
+    </comp>
+    <comp ref="FID1">
+      <value>Fiducial</value>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>457f929f-17ed-4eee-8eba-3af909e8c516</tstamps>
+    </comp>
+    <comp ref="FID2">
+      <value>Fiducial</value>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5552a350-225a-4c3c-8643-df2be6c7b9a2</tstamps>
+    </comp>
+    <comp ref="FID3">
+      <value>Fiducial</value>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80ac0b57-0388-409c-bf8b-2ee44690ae03</tstamps>
     </comp>
     <comp ref="J1">
       <value>HEADER_1x03</value>
@@ -498,6 +516,18 @@
         <pin num="1" name="" type="input"/>
       </pins>
     </libpart>
+    <libpart lib="Mechanical" part="Fiducial">
+      <description>Fiducial Marker</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Fiducial*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FID</field>
+        <field name="Value">Fiducial</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
     <libpart lib="Regulator_Linear" part="MIC5504-3.3YM5">
       <description>300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23</description>
       <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf</docs>
@@ -525,6 +555,9 @@
     </library>
     <library logical="Jumper">
       <uri>/usr/share/kicad/symbols//Jumper.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad/symbols//Mechanical.kicad_sym</uri>
     </library>
     <library logical="Regulator_Linear">
       <uri>/usr/share/kicad/symbols//Regulator_Linear.kicad_sym</uri>

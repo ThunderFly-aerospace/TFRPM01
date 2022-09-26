@@ -87,7 +87,6 @@ Used vias:
 Holes (excluding vias):
 
 - 1.0 mm (39 mils) (3)
-- 2.7 mm (106 mils) (2)
 - 3.0 mm (118 mils) (1)
 
 

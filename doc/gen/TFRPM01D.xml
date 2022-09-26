@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFRPM01D.kicad_sch</source>
-    <date>Mon Sep 26 12:11:21 2022</date>
+    <date>Mon Sep 26 14:43:32 2022</date>
     <tool>Eeschema 6.0.4-6f826c9f35~116~ubuntu20.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -143,6 +143,7 @@
     </comp>
     <comp ref="FID1">
       <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_0.5mm_Mask1.5mm</footprint>
       <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
@@ -151,6 +152,7 @@
     </comp>
     <comp ref="FID2">
       <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_0.5mm_Mask1.5mm</footprint>
       <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
@@ -159,6 +161,7 @@
     </comp>
     <comp ref="FID3">
       <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_0.5mm_Mask1.5mm</footprint>
       <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>

@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFRPM01D.kicad_sch</source>
-    <date>Mon Sep 26 14:43:32 2022</date>
+    <date>Tue Sep 27 14:31:20 2022</date>
     <tool>Eeschema 6.0.4-6f826c9f35~116~ubuntu20.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -518,6 +518,13 @@
       <pins>
         <pin num="1" name="" type="input"/>
       </pins>
+    </libpart>
+    <libpart lib="MLAB_TF_LOGO" part="LOGO">
+      <fields>
+        <field name="Reference">G</field>
+        <field name="Value">LOGO</field>
+        <field name="Footprint">MLAB_LOGA:TF 10x4,7</field>
+      </fields>
     </libpart>
     <libpart lib="Mechanical" part="Fiducial">
       <description>Fiducial Marker</description>

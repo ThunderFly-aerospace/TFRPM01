@@ -1895,6 +1895,7 @@
     )
   )
 
+
   (junction (at 165.1 111.76) (diameter 1.016) (color 0 0 0 0)
     (uuid 1f612e70-0c34-4c1b-9a81-56417c9c8822)
   )
@@ -2651,6 +2652,8 @@
     )
     (pin "2" (uuid e87c78e0-b70a-4522-9ae9-d5d1689a91b4))
     (pin "4" (uuid 02c283f3-0c4f-4000-b69f-5e019402b5e1))
+    (pin "3" (uuid da9a3a10-f868-4e5c-8eea-950150f5f277))
+    (pin "5" (uuid b8ece69b-3605-48c2-8919-cbf0e9858e12))
   )
 
   (symbol (lib_id "Device:LED") (at 104.14 63.5 0) (unit 1)
@@ -3257,6 +3260,8 @@
     (property "UST_ID" "604b05e1128750769e5b106e" (id 5) (at 53.34 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (pin "2" (uuid 5441333a-1693-42a4-9d97-65885cb74944))
+    (pin "4" (uuid c9503ccc-f657-4da7-9240-525ae4ae27fd))
     (pin "3" (uuid aa8d1044-33b1-41ce-ba05-be80f1bac03b))
     (pin "5" (uuid 56480903-11e5-41a4-9a58-f038958d1646))
   )

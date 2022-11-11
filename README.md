@@ -115,14 +115,14 @@ After proper connection of the sensor with sensing probe to I2C port of PX4 base
 
 # FAQ
 
-## What about resolution of the RPM? 
+## What about measurement resolution of the RPM? 
 
-RPM measurement resolution depends on [pooling interval](https://docs.px4.io/main/en/advanced_config/parameter_reference.html#PCF8583_POOL) and number of pulses per revolution. Therefore the measured RPM resolution is following: 
+RPM measurement [resolution](https://en.wikipedia.org/wiki/Sensor#Resolution) depends on [pooling interval](https://docs.px4.io/main/en/advanced_config/parameter_reference.html#PCF8583_POOL) and number of pulses per revolution. Therefore the measured RPM resolution is following: 
 
 Where
   * N is pulses per revolution
   * T is pooling interval in seconds
-  * 
+  * Nc is pules counted during the measurement pooling interval
 
 ## Does it connect to RPM output from ESC? 
 

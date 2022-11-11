@@ -119,15 +119,16 @@ After proper connection of the sensor with sensing probe to I2C port of PX4 base
 
 RPM measurement [resolution](https://en.wikipedia.org/wiki/Sensor#Resolution) depends on [pooling interval](https://docs.px4.io/main/en/advanced_config/parameter_reference.html#PCF8583_POOL) and number of pulses per revolution. Therefore the measured RPM resolution is following: 
 
-<!-- source: A_{cc}=\frac{1}{N\tau60} -->
+![Resolution equation](https://latex.codecogs.com/png.image?\dpi{110}Res=\frac{60}{N\tau})
 
-![Resulution equation](https://latex.codecogs.com/png.image?\dpi{110}A_{cc}=\frac{1}{N\tau60})
+![RPM equation](https://latex.codecogs.com/png.image?\dpi{110}RPM=\frac{N_c60}{N\tau})
+
 
 Where:
   * N is pulses per revolution
   * τ is pooling interval in seconds
   * Nc is pules counted during the measurement pooling interval
-  * Acc is accuracy of measurement in +/- RPM 
+  * Res is resolution of measurement in +/- RPM 
 
 Therefore absolute resolution of the sensor is independent on current RPM measured. Instead of the resolution strongly depends on lenght of pooling interval (longer interval gets better resolution). Resolution also increase with number of pulses per revolution, where more pulses per revolution gives better RPM resolution. Related terms like precision and accuracy are more dificult to analyse, because depends on hardware and firmware versions of Pixhawk, but these errors could be neglected in the usual usage cases.
 

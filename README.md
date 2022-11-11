@@ -114,10 +114,9 @@ The TFRPM01 revolution counter is currently supported by PX4 firmware only. (Ard
 After proper connection of the sensor with sensing probe to I2C port of PX4 based autopilot you should follow instrictions to [PX4 software setup](https://docs.px4.io/main/en/sensor/thunderfly_tachometer.html#software-setup).
 
 # FAQ
+## What about the measurement resolution of the RPM? 
 
-## What about measurement resolution of the RPM? 
-
-RPM measurement [resolution](https://en.wikipedia.org/wiki/Sensor#Resolution) depends on [pooling interval](https://docs.px4.io/main/en/advanced_config/parameter_reference.html#PCF8583_POOL) and number of pulses per revolution. 
+RPM measurement [resolution](https://en.wikipedia.org/wiki/Sensor#Resolution) depends on [pooling interval](https://docs.px4.io/main/en/advanced_config/parameter_reference.html#PCF8583_POOL) and the number of pulses per revolution. 
 
 RPM is calculated from measured values (pulses per interval) as follows
 
@@ -130,11 +129,11 @@ Therefore the resolution of measured RPM is following:
 
 Where:
   * N is pulses per revolution
-  * τ is pooling interval in seconds
+  * τ is the pooling interval in seconds
   * Nc is pules counted during the measurement pooling interval
-  * Res is resolution of measurement in +/- RPM 
+  * Res is the absolute resolution of measurement in +/- RPM 
 
-Therefore absolute resolution of the sensor is independent on current RPM measured. Instead of the resolution strongly depends on lenght of pooling interval (longer interval gets better resolution). Resolution also increase with number of pulses per revolution, where more pulses per revolution gives better RPM resolution. Related terms like precision and accuracy are more dificult to analyse, because depends on hardware and firmware versions of Pixhawk, but these errors could be neglected in the usual usage cases.
+Therefore the absolute resolution of the sensor is independent of the current RPM measured and remains constant depending on sensor configuration, however, relative resolution increases with the RPM measured.  The absolute resolution strongly depends on the length of the pooling interval (a longer interval gets better resolution). The resolution also increases with the number of pulses per revolution, where more pulses per revolution give better RPM resolution. Related terms like precision and accuracy are more difficult to analyze because depend on hardware and firmware versions of Pixhawk, but these errors could be neglected in the usual use cases.
 
 ## Does it connect to RPM output from ESC? 
 

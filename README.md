@@ -2,7 +2,7 @@
 
 Revolutions per minute meter for UAV.
 It is designed to direct connection to Pixhawk controller (CUAV V5+ for example) trough standard I²C connector. The device [is supported by PX4 firmware](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html).
-At the input of meter is supposed a pulse signal from optical encoder, hall sensor etc.
+At the input of meter is supposed a pulse signal from optical encoder, hall sensor etc. The pulses are counted during a predefined constant interval. 
 The hardware is inteded to be used for helicopter and autogyro rotor RPM measurement, but its counting capability is up to 20 kHz therefore it should be used for propeller or engine RPM measurement.
 
 
@@ -114,6 +114,15 @@ The TFRPM01 revolution counter is currently supported by PX4 firmware only. (Ard
 After proper connection of the sensor with sensing probe to I2C port of PX4 based autopilot you should follow instrictions to [PX4 software setup](https://docs.px4.io/main/en/sensor/thunderfly_tachometer.html#software-setup).
 
 # FAQ
+
+## What about resolution of the RPM? 
+
+RPM measurement resolution depends on [pooling interval](https://docs.px4.io/main/en/advanced_config/parameter_reference.html#PCF8583_POOL) and number of pulses per revolution. Therefore the measured RPM resolution is following: 
+
+Where
+  * N is pulses per revolution
+  * T is pooling interval in seconds
+  * 
 
 ## Does it connect to RPM output from ESC? 
 

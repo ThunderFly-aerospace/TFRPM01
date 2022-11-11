@@ -113,3 +113,10 @@ As can be seen from the schematics the default probe power selection is +5V, pro
 The TFRPM01 revolution counter is currently supported by PX4 firmware only. (Ardupilot pull-requests are welcomed)
 After proper connection of the sensor with sensing probe to I2C port of PX4 based autopilot you should follow instrictions to [PX4 software setup](https://docs.px4.io/main/en/sensor/thunderfly_tachometer.html#software-setup).
 
+# FAQ
+
+## Does it connect to RPM output from ESC? 
+
+Generally yes, the TFRPM could be connected to PWM output from an ESC in cese of output logic confirms to 5V TTL. Limitation is the RPM resolution here, because many ESCs gets one pulse per revolution. 
+
+

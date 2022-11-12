@@ -1,8 +1,8 @@
 # TFRPM01C - RPM measuring device
 
 Revolutions per minute meter for UAV.
-It is designed to direct connection to Pixhawk controller (CUAV V5+) trough standard I²C connector. The device [is supported by PX4 firmware](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html).
-At the input of meter is supposed a pulse signal from optical encoder, hall sensor etc.
+It is designed to direct connection to Pixhawk controller (CUAV V5+ for example) trough standard I²C connector. The device [is supported by PX4 firmware](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html).
+At the input of meter is supposed a pulse signal from optical encoder, hall sensor etc. The pulses are counted during a predefined constant interval. 
 The hardware is inteded to be used for helicopter and autogyro rotor RPM measurement, but its counting capability is up to 20 kHz therefore it should be used for propeller or engine RPM measurement.
 
 
@@ -44,7 +44,7 @@ Therefore sensor is resistant to short circuit at the probe connector power.
 
 The two I²C Pixhawk connectors are connected to each other. This feature allows easily nesting with other I²C devices to single Pixhawks I²C port.
 
-### Connection to the Pixhawk autopilot
+## Connection to the Pixhawk autopilot
 
 The I²C interface connectors respects the [Pixhawk connector standard](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf). The signal and color coding of the connector and supplied cable are described by following table (ThunderFly color scheme):
 
@@ -57,7 +57,7 @@ The I²C interface connectors respects the [Pixhawk connector standard](https://
 
 The conductor colors in the cable are different to Pixhawk standard to increase the visual distinction between multiple cables in the UAV.
 
-#### Cable turnig
+### Cable turnig
 
 To improve I2C bus reliability, the supplied cable is specifically turned by following scheme
 
@@ -74,24 +74,22 @@ The default configuration of the junction corresponds to following picture, wher
 
 ![The default 0x50 address setup](/doc/img/JP1_address_0x50_config.png)
 
-### Mounting options
+## Mounting options
 
 The device is designed to be mouted with or without plastic case. The 3D printed case is intended to be modifable to particular sensor mount options. The supplied variant of 3D printed case supports two mount options:
 
   * By default the case could be mounted by screw on flat sulface (the original screew need to be replaced by longer one)
   * The second option is use of [double sided adhesive tape](https://www.3m.com/3M/en_US/vhb-tapes-us/) or [reclosable fastener](https://www.3m.com/3M/en_US/dual-lock-reclosable-fasteners-us/) sticked on the side of the TFRPM01 case.
 
-#### PCB dimensions
+### PCB dimensions
 
 ![PCB dimensions](doc/img/TFRPM01C_PCB_dimensions.png)
 
 The PCB is designed to be mounted on flat surface by center screw hole. The supposed screw diameter is metric 3mm e.g. DIN 912 M3 Hexagon socket Head Cap Screws.
 
+### Sensor probe selection
 
-### Sensor options
-
-The sensor could be used with multiple sensor probes. The most used one is a hall effect probe.
-
+The counter could be used with multiple types of sensor probes. The most used one is a hall effect probe.  The magnetic probe is ideal for harsh environments, where dirt, dust, and water can contact the sensed rotor. Disadvantage is, that mounting of magnet is required for proper sensor work. 
 
 ![TFRPM01B hall effect magnetic sensor](/doc/img/TFRPM01B_hall_sensor.jpg)
 
@@ -101,8 +99,44 @@ The probe should be connected to the sensor board as follows (- Black, + Red, Pu
 
 Correct connection of the probe could be check by magnet, the PULSE LED switch on and off according to magnet presence. The sensor board needs to be powered from at least one I²C port during the test.
 
-The sensor could also be used with other probe types. The one example is [TFPROBE01](https://github.com/ThunderFly-aerospace/TFPROBE01), which combines the optical reflective sensor and magnetic hall-effect sensor in one device. However the TFRPM01 sensor needs matching the input parameters to certain probe types. The default configuration is reflected in the following schematics.
+The sensor could also be used with other probe types. We tested the se [TFPROBE01](https://github.com/ThunderFly-aerospace/TFPROBE01), which combines the optical reflective sensor and magnetic hall-effect sensor in one device. 
+
+
+Technically TFRPM01 could be used by every probe with pulsed output with amplitude in range of 0 to +5V. However the TFRPM01 sensor needs matching the input parameters to certain probe types. The default configuration is reflected in the following schematics.
 
 ![TFRPM01B probe input circuit](/doc/img/TFRPM01_pulse_counter_input.png)
 
-As can be seen from the schematics the default probe power selection is +5V, protected by resistor R2 to about 61 mA short-circuit current. The pull-up resistor R1 with default value 22 kOhm is quite hard and it is generally unsuitable to most optical probes with open-collector outputs. Therefore the resistor R1 should be interchanged to a more suitable value. It is depending on the selected material for the optical sensor this value might need further fine-tuning. (The specific resistor value could be requested during the order process in case of ordering a larger quantity).
+As can be seen from the schematics the default probe power selection is +5V, protected by resistor R2 to about 61 mA short-circuit current. The pull-up resistor R1 with default value 22 kOhm is quite hard and it is generally unsuitable to most optical probes with open-collector outputs. Therefore the resistor R1 should be interchanged to a more suitable (usually increased) value. It is depending on the selected material for the optical sensor this value might need further fine-tuning. (The specific resistor value could be requested during the order process in case of ordering a larger quantity).
+
+## Software configuration
+
+The TFRPM01 revolution counter is currently supported by PX4 firmware only. (Ardupilot pull-requests are welcomed)
+After proper connection of the sensor with sensing probe to I2C port of PX4 based autopilot you should follow instrictions to [PX4 software setup](https://docs.px4.io/main/en/sensor/thunderfly_tachometer.html#software-setup).
+
+# FAQ
+## What about the measurement resolution of the RPM? 
+
+RPM measurement [resolution](https://en.wikipedia.org/wiki/Sensor#Resolution) depends on [pooling interval](https://docs.px4.io/main/en/advanced_config/parameter_reference.html#PCF8583_POOL) and the number of pulses per revolution. 
+
+RPM is calculated from measured values (pulses per interval) as follows
+
+![RPM equation](https://latex.codecogs.com/png.image?\dpi{110}RPM=\frac{N_c60}{N\tau})
+
+Therefore the resolution of measured RPM is following:
+
+![Resolution equation](https://latex.codecogs.com/png.image?\dpi{110}Res=\frac{60}{N\tau})
+
+
+Where:
+  * N is pulses per revolution
+  * τ is the pooling interval in seconds
+  * Nc is pules counted during the measurement pooling interval
+  * Res is the absolute resolution of measurement in +/- RPM 
+
+Therefore the absolute resolution of the sensor is independent of the current RPM measured and remains constant depending on sensor configuration, however, relative resolution increases with the RPM measured.  The absolute resolution strongly depends on the length of the pooling interval (a longer interval gets better resolution). The resolution also increases with the number of pulses per revolution, where more pulses per revolution give better RPM resolution. Related terms like precision and accuracy are more difficult to analyze because depend on hardware and firmware versions of Pixhawk, but these errors could be neglected in the usual use cases.
+
+## Does it connect to RPM output from ESC? 
+
+Generally yes, the TFRPM could be connected to PWM output from an ESC in cese of output logic confirms to 5V TTL. Limitation is the RPM resolution here, because many ESCs gets one pulse per revolution. 
+
+

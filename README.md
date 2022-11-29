@@ -111,7 +111,7 @@ As can be seen from the schematics the default probe power selection is +5V, pro
 ## Software configuration
 
 The TFRPM01 revolution counter is currently supported by PX4 firmware only. (Ardupilot pull-requests are welcomed)
-After proper connection of the sensor with sensing probe to an I2C port (Except port I2C3) of PX4 based autopilot you should follow instructions to [PX4 software setup](https://docs.px4.io/main/en/sensor/thunderfly_tachometer.html#software-setup). After proper setup, you should get an uLog containing the RPM logged during the flight. Here is an example of rotor RPM captured during the flight of [TF-G2 outogyro](https://github.com/ThunderFly-aerospace/TF-G2). The graph is rendered by [flight_review](https://github.com/ThunderFly-aerospace/flight_review).
+After proper connection of the sensor with sensing probe to an I2C port (Except port I2C3) of PX4 based autopilot you should follow instructions to [PX4 software setup](https://docs.px4.io/main/en/sensor/thunderfly_tachometer.html#software-setup). After proper setup, you should get an uLog containing the RPM logged during the flight. Here is an example of rotor RPM captured during the flight of [TF-G2 autogyro](https://github.com/ThunderFly-aerospace/TF-G2). The graph is rendered by [flight_review](https://github.com/ThunderFly-aerospace/flight_review).
 
 ![TFRPM01 measuring rotor RPM during the flight](/doc/img/rpm_graph.png)
 

@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFRPM01D.kicad_sch</source>
-    <date>Tue Oct 18 10:03:49 2022</date>
+    <date>Sat Jan 21 11:42:00 2023</date>
     <tool>Eeschema 6.0.4-6f826c9f35~116~ubuntu20.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -41,9 +41,12 @@
     <comp ref="C2">
       <value>10uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bf5</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="UST_id" value=""/>
-      <property name="UST_ID" value=""/>
+      <property name="UST_ID" value="5c70984812875079b91f8bf5"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -52,9 +55,12 @@
     <comp ref="C3">
       <value>10uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="UST_ID">5c70984812875079b91f8bf5</field>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="UST_id" value=""/>
-      <property name="UST_ID" value=""/>
+      <property name="UST_ID" value="5c70984812875079b91f8bf5"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -133,9 +139,12 @@
     <comp ref="D3">
       <value>LED GREEN</value>
       <footprint>Mlab_D:LED_1206_2</footprint>
+      <fields>
+        <field name="UST_ID">5c70984412875079b91f8895</field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="UST_id" value=""/>
-      <property name="UST_ID" value=""/>
+      <property name="UST_ID" value="5c70984412875079b91f8895"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -264,11 +273,11 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="UST_ID">5c70984612875079b91f899f</field>
+        <field name="UST_ID">5c70984512875079b91f8962</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_id" value=""/>
-      <property name="UST_ID" value="5c70984612875079b91f899f"/>
+      <property name="UST_ID" value="5c70984512875079b91f8962"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -289,14 +298,14 @@
       <tstamps>00000000-0000-0000-0000-00005b1d2dc1</tstamps>
     </comp>
     <comp ref="R5">
-      <value>R</value>
+      <value>130R</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="UST_ID">5c70984512875079b91f8953</field>
+        <field name="UST_ID">5cd08b17128750448e4542b1</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_id" value=""/>
-      <property name="UST_ID" value="5c70984512875079b91f8953"/>
+      <property name="UST_ID" value="5cd08b17128750448e4542b1"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -306,11 +315,11 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="UST_ID">5c70984612875079b91f899f</field>
+        <field name="UST_ID">5c70984512875079b91f8962</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
       <property name="UST_id" value=""/>
-      <property name="UST_ID" value="5c70984612875079b91f899f"/>
+      <property name="UST_ID" value="5c70984512875079b91f8962"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>

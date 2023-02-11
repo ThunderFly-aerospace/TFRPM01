@@ -1,10 +1,9 @@
 # TFRPM01C - RPM measuring device
 
-Revolutions per minute meter for UAV.
-It is designed to direct connection to Pixhawk controller (CUAV V5+ for example) trough standard I²C connector. The device [is supported by PX4 firmware](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html).
-At the input of meter is supposed a pulse signal from optical encoder, hall sensor etc. The pulses are counted during a predefined constant interval. 
-The hardware is inteded to be used for helicopter and autogyro rotor RPM measurement, but its counting capability is up to 20 kHz therefore it should be used for propeller or engine RPM measurement.
-
+Revolutions per minute measurement device for UAV.
+It is designed to direct connection to the Pixhawk controller (CUAV V5+ for example) through a standard I²C connector. The device [is supported by PX4 firmware](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html).
+The input of the meter is supposed a pulse signal from an optical encoder, hall sensor, etc. The pulses are counted during a predefined constant interval. 
+The hardware is intended to be used for helicopter and autogyro rotor RPM measurement, but its counting capability is up to 20 kHz therefore it should be used for propeller or engine RPM measurement.
 
 ![Top view on I2C RPM sensor](/doc/img/TFRPM01C_case.jpg)
 

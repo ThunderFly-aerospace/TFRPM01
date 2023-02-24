@@ -1,3 +1,5 @@
+<a href="https://certification.oshwa.org/cz000009.html" title="Open Source Hardware Association Certificate"><img align="right" src="https://raw.githubusercontent.com/oshwa/certification-mark-generator/gh-pages/premade/certification-template.svg" alt="Open Source Hardware Association Certificate"></a>
+
 # TFRPM01C - RPM measuring device
 
 Revolutions per minute measurement device for UAV.

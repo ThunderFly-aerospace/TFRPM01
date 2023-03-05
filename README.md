@@ -141,6 +141,5 @@ Therefore the absolute resolution of the sensor is independent of the current RP
 
 ## Does it connect to RPM output from ESC? 
 
-Generally yes, the TFRPM could be connected to PWM output from an ESC in cese of output logic confirms to 5V TTL. Limitation is the RPM resolution here, because many ESCs gets one pulse per revolution. 
-
+Generally yes, the TFRPM could be connected to revolution output from an ESC in case of output logic confirms to 5V TTL.
 

@@ -21,6 +21,7 @@ address = int(sys.argv[2],0)
 cfg = config.Config(
     i2c = {
         "port": port,
+        # "driver": "smbus",
         "device": None,  # OPTIONAL here you can explicitly set I2C driver with 'hid', 'smbus', 'serial'
         "serial_number": None, # OPTIONAL serial number of I2CUSB01A (CP2112 IO), works only with HID driver
     },

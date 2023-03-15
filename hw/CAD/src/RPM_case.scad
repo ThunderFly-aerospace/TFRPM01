@@ -119,7 +119,14 @@ module rpm_case_bottom(){
     }
 }
 
-if(1){
+if(0){
+    rpm_case_top();
+    translate([0, -30, 3])
+        rpm_case_bottom();
+}
+
+
+if(1) projection(cut=true) translate([0, 0, 4.15]) {
     rpm_case_top();
 
     translate([0, -30, 3])
@@ -136,5 +143,5 @@ if(0){
 
 use <../../../doc/sticker/sticker_outline.scad>
 
-translate([19, -32.8, -5.25]) color("green", 0.5) %poly_rect1948(0.1);
-translate([19, 22.2, -5.25]) color("green", 0.5) %poly_rect1944(0.1);
+//translate([19, -32.8, -5.25]) color("green", 0.5) %poly_rect1948(0.1);
+//translate([19, 22.2, -5.25]) color("green", 0.5) %poly_rect1944(0.1);

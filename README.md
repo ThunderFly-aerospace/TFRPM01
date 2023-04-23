@@ -1,9 +1,11 @@
+<a href="https://certification.oshwa.org/cz000009.html" title="Open Source Hardware Association Certificate"><img align="right" src="https://raw.githubusercontent.com/oshwa/certification-mark-generator/gh-pages/premade/certification-template.svg" alt="Open Source Hardware Association Certificate"></a>
+
 # TFRPM01D - RPM measuring device
 
-Revolutions per minute meter for UAV.
-It is designed to direct connection to Pixhawk controller (CUAV V5+ for example) trough standard I²C connector. The device [is supported by PX4 firmware](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html).
-At the input of meter is supposed a pulse signal from optical encoder, hall sensor etc. The pulses are counted during a predefined constant interval. 
-The hardware is inteded to be used for helicopter and autogyro rotor RPM measurement, but its counting capability is up to 20 kHz therefore it should be used for propeller or engine RPM measurement.
+Revolutions per minute measurement device for UAV.
+It is designed to direct connection to the Pixhawk controller (CUAV V5+ for example) through a standard I²C connector. The device [is supported by PX4 firmware](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html).
+The input of the meter is supposed a pulse signal from an optical encoder, hall sensor, etc. The pulses are counted during a predefined constant interval. 
+The hardware is intended to be used for helicopter and autogyro rotor RPM measurement, but its counting capability is up to 20 kHz therefore it should be used for propeller or engine RPM measurement.
 
 
 ![Top view on I2C RPM sensor](/doc/img/TFRPM01C_case.jpg)
@@ -140,6 +142,6 @@ Therefore the absolute resolution of the sensor is independent of the current RP
 
 ## Does it connect to RPM output from ESC? 
 
-Generally yes, the TFRPM could be connected to PWM output from an ESC in cese of output logic confirms to 5V TTL. Limitation is the RPM resolution here, because many ESCs gets one pulse per revolution. 
-
+Generally yes, the TFRPM could be connected to revolution output from an ESC in case of output logic confirms to 5V TTL.
+Limitation is the RPM resolution here, because many ESCs gets one pulse per revolution. 
 

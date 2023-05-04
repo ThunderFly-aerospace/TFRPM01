@@ -54,7 +54,7 @@ In applications where multiple TFRPM01 are needed, the [TFI2CADT01](https://www.
 # Accessories
 
 ## I2C cables
-I2C cables for connecting to the autopilot are not included in the package. You will need to purchase the cables separately from our [tindie catalog](https://www.tindie.com/stores/thunderfly/). We offer high-quality cables that are compatible with the [Pixhawk standard](https://raw.githubusercontent.com/pixhawk/Pixhawk-Standards/master/DS-009%20Pixhawk%20Connector%20Standard.pdf) and with a [ThunderFly color](https://docs.px4.io/main/en/assembly/cable_wiring.html#i2c-cables) scheme for easy signal identification. Our cables are specifically designed with improved resistance to electromagnetic interference and feature a silicone insulator that makes them highly flexible.
+I2C cables for connecting to the autopilot are not included in the package. You will need to purchase the cables separately from our [tindie catalog](https://www.tindie.com/stores/thunderfly/). We offer high-quality cables that are compatible with the [Pixhawk standard](https://raw.githubusercontent.com/pixhawk/Pixhawk-Standards/master/DS-009%20Pixhawk%20Connector%20Standard.pdf) and with a [ThunderFly color](https://docs.px4.io/main/en/assembly/cable_wiring.html#i2c-cables) scheme for easy signal identification. Our cables are specifically designed with improved resistance to electromagnetic interference and a silicone insulator that makes them highly flexible.
 
   * Length 15 cm - [TFCAB15I2C01](https://github.com/ThunderFly-aerospace/TFCAB01) [Buy at Tindie](https://www.tindie.com/products/thunderfly/tfcab15i2c01-15-cm-i2c-cable-for-pixhawk-drones/)
   * Length 30 cm - [TFCAB30I2C01](https://github.com/ThunderFly-aerospace/TFCAB01) [Buy at Tindie](https://www.tindie.com/products/thunderfly/tfcab30i2c01-30-cm-i2c-cable-for-pixhawk-drones/)
@@ -64,13 +64,13 @@ I2C cables for connecting to the autopilot are not included in the package. You 
 ## Sensor probe
 The sensing element is also not included in the TFRPM01 sensor package. We sell and have tested the following two probes, which can be directly connected to the TFRPM01 sensor board:
 
-  * Hall probe with flange ~~[Buy at Tindie]()~~
+  * Hall probe with flange
   * Omnipolar magnetic and reflective optical probe [TFPROBE01](https://github.com/ThunderFly-aerospace/TFPROBE01) [Buy at Tindie](https://www.tindie.com/products/thunderfly/tfprobe-ir-and-magnetic-probe-for-rpm-measurement/)
 
 
-## Versions
-The product is gradually evolving and improving based on user requirements. Currently (as of 05/2023), the TFRPM01D revision is being shipped. In the development process, we strive to maintain backwards compatibility, for example by keeping the same form factor and communication interface.
-TFRPM01D (as of 05/2023)
+# Versions
+The product is gradually evolving and improving based on user requirements. Currently (as of 05/2023), the TFRPM01D revision is being shipped. In the development process, we keeps backwards compatibility, for example by keeping the same form factor or communication interface.
 
+#### TFRPM01D (as of 05/2023)
  * Added an LED indicating sensor power supply
  * Improved PCB layout

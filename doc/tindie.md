@@ -69,8 +69,17 @@ The sensing element is also not included in the TFRPM01 sensor package. We sell 
 
 
 # Versions
-The product is gradually evolving and improving based on user requirements. Currently (as of 05/2023), the TFRPM01D revision is being shipped. In the development process, we keeps backwards compatibility, for example by keeping the same form factor or communication interface.
+The product is gradually evolving and improving based on user requirements. Currently (as of 05/2023), the TFRPM01D revision is being shipped. In the development process, we keeps backwards compatibility, for example by keeping the same form factor or communication interface. The complete list of changes is in [releases](https://github.com/ThunderFly-aerospace/TFRPM01/releases).
 
-#### TFRPM01D (as of 05/2023)
+#### TFRPM01D (from 05/2023)
+ * Green case
  * Added an LED indicating sensor power supply
  * Improved PCB layout
+
+#### TFRPM01C (from 03/2021) 
+ * Gray case
+ 
+#### TFRPM01B (from 12/2020)
+ * Orange case
+
+#### TFRPM01A - Was not publicly available

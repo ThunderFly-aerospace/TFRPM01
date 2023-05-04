@@ -62,6 +62,15 @@ I2C cables for connecting to the autopilot are not included in the package. You 
 
 
 ## Sensor probe
+The sensing element is also not included in the TFRPM01 sensor package. We sell and have tested the following two probes, which can be directly connected to the TFRPM01 sensor board:
 
-  * Hall probe with flange
-  * Omnipolar magnetic and reflective optical probe [TFPROBE01](https://github.com/ThunderFly-aerospace/TFPROBE01)
+  * Hall probe with flange ~~[Buy at Tindie]()~~
+  * Omnipolar magnetic and reflective optical probe [TFPROBE01](https://github.com/ThunderFly-aerospace/TFPROBE01) [Buy at Tindie](https://www.tindie.com/products/thunderfly/tfprobe-ir-and-magnetic-probe-for-rpm-measurement/)
+
+
+## Versions
+The product is gradually evolving and improving based on user requirements. Currently (as of 05/2023), the TFRPM01D revision is being shipped. In the development process, we strive to maintain backwards compatibility, for example by keeping the same form factor and communication interface.
+TFRPM01D (as of 05/2023)
+
+ * Added an LED indicating sensor power supply
+ * Improved PCB layout

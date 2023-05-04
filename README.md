@@ -39,7 +39,7 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
   * Offload flight controller's MCU, by storing the number of counted pulses in internal memory
 
 
-![Bottom view on I2C RPM sensor](/doc/img/TFRPM01C_pcb.jpg)
+![Bottom view on I2C RPM sensor](doc/img/TFRPM01D_pcb_bot.jpg)
 
 The 3Pin probe connector is powered from I²C bus trough RC filter which limits current and voltage spikes to sensor probe.
 Therefore sensor is resistant to short circuit at the probe connector power.

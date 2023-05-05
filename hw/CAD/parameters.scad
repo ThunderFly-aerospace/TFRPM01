@@ -13,7 +13,8 @@ pcb_w = 19.0 + tolerance;
 pcb_t = 1.6;
 
 M3_screw_diameter = 3.35;
-M3_screw_head_height = 3;
+M3_screw_head_height = 3.2;
 M3_screw_lenght = 10;
-M3_nut_diameter = 6.6;
-M3_nut_height = 2.7;
+M3_head_diameter = 6.3;
+M3_nut_diameter = 6.5;
+M3_nut_height = 3;

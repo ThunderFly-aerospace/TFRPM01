@@ -8,7 +8,7 @@ The input of the meter is supposed a pulse signal from an optical encoder, hall 
 The hardware is intended to be used for helicopter and autogyro rotor RPM measurement, but its counting capability is up to 20 kHz therefore it should be used for propeller or engine RPM measurement.
 
 
-![Top view on I2C RPM sensor](/doc/img/TFRPM01C_case.jpg)
+![Top view on I2C RPM sensor](/doc/img/TFRPM01D.jpg)
 
 
 ## Where to get it?

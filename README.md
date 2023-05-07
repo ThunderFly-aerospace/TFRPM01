@@ -4,7 +4,7 @@
 
 Revolutions per minute measurement device for UAV.
 It is designed to direct connection to the Pixhawk controller (CUAV V5+ for example) through a standard I²C connector. The device [is supported by PX4 firmware](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html).
-The input of the meter is supposed a pulse signal from an optical encoder, hall sensor, etc. The pulses are counted during a predefined constant interval. 
+The input of the meter is supposed a pulse signal from an optical encoder, hall sensor, etc. The pulses are counted during a predefined constant interval.
 The hardware is intended to be used for helicopter and autogyro rotor RPM measurement, but its counting capability is up to 20 kHz therefore it should be used for propeller or engine RPM measurement.
 
 
@@ -85,13 +85,13 @@ The device is designed to be mouted with or without plastic case. The 3D printed
 
 ### PCB dimensions
 
-![PCB dimensions](doc/img/TFRPM01C_PCB_dimensions.png)
+![TFRPM01 PCB dimensions](doc/img/TFRPM01_PCB_dimensions.png)
 
 The PCB is designed to be mounted on flat surface by center screw hole. The supposed screw diameter is metric 3mm e.g. DIN 912 M3 Hexagon socket Head Cap Screws.
 
 ### Sensor probe selection
 
-The counter could be used with multiple types of sensor probes. The most used one is a hall effect probe.  The magnetic probe is ideal for harsh environments, where dirt, dust, and water can contact the sensed rotor. Disadvantage is, that mounting of magnet is required for proper sensor work. 
+The counter could be used with multiple types of sensor probes. The most used one is a hall effect probe.  The magnetic probe is ideal for harsh environments, where dirt, dust, and water can contact the sensed rotor. Disadvantage is, that mounting of magnet is required for proper sensor work.
 
 ![TFRPM01B hall effect magnetic sensor](/doc/img/TFRPM01B_hall_sensor.jpg)
 
@@ -101,7 +101,7 @@ The probe should be connected to the sensor board as follows (- Black, + Red, Pu
 
 Correct connection of the probe could be check by magnet, the PULSE LED switch on and off according to magnet presence. The sensor board needs to be powered from at least one I²C port during the test.
 
-The sensor could also be used with other probe types. We tested the se [TFPROBE01](https://github.com/ThunderFly-aerospace/TFPROBE01), which combines the optical reflective sensor and magnetic hall-effect sensor in one device. 
+The sensor could also be used with other probe types. We tested the se [TFPROBE01](https://github.com/ThunderFly-aerospace/TFPROBE01), which combines the optical reflective sensor and magnetic hall-effect sensor in one device.
 
 
 Technically TFRPM01 could be used by every probe with pulsed output with amplitude in range of 0 to +5V. However the TFRPM01 sensor needs matching the input parameters to certain probe types. The default configuration is reflected in the following schematics.
@@ -119,9 +119,9 @@ After proper connection of the sensor with sensing probe to an I2C port (Except 
 
 
 # FAQ
-## What about the measurement resolution of the RPM? 
+## What about the measurement resolution of the RPM?
 
-RPM measurement [resolution](https://en.wikipedia.org/wiki/Sensor#Resolution) depends on [pooling interval](https://docs.px4.io/main/en/advanced_config/parameter_reference.html#PCF8583_POOL) and the number of pulses per revolution. 
+RPM measurement [resolution](https://en.wikipedia.org/wiki/Sensor#Resolution) depends on [pooling interval](https://docs.px4.io/main/en/advanced_config/parameter_reference.html#PCF8583_POOL) and the number of pulses per revolution.
 
 RPM is calculated from measured values (pulses per interval) as follows
 
@@ -136,12 +136,11 @@ Where:
   * N is pulses per revolution
   * τ is the pooling interval in seconds
   * Nc is pules counted during the measurement pooling interval
-  * Res is the absolute resolution of measurement in +/- RPM 
+  * Res is the absolute resolution of measurement in +/- RPM
 
 Therefore the absolute resolution of the sensor is independent of the current RPM measured and remains constant depending on sensor configuration, however, relative resolution increases with the RPM measured.  The absolute resolution strongly depends on the length of the pooling interval (a longer interval gets better resolution). The resolution also increases with the number of pulses per revolution, where more pulses per revolution give better RPM resolution. Related terms like precision and accuracy are more difficult to analyze because depend on hardware and firmware versions of Pixhawk, but these errors could be neglected in the usual use cases.
 
-## Does it connect to RPM output from ESC? 
+## Does it connect to RPM output from ESC?
 
 Generally yes, the TFRPM could be connected to revolution output from an ESC in case of output logic confirms to 5V TTL.
-Limitation is the RPM resolution here, because many ESCs gets one pulse per revolution. 
-
+Limitation is the RPM resolution here, because many ESCs gets one pulse per revolution.

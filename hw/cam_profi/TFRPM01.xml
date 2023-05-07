@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/github/workspace/hw/sch_pcb/TFRPM01D.kicad_sch</source>
-    <date>Sun May  7 15:05:11 2023</date>
+    <source>/github/workspace/hw/sch_pcb/TFRPM01.kicad_sch</source>
+    <date>Sun May  7 16:25:00 2023</date>
     <tool>Eeschema 6.0.11+dfsg-1~bpo11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -10,7 +10,7 @@
         <company>ThunderFly s.r.o.</company>
         <rev/>
         <date>2022-03-29</date>
-        <source>TFRPM01D.kicad_sch</source>
+        <source>TFRPM01.kicad_sch</source>
         <comment number="1" value="RPM measuring device for UAVs"/>
         <comment number="2" value="Jacho  &lt;info@thunderfly.cz&gt;"/>
         <comment number="3" value="roman-dvorak"/>
@@ -34,7 +34,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984812875079b91f8bc2"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005debf498</tstamps>
     </comp>
@@ -48,7 +48,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984812875079b91f8bf5"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005de9100e</tstamps>
     </comp>
@@ -62,7 +62,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984812875079b91f8bf5"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffc6a8</tstamps>
     </comp>
@@ -76,7 +76,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984812875079b91f8bf2"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005562302c</tstamps>
     </comp>
@@ -90,7 +90,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984812875079b91f8bf2"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005deabd1a</tstamps>
     </comp>
@@ -104,7 +104,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984812875079b91f8bf2"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005deba31c</tstamps>
     </comp>
@@ -118,7 +118,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="60879d38128750769ee58e48"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffcb7d</tstamps>
     </comp>
@@ -132,7 +132,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984412875079b91f8896"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005b1bc617</tstamps>
     </comp>
@@ -146,7 +146,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984412875079b91f8895"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>158af5df-cc1b-4506-bbe6-cb7505295b5b</tstamps>
     </comp>
@@ -155,7 +155,7 @@
       <footprint>Fiducial:Fiducial_0.5mm_Mask1.5mm</footprint>
       <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>457f929f-17ed-4eee-8eba-3af909e8c516</tstamps>
     </comp>
@@ -164,7 +164,7 @@
       <footprint>Fiducial:Fiducial_0.5mm_Mask1.5mm</footprint>
       <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>5552a350-225a-4c3c-8643-df2be6c7b9a2</tstamps>
     </comp>
@@ -173,7 +173,7 @@
       <footprint>Fiducial:Fiducial_0.5mm_Mask1.5mm</footprint>
       <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>80ac0b57-0388-409c-bf8b-2ee44690ae03</tstamps>
     </comp>
@@ -182,7 +182,7 @@
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
       <libsource lib="MLAB_HEADER" part="HEADER_1x03" description="1x03 2.54 mm pitch header"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005de84efb</tstamps>
     </comp>
@@ -196,7 +196,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c86273d1287500b4e0280be"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005deb9c07</tstamps>
     </comp>
@@ -210,7 +210,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c86273d1287500b4e0280be"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005de8841c</tstamps>
     </comp>
@@ -219,7 +219,7 @@
       <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
       <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>5ba25741-4f4a-4722-840d-a318fd156e0e</tstamps>
     </comp>
@@ -228,7 +228,7 @@
       <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
       <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>3e698e44-302e-427a-b240-48a7133a82dd</tstamps>
     </comp>
@@ -237,7 +237,7 @@
       <footprint>Mlab_Mechanical:MountingHole_3mm</footprint>
       <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-0000549d7628</tstamps>
     </comp>
@@ -251,7 +251,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984712875079b91f8a87"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005b1c4727</tstamps>
     </comp>
@@ -265,7 +265,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984512875079b91f8976"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ded9c2d</tstamps>
     </comp>
@@ -279,7 +279,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984512875079b91f8962"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffb143</tstamps>
     </comp>
@@ -293,7 +293,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984512875079b91f8953"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005b1d2dc1</tstamps>
     </comp>
@@ -307,7 +307,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5cd08b17128750448e4542b1"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>0f0d22b0-c2a7-436a-931c-fa4be6782d48</tstamps>
     </comp>
@@ -321,7 +321,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984512875079b91f8962"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffb1aa</tstamps>
     </comp>
@@ -335,7 +335,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c70984712875079b91f8b59"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ff55ba</tstamps>
     </comp>
@@ -350,7 +350,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="604b05e1128750769e5b106e"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ded0588 00000000-0000-0000-0000-00005b1b4dea</tstamps>
     </comp>
@@ -365,7 +365,7 @@
       <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c7255e81287500b4e112ea2"/>
       <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="TFRPM01D.kicad_sch"/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005de928cf</tstamps>
     </comp>

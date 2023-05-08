@@ -77,7 +77,7 @@ The product is gradually evolving and improving based on user requirements. Curr
  * Added an LED indicating sensor power supply
  * Improved PCB layout
 
-Note: The TFRPM01D sensors shipped from 8.5. 2023 do not have a screw hole on the bottom sticker for opening the casing. To change the I2C device address or output voltage, it is necessary to remove the bottom sticker with a hole for a screw.
+Note: The TFRPM01D sensors shipped from 8. 5. 2023 do not have a hole for screw on the bottom sticker for opening the plastic case. To change the I2C device address or output voltage, it is necessary to remove the bottom sticker for accessing the screw. (bottom sticker is sticker with QR code)
 
 #### TFRPM01C (from 03/2021) 
  * Gray case

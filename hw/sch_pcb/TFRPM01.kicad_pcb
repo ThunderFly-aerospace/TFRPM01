@@ -1809,7 +1809,7 @@
     (property "Sheetname" "")
     (property "UST_ID" "5c70984712875079b91f8b59")
     (path "/00000000-0000-0000-0000-000059ff55ba")
-    (attr through_hole)
+    (attr smd)
     (fp_text reference "U1" (at 3.408 -4.574) (layer "B.SilkS")
       (effects (font (size 0.9 0.9) (thickness 0.1)) (justify mirror))
       (tstamp 2afbd14f-e6ea-4bea-882b-7e9761a0434e)

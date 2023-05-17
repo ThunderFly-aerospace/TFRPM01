@@ -171,9 +171,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "multiple_net_names|812800|1663700|91e1f399-c2dd-44c9-a1c9-70fd72e3d5ea|68e43784-c786-40ee-8ffb-20ac9614b112"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },

@@ -171,7 +171,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "multiple_net_names|812800|1663700|91e1f399-c2dd-44c9-a1c9-70fd72e3d5ea|68e43784-c786-40ee-8ffb-20ac9614b112"
+    ],
     "meta": {
       "version": 0
     },
@@ -360,7 +362,7 @@
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "lib_symbol_issues": "warning",
-      "multiple_net_names": "warning",
+      "multiple_net_names": "error",
       "net_not_bus_member": "warning",
       "no_connect_connected": "error",
       "no_connect_dangling": "error",
@@ -380,7 +382,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "TFRPM01D.kicad_pro",
+    "filename": "TFRPM01.kicad_pro",
     "version": 1
   },
   "net_settings": {

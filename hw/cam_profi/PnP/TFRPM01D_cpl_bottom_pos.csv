@@ -19,5 +19,6 @@ Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "R4","51R","R_0603_1608Metric",-4.0640,-7.1120,-90.0000,bottom
 "R5","130R","R_0603_1608Metric",-6.0960,-7.1120,90.0000,bottom
 "R10","10k","R_0603_1608Metric",-7.4420,7.4251,180.0000,bottom
+"U1","PCF8583","SOT176-1",-9.2920,0.7620,180.0000,bottom
 "U2","SN74LVC1G14-Q1","SOT-353_SC-70-5",7.1120,-6.8609,-90.0000,bottom
 "U3","MIC5504-3.3YM5","SOT-23-5",-3.5420,6.6751,0.0000,bottom

@@ -15,6 +15,8 @@ jobs:
     - uses: actions/checkout@v3
       with:
         submodules: 'recursive'
+        token: ${{ secrets.pat }}
+        ref: ${{ github.head_ref }}
 
     - name: Set up Python 3.10
       uses: actions/setup-python@v3

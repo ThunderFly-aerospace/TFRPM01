@@ -39,7 +39,6 @@ jobs:
         gh_token: ${{ secrets.GITHUB_TOKEN }}
       run: |
         python3 doc/assets/workflows/update_metadata.py
-        python3 doc/assets/workflows/update_kitspace.py
 
     - uses: stefanzweifel/git-auto-commit-action@v4.16.0
       with:

@@ -2189,7 +2189,6 @@
     )
   )
 
-
   (junction (at 165.1 111.76) (diameter 1.016) (color 0 0 0 0)
     (uuid 1f612e70-0c34-4c1b-9a81-56417c9c8822)
   )
@@ -2688,7 +2687,7 @@
   )
 
   (symbol (lib_id "MLAB_MECHANICAL:HOLE") (at 265.43 21.59 90) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000549d7628)
     (property "Reference" "M2" (id 0) (at 265.43 24.13 90)
       (effects (font (size 1.524 1.524)))
@@ -3688,7 +3687,7 @@
   )
 
   (symbol (lib_name "SolderJumper_3_Bridged12_1") (lib_id "Jumper:SolderJumper_3_Bridged12") (at 143.51 45.72 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board yes)
     (uuid 3e698e44-302e-427a-b240-48a7133a82dd)
     (property "Reference" "JP2" (id 0) (at 143.51 43.1608 0))
     (property "Value" "SolderJumper_3_Bridged12" (id 1) (at 143.51 42.92 0)
@@ -3722,7 +3721,7 @@
   )
 
   (symbol (lib_id "Mechanical:Fiducial") (at 216.535 22.225 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 457f929f-17ed-4eee-8eba-3af909e8c516)
     (property "Reference" "FID1" (id 0) (at 218.694 21.3165 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -3739,7 +3738,7 @@
   )
 
   (symbol (lib_id "Mechanical:Fiducial") (at 228.6 22.225 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 5552a350-225a-4c3c-8643-df2be6c7b9a2)
     (property "Reference" "FID2" (id 0) (at 230.759 21.3165 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -3772,7 +3771,7 @@
   )
 
   (symbol (lib_id "Jumper:SolderJumper_3_Bridged12") (at 100.33 107.95 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board yes)
     (uuid 5ba25741-4f4a-4722-840d-a318fd156e0e)
     (property "Reference" "JP1" (id 0) (at 100.33 105.3908 0))
     (property "Value" "SolderJumper_3_Bridged12" (id 1) (at 100.33 105.15 0)
@@ -3790,7 +3789,7 @@
   )
 
   (symbol (lib_id "Mechanical:Fiducial") (at 241.3 22.225 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom no) (on_board yes) (fields_autoplaced)
     (uuid 80ac0b57-0388-409c-bf8b-2ee44690ae03)
     (property "Reference" "FID3" (id 0) (at 243.459 21.3165 0)
       (effects (font (size 1.27 1.27)) (justify left))

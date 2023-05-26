@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFRPM01.kicad_sch</source>
-    <date>Fri May 26 13:41:08 2023</date>
+    <date>Fri May 26 13:46:35 2023</date>
     <tool>Eeschema 6.0.11+dfsg-1~bpo11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>TFRPM01D</title>
         <company>ThunderFly s.r.o.</company>
         <rev/>
-        <date>2022-03-29</date>
+        <date>2023-05-26</date>
         <source>TFRPM01.kicad_sch</source>
         <comment number="1" value="RPM measuring device for UAVs"/>
         <comment number="2" value="Jacho  &lt;info@thunderfly.cz&gt;"/>

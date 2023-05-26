@@ -32,7 +32,7 @@ jobs:
     
       - name: Zaktualizovat skripty
         run: |
-          cd doc/assets/workflows/ && ./copy_workflow_to_repo.sh && cd ${GITHUB_WORKSPACE}
+          cd doc/assets/workflow/ && ./copy_workflow_to_repo.sh && cd ${GITHUB_WORKSPACE}
           
       - uses: stefanzweifel/git-auto-commit-action@v4.16.0
         with:

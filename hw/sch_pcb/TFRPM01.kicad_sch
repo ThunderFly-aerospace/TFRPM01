@@ -11,6 +11,7 @@
     (comment 1 "RPM measuring device for UAVs")
     (comment 2 "Jacho  <info@thunderfly.cz>")
     (comment 3 "roman-dvorak")
+    (comment 4 "kaklik")
   )
 
   (lib_symbols

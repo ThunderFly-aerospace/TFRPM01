@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFRPM01.kicad_sch</source>
-    <date>Fri May 26 13:46:35 2023</date>
+    <date>Fri May 26 14:04:02 2023</date>
     <tool>Eeschema 6.0.11+dfsg-1~bpo11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -14,7 +14,7 @@
         <comment number="1" value="RPM measuring device for UAVs"/>
         <comment number="2" value="Jacho  &lt;info@thunderfly.cz&gt;"/>
         <comment number="3" value="roman-dvorak"/>
-        <comment number="4" value=""/>
+        <comment number="4" value="kaklik"/>
         <comment number="5" value=""/>
         <comment number="6" value=""/>
         <comment number="7" value=""/>

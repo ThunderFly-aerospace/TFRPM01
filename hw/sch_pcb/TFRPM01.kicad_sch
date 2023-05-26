@@ -2753,7 +2753,7 @@
     (property "Reference" "U1" (id 0) (at 127 101.6 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Value" "PCF8583" (id 1) (at 140.97 101.6 0)
+    (property "Value" "PCF8583T" (id 1) (at 140.97 101.6 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Footprint" "Mlab_IO:SOT176-1" (id 2) (at 133.35 95.25 0)
@@ -2926,8 +2926,8 @@
   (symbol (lib_id "MLAB_IO:74AHC1G14GV") (at 127 63.5 180) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005b1b4dea)
-    (property "Reference" "U2" (id 0) (at 127 55.4482 0))
-    (property "Value" "SN74LVC1G14-Q1" (id 1) (at 127 57.76 0))
+    (property "Reference" "U2" (id 0) (at 127 58.42 0))
+    (property "Value" "SN74LVC1G14QDCKRQ1" (id 1) (at 130.81 69.85 0))
     (property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5" (id 2) (at 127 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3112,7 +3112,7 @@
     (property "Reference" "J1" (id 0) (at 165.8112 64.5414 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
-    (property "Value" "HEADER_1x03" (id 1) (at 165.8112 67.2592 0)
+    (property "Value" "HEADER_1x03_Horizontal" (id 1) (at 165.8112 67.2592 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" (id 2) (at 163.83 63.5 0)
@@ -3534,7 +3534,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005ded0588)
     (property "Reference" "U2" (id 0) (at 46.99 137.16 0))
-    (property "Value" "SN74LVC1G14-Q1" (id 1) (at 58.42 137.16 90))
+    (property "Value" "SN74LVC1G14QDCKRQ1" (id 1) (at 58.42 137.16 90))
     (property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5" (id 2) (at 53.34 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3981,7 +3981,7 @@
       (reference "G1") (unit 1) (value "LOGO") (footprint "MLAB_LOGA:TF")
     )
     (path "/00000000-0000-0000-0000-00005de84efb"
-      (reference "J1") (unit 1) (value "HEADER_1x03") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal")
+      (reference "J1") (unit 1) (value "HEADER_1x03_Horizontal") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00005deb9c07"
       (reference "J2") (unit 1) (value "SM04B-GHS-TB") (footprint "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal")
@@ -4017,13 +4017,13 @@
       (reference "R10") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000059ff55ba"
-      (reference "U1") (unit 1) (value "PCF8583") (footprint "Mlab_IO:SOT176-1")
+      (reference "U1") (unit 1) (value "PCF8583T") (footprint "Mlab_IO:SOT176-1")
     )
     (path "/00000000-0000-0000-0000-00005b1b4dea"
-      (reference "U2") (unit 1) (value "SN74LVC1G14-Q1") (footprint "Package_TO_SOT_SMD:SOT-353_SC-70-5")
+      (reference "U2") (unit 1) (value "SN74LVC1G14QDCKRQ1") (footprint "Package_TO_SOT_SMD:SOT-353_SC-70-5")
     )
     (path "/00000000-0000-0000-0000-00005ded0588"
-      (reference "U2") (unit 2) (value "SN74LVC1G14-Q1") (footprint "Package_TO_SOT_SMD:SOT-353_SC-70-5")
+      (reference "U2") (unit 2) (value "SN74LVC1G14QDCKRQ1") (footprint "Package_TO_SOT_SMD:SOT-353_SC-70-5")
     )
     (path "/00000000-0000-0000-0000-00005de928cf"
       (reference "U3") (unit 1) (value "MIC5504-3.3YM5") (footprint "Package_TO_SOT_SMD:SOT-23-5")

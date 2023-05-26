@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFRPM01.kicad_sch</source>
-    <date>Fri May 26 12:44:24 2023</date>
+    <date>Fri May 26 13:30:21 2023</date>
     <tool>Eeschema 6.0.11+dfsg-1~bpo11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -150,7 +150,7 @@
       <tstamps>158af5df-cc1b-4506-bbe6-cb7505295b5b</tstamps>
     </comp>
     <comp ref="J1">
-      <value>HEADER_1x03</value>
+      <value>HEADER_1x03_Horizontal</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
       <libsource lib="MLAB_HEADER" part="HEADER_1x03" description="1x03 2.54 mm pitch header"/>
       <property name="Sheetname" value=""/>
@@ -271,7 +271,7 @@
       <tstamps>00000000-0000-0000-0000-000059ffb1aa</tstamps>
     </comp>
     <comp ref="U1">
-      <value>PCF8583</value>
+      <value>PCF8583T</value>
       <footprint>Mlab_IO:SOT176-1</footprint>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8b59</field>
@@ -284,7 +284,7 @@
       <tstamps>00000000-0000-0000-0000-000059ff55ba</tstamps>
     </comp>
     <comp ref="U2">
-      <value>SN74LVC1G14-Q1</value>
+      <value>SN74LVC1G14QDCKRQ1</value>
       <footprint>Package_TO_SOT_SMD:SOT-353_SC-70-5</footprint>
       <datasheet>http://www.ti.com/lit/gpn/sn74HC14</datasheet>
       <fields>

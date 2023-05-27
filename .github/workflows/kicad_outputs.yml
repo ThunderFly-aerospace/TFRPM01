@@ -235,8 +235,6 @@ jobs:
           dir: ${{ env.dir }}_img
           verbose: 3
 
-      - run: tree
-
       - uses: actions/upload-artifact@v3
         if: ${{ success() }}
         with:

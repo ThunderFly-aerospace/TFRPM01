@@ -30,10 +30,18 @@ module rpm_case_top(){
             cube([pcb_l, pcb_w, 10]);
 
         // Otvory pro sroubek
-        translate([screw_dist, pcb_w/2, - M3_screw_head_height - 8*layer_thickness - 5])
-            rotate(30) cylinder(d = M3_nut_diameter, h = M3_screw_head_height+5, $fn = 6);
+        //#translate([screw_dist, pcb_w/2, - M3_screw_head_height - 8*layer_thickness - 5])
+        //    rotate(30) cylinder(d = M3_nut_diameter, h = M3_screw_head_height+5, $fn = 6);
         translate([21.79, pcb_w/2, - M3_screw_head_height - 7*layer_thickness])
             rotate(30) cylinder(d1 = M3_nut_diameter +1, d2 = M3_nut_diameter, h = 0.5, $fn = 6);
+        translate([screw_dist, pcb_w/2, - M3_screw_head_height - 6.9*layer_thickness - 5])  difference(){   
+                    rotate(30) cylinder(d = M3_nut_diameter, h = M3_screw_head_height+5, $fn = 6); // screw head hole .... Try to do fancy hole .. :) without support
+                    for( x = [[0, 0], [60, 0.15], [120, 0.30]]) translate([0, 0, -x[1] + M3_screw_head_height + 5 ]) rotate([0, 0, x[0]]) {
+                        translate([M3_screw_diameter/2, -5, 0]) cube([10, 10, 0.2]);
+                        translate([-10-M3_screw_diameter/2, -5, 0]) cube([10, 10, 0.2]);
+                    }
+                }
+            
         translate([21.79, pcb_w/2, - 7*layer_thickness])
             cylinder(d = M3_screw_diameter, h = 10, $fn = 50);
 
@@ -111,7 +119,13 @@ module rpm_case_bottom(){
         translate([21.79, pcb_w/2, -2 + 0.15]){
             translate([0, 0,  -M3_screw_head_height -  6*layer_thickness -3 + 2 - layer_thickness]){
                 translate([0, 0, M3_screw_head_height]) cylinder(d = M3_screw_diameter, h = 10, $fn = 50); // screw hole
-                translate([0, 0, 0]) cylinder(d = M3_head_diameter, h = M3_screw_head_height - layer_thickness, $fn = 50); // screw head hole
+                translate([0, 0, 0]) difference(){   
+                    cylinder(d = M3_head_diameter, h = M3_screw_head_height, $fn = 50); // screw head hole .... Try to do fancy hole .. :) without support
+                    for( x = [[0, 0], [60, 0.15], [120, 0.30]]) translate([0, 0, -x[1]]) {
+                        rotate([0, 0, x[0]]) translate([M3_screw_diameter/2, -5, M3_screw_head_height]) cube([10, 10, 0.2]);
+                        rotate([0, 0, x[0]]) translate([-10-M3_screw_diameter/2, -5, M3_screw_head_height]) cube([10, 10, 0.2]);
+                    }
+                }
                 translate([0, 0, 0]) cylinder(d1 = M3_head_diameter+1, d2 = M3_head_diameter, h = 0.6, $fn = 50); // hole bevel
             }
 

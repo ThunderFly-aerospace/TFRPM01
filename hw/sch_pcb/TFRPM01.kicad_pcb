@@ -1210,7 +1210,7 @@
       (effects (font (size 0.8 0.8) (thickness 0.1)) (justify mirror))
       (tstamp a280cf3e-b880-48f0-8418-5cebecd7a144)
     )
-    (fp_text value "HEADER_1x03_Horizontal" (at 4.385 -7.35) (layer "B.Fab") hide
+    (fp_text value "DS1022-1*40RDF11-B" (at 4.385 -7.35) (layer "B.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp ca37d7b6-f287-4e55-8eec-964cfefa213c)
     )

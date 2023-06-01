@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFRPM01.kicad_sch</source>
-    <date>Mon May 29 00:37:03 2023</date>
+    <date>Thu Jun  1 21:50:59 2023</date>
     <tool>Eeschema 6.0.11+dfsg-1~bpo11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -150,8 +150,9 @@
       <tstamps>158af5df-cc1b-4506-bbe6-cb7505295b5b</tstamps>
     </comp>
     <comp ref="J1">
-      <value>HEADER_1x03_Horizontal</value>
+      <value>DS1022-1*40RDF11-B</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <datasheet>5c70984412875079b91f879d</datasheet>
       <libsource lib="MLAB_HEADER" part="HEADER_1x03" description="1x03 2.54 mm pitch header"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>

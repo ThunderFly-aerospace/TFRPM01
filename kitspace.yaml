@@ -1,8 +1,0 @@
-bom: hw/sch_pcb/TFRPM01.kicad_pcb
-color: white
-eda:
-  pcb: hw/sch_pcb/TFRPM01.kicad_pcb
-  type: kicad
-gerbers: hw/cam_profi/
-site: https://github.com/ThunderFly-aerospace/TFRPM01
-summary: Revolutions per minute (RPM) meter  for UAV

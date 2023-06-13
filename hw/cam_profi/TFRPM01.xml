@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFRPM01.kicad_sch</source>
-    <date>Wed Jun  7 12:42:29 2023</date>
+    <date>Tue Jun 13 23:20:50 2023</date>
     <tool>Eeschema 6.0.11+dfsg-1~bpo11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -123,27 +123,28 @@
       <tstamps>00000000-0000-0000-0000-000059ffcb7d</tstamps>
     </comp>
     <comp ref="D2">
-      <value>LED RED</value>
+      <value>KPTR-3216SURCK</value>
       <footprint>Mlab_D:LED_1206_2</footprint>
+      <datasheet>https://www.tme.eu/Document/abfabb2e369b55022af776cff528b52b/kptr-3216surck.pdf</datasheet>
       <fields>
-        <field name="UST_ID">5c70984412875079b91f8896</field>
+        <field name="Color">Red</field>
       </fields>
       <libsource lib="" part="LED_1" description="Light emitting diode"/>
-      <property name="UST_ID" value="5c70984412875079b91f8896"/>
+      <property name="Color" value="Red"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005b1bc617</tstamps>
     </comp>
     <comp ref="D3">
-      <value>LED GREEN</value>
+      <value>KPTR-3216CGCK</value>
       <footprint>Mlab_D:LED_1206_2</footprint>
+      <datasheet>https://www.tme.eu/Document/283cf8402cc8d70fa16840405395cb5a/kptr-3216cgck.pdf</datasheet>
       <fields>
-        <field name="UST_ID">5c70984412875079b91f8895</field>
+        <field name="Color">Green</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="UST_id" value=""/>
-      <property name="UST_ID" value="5c70984412875079b91f8895"/>
+      <property name="Color" value="Green"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>

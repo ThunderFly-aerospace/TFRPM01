@@ -143,4 +143,9 @@ Therefore the absolute resolution of the sensor is independent of the current RP
 ## Does it connect to RPM output from ESC?
 
 Generally yes, the TFRPM could be connected to revolution output from an ESC in case of output logic confirms to 5V TTL.
-The limitation is the RPM resolution here because many ESCs get one pulse per revolution.
+The limitation is the RPM resolution here because many ESCs get one pulse per revolution. See the formula above for an explanation.
+
+## Could be used for internal combustion engines?
+
+Yes, it could measure the RPM of the IC Engine. But it needs a pulse signal to count the rotation speed. The pulsed signal could be either obtained either from [Electronic control unit](https://en.wikipedia.org/wiki/Electronic_control_unit) (ECU) or from an [Optical or magnetic probe](https://github.com/ThunderFly-aerospace/TFPROBE01) mounted on the proper location of the engine unit. Direct connection of TFRPM to ignition or sensing coils is not possible without signal conditioning, because the voltage of signals coming from coils will likely destroy the TTL-based RPM input of TFRPM. Required signal conditioning could be realized by a resistor network in many cases. Contact ThunderFly s.r.o. in case you need professional support.
+

@@ -1,8 +1,8 @@
 # General Description
 
-TFRPM01 is an open-source frequency sensor [tachometer](https://en.wikipedia.org/wiki/Tachometer) intended for the measurement of rotational actuators on drones. The TFRPM01 sensor itself does not contain a sensing probe. It needs to be connected externally. This allows you to connect a number of different probes based on different technologies. For basic diagnostics, the sensor is equipped with an LED indicator that shows the logic state of the input pin.
+TFRPM01 is an open-source frequency sensor [tachometer](https://en.wikipedia.org/wiki/Tachometer) intended for the measurement of the speed of rotational actuators on drones. The TFRPM01 sensor itself does not contain a sensing probe. It needs to be connected externally. This allows you to connect a number of different probes based on different technologies. For basic diagnostics, the sensor is equipped with an LED indicator that shows the logic state of the input pin.
 
-TFRPM01 is supported by Pixhawk autopilots with PX4. For the correct setting of the sensor, see the [official documentation](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html). The sensor is designed to be able to count high frequencies without overloading the autopilot CPU.
+TFRPM01 is supported by Pixhawk autopilots with up-to-date PX4 firmware. For the correct setting of the sensor, see the [official documentation](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html). The sensor is designed to be able to count high frequencies without overloading the autopilot CPU.
 
 # Technical description
 

@@ -23,10 +23,10 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 | Pulse frequency range | 0 - 20 kHz (equal high and low periods) | Maximum RPM value varies by pulse number per revolution |
 | I2C Connector | 2x 4-pin JST-GH | Connected in parallel |
 | RPM connector | 3-pin 2.54mm pitch header | Internal 22k Ohm pullup resistor |
-| I2C adress | 0x50 default | By switching JP1 possible change to 0x51 |
+| I2C address | 0x50 default | By switching JP1 possible change to 0x51 |
 | I2C SCL clock frequency | Max 100 kHz | Operation on 400 kHz is possible, but unreliable|
 | Operating and storage temperature | −20°C to +40°C | Limited by case material |
-| Operational input voltage | +3.6V to +5.4V | Overvoltage internally protected by zener diode, undervoltage is not treated |
+| Operational input voltage | +3.6V to +5.4V | Overvoltage internally protected by Zener diode, Undervoltage is not treated |
 | Mass | 4g PCB + 8g case | Printed case gcode included in docs |
 | Dimensions | 23.5x42x12.5mm / 37.5x19mm | Case / PCB |
 | Weather resistance | [IP40](https://en.wikipedia.org/wiki/IP_Code) | External connectors fully occupied |
@@ -35,20 +35,20 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 
   * Short circuit protection on probe connector
   * Input status LED indicator - [optionally visible at daylight](/doc/README.md)
-  * Pass-trough I²C connectors to allow daisy chain of different sensors
-  * Offload flight controller's MCU, by storing the number of counted pulses in internal memory
+  * Pass-trough I²C connectors to allow a daisy chain of different sensors
+  * Offload the flight controller's MCU, by storing the number of counted pulses in internal memory
 
 
 ![Bottom view on I2C RPM sensor](doc/img/TFRPM01D_pcb_bot.jpg)
 
-The 3Pin probe connector is powered from I²C bus trough RC filter which limits current and voltage spikes to sensor probe.
-Therefore sensor is resistant to short circuit at the probe connector power.
+The 3Pin probe connector is powered from the I²C bus through an RC filter which limits current and voltage spikes to the sensor probe.
+Therefore sensor is resistant to short circuits at the probe connector power.
 
-The two I²C Pixhawk connectors are connected to each other. This feature allows easily nesting with other I²C devices to single Pixhawks I²C port.
+The two I²C Pixhawk connectors are connected to each other. This feature allows easy nesting with other I²C devices to a single Pixhawks I²C port.
 
 ## Connection to the Pixhawk autopilot
 
-The I²C interface connectors respects the [Pixhawk connector standard](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf). The signal and color coding of the connector and supplied cable are described by following table (ThunderFly color scheme):
+The I²C interface connectors respect the [Pixhawk connector standard](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf). The signal and color coding of the connector and supplied cable are described by following table (ThunderFly color scheme):
 
 |Signal | Pixhawk Color | ThunderFly color |
 |--------|------------------|---------------------|
@@ -57,41 +57,41 @@ The I²C interface connectors respects the [Pixhawk connector standard](https://
 | SDA  | Black |  ![green](https://user-images.githubusercontent.com/5196729/102205114-04846200-3ecb-11eb-8eb8-251c7e564707.png) Green |
 | GND | Black  | ![black](https://user-images.githubusercontent.com/5196729/102204896-b8d1b880-3eca-11eb-8b73-656cac9104e4.png) Black |
 
-The conductor colors in the cable are different to Pixhawk standard to increase the visual distinction between multiple cables in the UAV.
+The conductor colors in the cable are different from the Pixhawk standard to increase the visual distinction between multiple cables in the UAV.
 
-### Cable turnig
+### Cable turning
 
-To improve I2C bus reliability, the supplied cable is specifically turned by following scheme
+To improve I2C bus reliability, the supplied cable is specifically twisted by following the scheme
 
 - 10 turns for each pair SCL/+5V and SDA/GND per 30cm cable length
 - The two pairs are turned again by 4 turns of pairs per 30cm cable length.
 
-This special cable conductors winding method, greatly improves the signal integrity by minimising of the crosstalk between the SDA and SCL signals.
+These special cable conductors winding method greatly improves the signal integrity by minimizing the crosstalk between the SDA and SCL signals.
 
-### I²C Address configuration
+### I²C Address Configuration
 
-By default the TFRPM01C sensor is manufactured with 0x50 I²C address. This address is possible to change to 0x51 by altering the JP1 solder junction. The junction connection to GND needs to be cut by knife and then soldered to opposite side Vcc.
+By default, the TFRPM01C sensor is manufactured with a 0x50 I²C address. This address is possible to change to 0x51 by altering the JP1 solder junction. The junction connection to GND needs to be cut by knife and then soldered to the opposite side Vcc.
 
-The default configuration of the junction corresponds to following picture, where center pin is connected to GND by copper trace.
+The default configuration of the junction corresponds to the following picture, where the center pin is connected to GND by copper trace.
 
 ![The default 0x50 address setup](/doc/img/JP1_address_0x50_config.png)
 
 ## Mounting options
 
-The device is designed to be mouted with or without plastic case. The 3D printed case is intended to be modifable to particular sensor mount options. The supplied variant of 3D printed case supports two mount options:
+The device is designed to be mounted with or without a plastic case. The 3D printed case is intended to be modifiable to particular sensor mount options. The supplied variant of the 3D-printed case supports two mount options:
 
-  * By default the case could be mounted by screw on flat sulface (the original screew need to be replaced by longer one)
-  * The second option is use of [double sided adhesive tape](https://www.3m.com/3M/en_US/vhb-tapes-us/) or [reclosable fastener](https://www.3m.com/3M/en_US/dual-lock-reclosable-fasteners-us/) sticked on the side of the TFRPM01 case.
+  * By default the case could be mounted by the screw on a flat surface (the original screw needs to be replaced by a longer one)
+  * The second option is the use of [double-sided adhesive tape](https://www.3m.com/3M/en_US/vhb-tapes-us/) or [reclosable fastener](https://www.3m.com/3M/en_US/dual-lock-reclosable-fasteners-us/) stuck on the side of the TFRPM01 case.
 
 ### PCB dimensions
 
 ![TFRPM01 PCB dimensions](doc/img/TFRPM01_PCB_dimensions.png)
 
-The PCB is designed to be mounted on flat surface by center screw hole. The supposed screw diameter is metric 3mm e.g. DIN 912 M3 Hexagon socket Head Cap Screws.
+The PCB is designed to be mounted on a flat surface by a center screw hole. The supposed screw diameter is metric 3mm e.g. DIN 912 M3 Hexagon socket Head Cap Screws.
 
 ### Sensor probe selection
 
-The counter could be used with multiple types of sensor probes. The most used one is a hall effect probe.  The magnetic probe is ideal for harsh environments, where dirt, dust, and water can contact the sensed rotor. Disadvantage is, that mounting of magnet is required for proper sensor work.
+The counter could be used with multiple types of sensor probes. The most used one is a Hall effect probe.  The magnetic probe is ideal for harsh environments, where dirt, dust, and water can contact the sensed rotor. The disadvantage is, that mounting of the magnet is required for proper sensor work.
 
 ![TFRPM01B hall effect magnetic sensor](/doc/img/TFRPM01B_hall_sensor.jpg)
 
@@ -99,12 +99,12 @@ The probe should be connected to the sensor board as follows (- Black, + Red, Pu
 
 ![TFRPM01B hall effect magnetic sensor connection](/doc/img/TFRPM01B_hall_connection.jpg)
 
-Correct connection of the probe could be check by magnet, the PULSE LED switch on and off according to magnet presence. The sensor board needs to be powered from at least one I²C port during the test.
+The correct connection of the probe could be checked by the magnet, and the PULSE LED switch on and off according to magnet presence. The sensor board needs to be powered from at least one I²C port during the test.
 
 The sensor could also be used with other probe types. We tested the se [TFPROBE01](https://github.com/ThunderFly-aerospace/TFPROBE01), which combines the optical reflective sensor and magnetic hall-effect sensor in one device.
 
 
-Technically TFRPM01 could be used by every probe with pulsed output with amplitude in range of 0 to +5V. However the TFRPM01 sensor needs matching the input parameters to certain probe types. The default configuration is reflected in the following schematics.
+Technically TFRPM01 could be used by every probe with pulsed output with amplitude in the range of 0 to +5V. However, the TFRPM01 sensor needs to match the input parameters to certain probe types. The default configuration is reflected in the following schematics.
 
 ![TFRPM01B probe input circuit](/doc/img/TFRPM01_pulse_counter_input.png)
 
@@ -112,8 +112,8 @@ As can be seen from the schematics the default probe power selection is +5V, pro
 
 ## Software configuration
 
-The TFRPM01 revolution counter is currently supported by PX4 firmware only. (Ardupilot pull-requests are welcomed)
-After proper connection of the sensor with sensing probe to an I2C port (Except port I2C3) of PX4 based autopilot you should follow instructions to [PX4 software setup](https://docs.px4.io/main/en/sensor/thunderfly_tachometer.html#software-setup). After proper setup, you should get an uLog containing the RPM logged during the flight. Here is an example of rotor RPM captured during the flight of [TF-G2 autogyro](https://github.com/ThunderFly-aerospace/TF-G2). The graph is rendered by [flight_review](https://github.com/ThunderFly-aerospace/flight_review).
+The TFRPM01 revolution counter is currently supported by PX4 firmware only. (Ardupilot pull requests are welcomed)
+After proper connection of the sensor with the sensing probe to an I2C port (Except port I2C3) of PX4-based autopilot you should follow instructions to [PX4 software setup](https://docs.px4.io/main/en/sensor/thunderfly_tachometer.html#software-setup). After proper setup, you should get an uLog containing the RPM logged during the flight. Here is an example of rotor RPM captured during the flight of [TF-G2 autogyro](https://github.com/ThunderFly-aerospace/TF-G2). The graph is rendered by [flight_review](https://github.com/ThunderFly-aerospace/flight_review).
 
 ![TFRPM01 measuring rotor RPM during the flight](/doc/img/rpm_graph.png)
 
@@ -143,4 +143,4 @@ Therefore the absolute resolution of the sensor is independent of the current RP
 ## Does it connect to RPM output from ESC?
 
 Generally yes, the TFRPM could be connected to revolution output from an ESC in case of output logic confirms to 5V TTL.
-Limitation is the RPM resolution here, because many ESCs gets one pulse per revolution.
+The limitation is the RPM resolution here because many ESCs get one pulse per revolution.

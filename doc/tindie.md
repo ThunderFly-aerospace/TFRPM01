@@ -6,9 +6,9 @@ TFRPM01 is supported by Pixhawk autopilots with PX4. For the correct setting of 
 
 # Technical description
 
-Sensor is based on I²C pulse counter IO [PCF8583](https://www.nxp.com/docs/en/data-sheet/PCF8583.pdf). 
+The sensor is based on I²C pulse counter IO [PCF8583](https://www.nxp.com/docs/en/data-sheet/PCF8583.pdf). 
 
-I2C connector is a 4-pin JST-GH connector compliant with [Pixhawk Reference Standards](https://pixhawk.org/standards/). The second I2C connector can be used as a thought-pass I2C output and allows to connect another sensor. 
+The I2C connector is a 4-pin JST-GH connector compliant with [Pixhawk Reference Standards](https://pixhawk.org/standards/). The second I2C connector can be used as a thought-pass I2C output and allows to connect another sensor. 
 
 There can be two sensors on one bus. The default sensor address is 0x50. It can be changed to 0x51 by the use of soldering iron. A sensor with a different address is available on request.
 
@@ -37,7 +37,7 @@ How to set up the TRRPM01 sensor with [PX4](https://px4.io/) based autopilot is 
 
 ![PlotJugles screen with RPM data](https://raw.githubusercontent.com/ThunderFly-aerospace/TFRPM01/TFRPM01C/doc/img/rpm_graph.png)
 
-The sensor was tested with CUAV V5+ and CUAV Nano autopilot. Other PX4 based autopilots should be also supported with PX4 firmware.
+The sensor was tested with CUAV V5+ and CUAV Nano autopilot. Other PX4-based autopilots should be also supported with PX4 firmware.
 
 ## Use of multiple TFRPM01 sensors
 
@@ -68,14 +68,14 @@ The sensing element is also not included in the TFRPM01 sensor package. We sell 
 
 
 # Versions
-The product is gradually evolving and improving based on user requirements. Currently (as of 05/2023), the TFRPM01D revision is being shipped. In the development process, we keeps backwards compatibility, for example by keeping the same form factor or communication interface. The complete list of changes is in [releases](https://github.com/ThunderFly-aerospace/TFRPM01/releases).
+The product is gradually evolving and improving based on user requirements. Currently (as of 05/2023), the TFRPM01D revision is being shipped. In the development process, we keep backward compatibility, for example by keeping the same form factor or communication interface. The complete list of changes is in [releases](https://github.com/ThunderFly-aerospace/TFRPM01/releases).
 
 #### TFRPM01D (from 05/2023)
  * Green case
- * Added an LED indicating sensor power supply
+ * Added an LED indicating the sensor power supply
  * Improved PCB layout
 
-Note: The TFRPM01D sensors shipped from 8. 5. 2023 do not have a hole in the bottom sticker for accesing screw for disassembling the plastic case. To change the I2C device address or output voltage, it is necessary to remove the bottom sticker and unscrew the screw. (bottom sticker is sticker with QR code)
+Note: The TFRPM01D sensors shipped from 8. 5. 2023 does not have a hole in the bottom sticker for accessing the screw for disassembling the plastic case. To change the I2C device address or output voltage, it is necessary to remove the bottom sticker and unscrew the screw. (bottom sticker is a sticker with a QR code)
 
 #### TFRPM01C (from 03/2021) 
  * Gray case

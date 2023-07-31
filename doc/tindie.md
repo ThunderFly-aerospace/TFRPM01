@@ -1,5 +1,3 @@
-**TFRPM01D Will be stocked again at the beginning of may.**
-
 # General Description
 
 TFRPM01 is an open-source frequency sensor [tachometer](https://en.wikipedia.org/wiki/Tachometer) intended for the measurement of rotational actuators on drones. The TFRPM01 sensor itself does not contain a sensing probe. It needs to be connected externally. This allows you to connect a number of different probes based on different technologies. For basic diagnostics, the sensor is equipped with an LED indicator that shows the logic state of the input pin.

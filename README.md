@@ -15,6 +15,12 @@ The hardware is intended to be used for helicopter and autogyro rotor RPM measur
 
 ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https://www.thunderfly.cz/), write an email to info@thunderfly.cz or shop at [Tindie store](https://www.tindie.com/products/thunderfly/tfrpm01-drone-rpm-tachometer-sensor/).
 
+## Main Features
+
+  * Offload the flight controller's MCU, by self-counting storing the number of counted pulses in I²C accessible internal memory
+  * Input status LED indicator - [optionally visible at daylight](/doc/README.md) for easy debug of mechanical configuration
+  * Short circuit protection on the probe connector
+  * Pass-trough I²C connectors to allow a daisy chain of additional or multiple sensors
 
 ## Parameters
 
@@ -30,14 +36,6 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 | Mass | 4g PCB + 8g case | Printed case gcode included in docs |
 | Dimensions | 23.5x42x12.5mm / 37.5x19mm | Case / PCB |
 | Weather resistance | [IP40](https://en.wikipedia.org/wiki/IP_Code) | External connectors fully occupied |
-
-## Features
-
-  * Short circuit protection on probe connector
-  * Input status LED indicator - [optionally visible at daylight](/doc/README.md)
-  * Pass-trough I²C connectors to allow a daisy chain of different sensors
-  * Offload the flight controller's MCU, by storing the number of counted pulses in internal memory
-
 
 ![Bottom view on I2C RPM sensor](doc/img/TFRPM01D_pcb_bot.jpg)
 

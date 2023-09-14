@@ -17,7 +17,7 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 
 ## Main Features
 
-  * Offload the flight controller's MCU, by self-counting storing the number of counted pulses in I²C accessible internal memory
+  * Offload the flight controller's MCU, by self-counting and storing the number of counted pulses in I²C accessible internal memory
   * Input status LED indicator - [optionally visible at daylight](/doc/README.md) for easy debug of mechanical configuration
   * Short circuit protection on the probe connector
   * Pass-trough I²C connectors to allow a daisy chain of additional or multiple sensors
@@ -64,7 +64,7 @@ To improve I2C bus reliability, the supplied cable is specifically twisted by fo
 - 10 turns for each pair SCL/+5V and SDA/GND per 30cm cable length
 - The two pairs are turned again by 4 turns of pairs per 30cm cable length.
 
-These special cable conductors winding method greatly improves the signal integrity by minimizing the crosstalk between the SDA and SCL signals.
+These special cable conductors' winding method greatly improves the signal integrity by minimizing the crosstalk between the SDA and SCL signals.
 
 ### I²C Address Configuration
 
@@ -125,7 +125,7 @@ RPM is calculated from measured values (pulses per interval) as follows
 
 ![RPM equation](https://latex.codecogs.com/png.image?\dpi{110}RPM=\frac{N_c60}{N\tau})
 
-Therefore the resolution of measured RPM is following:
+Therefore the resolution of measured RPM is the follows:
 
 ![Resolution equation](https://latex.codecogs.com/png.image?\dpi{110}Res=\frac{60}{N\tau})
 
@@ -145,5 +145,5 @@ The limitation is the RPM resolution here because many ESCs get one pulse per re
 
 ## Could be used for internal combustion engines?
 
-Yes, it could measure the RPM of the IC Engine. But it needs a pulse signal to count the rotation speed. The pulsed signal could be either obtained either from [Electronic control unit](https://en.wikipedia.org/wiki/Electronic_control_unit) (ECU) or from an [Optical or magnetic probe](https://github.com/ThunderFly-aerospace/TFPROBE01) mounted on the proper location of the engine unit. Direct connection of TFRPM to ignition or sensing coils is not possible without signal conditioning, because the voltage of signals coming from coils will likely destroy the TTL-based RPM input of TFRPM. Required signal conditioning could be realized by a resistor network in many cases. Contact [ThunderFly s.r.o.](https://www.thunderfly.cz/contact-us.html) in case you need professional support.
+Yes, it could measure the RPM of the IC Engine. However, it needs a pulse signal to count the rotation speed. The pulsed signal could be either obtained either from [Electronic control unit](https://en.wikipedia.org/wiki/Electronic_control_unit) (ECU) or from an [Optical or magnetic probe](https://github.com/ThunderFly-aerospace/TFPROBE01) mounted on the proper location of the engine unit. Direct connection of TFRPM to ignition or sensing coils is not possible without signal conditioning, because the voltage of signals coming from coils will likely destroy the TTL-based RPM input of TFRPM. Required signal conditioning could be realized by a resistor network in many cases. Contact [ThunderFly s.r.o.](https://www.thunderfly.cz/contact-us.html) in case you need professional support.
 

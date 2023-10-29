@@ -57,7 +57,7 @@ The I²C interface connectors respect the [Pixhawk connector standard](https://g
 
 The conductor colors in the cable are different from the Pixhawk standard to increase the visual distinction between multiple cables in the UAV.
 
-### Cable turning
+### Wiring cable
 
 To improve I2C bus reliability, the supplied cable is specifically twisted by following the scheme
 

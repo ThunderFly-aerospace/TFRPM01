@@ -17,6 +17,7 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
 
 ## Main Features
 
+  * [Schmitt trigger input](https://en.wikipedia.org/wiki/Schmitt_trigger) to shape a non-uniform signal from the RPM sensing element. 
   * Offload the flight controller's MCU, by self-counting and storing the number of counted pulses in I²C accessible internal memory
   * Input status LED indicator - [optionally visible at daylight](/doc/README.md) for easy debug of mechanical configuration
   * Short circuit protection on the probe connector

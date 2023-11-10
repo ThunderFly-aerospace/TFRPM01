@@ -22,6 +22,7 @@ ThunderFly RPM counter is commercially available from [ThunderFly s.r.o.](https:
   * Input status LED indicator - [optionally visible at daylight](/doc/README.md) for easy debug of mechanical configuration
   * Short circuit protection on the probe connector
   * Pass-trough I²C connectors to allow a daisy chain of additional or multiple sensors
+  * Highly robust and repairable design. 
 
 ## Parameters
 

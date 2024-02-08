@@ -2,7 +2,8 @@ import curses
 import time, datetime
 from pymlab import config
 import argparse
-
+import os
+import beepy
 
 # Zpracování vstupních argumentů
 parser = argparse.ArgumentParser(description='Callibration utility for TFRPM01 sensor')
@@ -16,7 +17,7 @@ args = parser.parse_args()
 req_freq = args.req_freq
 max_deviation = args.max_deviation
 
-address = 0x50
+address = args.address
 
 error = True
 connected = 0
@@ -63,6 +64,7 @@ def main(screen):
 
                 connected = datetime.datetime.now()
                 error = False
+                beepy.beep(sound=1)
 
             while True:
                 count = TFRPM01.get_count()
@@ -83,25 +85,21 @@ def main(screen):
                 in_range = bool(req_freq - max_deviation <= freq <= req_freq + max_deviation)
                 if in_range:
                     screen.addstr(11, 0, "In range: OK", curses.color_pair(2))
+                    beepy.beep(sound=5)
                 else:
                     screen.addstr(11, 0, "In range: ERROR", curses.color_pair(3))
-
-                screen.addstr(12, 0, "")
-                if old_range != in_range:
-                    old_range = in_range
-                    curses.beep()
 
                 screen.refresh()
                 time.sleep(0.2)
 
-                if count >= TFRPM01.MAX_COUNT / 2:
-                    TFRPM01.reset_counter()
-                    time.sleep(0.5)
-                    #screen.addstr(10, 0, "Counter reset due to half range exceeded")
-                if integration_time > 5:
-                    TFRPM01.reset_counter()
-                    time.sleep(0.5)
-                    #screen.addstr(10, 0, "Counter reset due to integration time exceeded")
+                #if count >= TFRPM01.MAX_COUNT / 2:
+                #    TFRPM01.reset_counter()
+                #    #time.sleep(0.1)
+                #    #screen.addstr(10, 0, "Counter reset due to half range exceeded")
+                #if integration_time > 5:
+                #    TFRPM01.reset_counter()
+                #    #time.sleep(0.1)
+                #    #screen.addstr(10, 0, "Counter reset due to integration time exceeded")
 
         except IOError:
             print("ERROR... ")

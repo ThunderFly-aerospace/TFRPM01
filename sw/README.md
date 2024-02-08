@@ -15,10 +15,7 @@ Set the Bus and Address in the source code.
 
 # TFRPM01 interactive testing utility
 
-```
-cd pymlab_interactive
-python3 quality_check.py --port 9 --address 0x50 --req_freq 489 --max_deviation 10
-```
+The testing utility used to verify proper function of TFRPM01 device. The utility needs the following elementary testing rig for proper function. 
 
 ## Prerequirements
 * python3
@@ -31,7 +28,8 @@ python3 quality_check.py --port 9 --address 0x50 --req_freq 489 --max_deviation 
 ## Usage:
 
 ```
-python3 quality_check.py --port 7 --address 0x50 --req_freq 1000 --max_deviation 500
+cd pymlab_interactive
+python3 quality_check.py --port 9 --address 0x50 --req_freq 489 --max_deviation 10
 ```
 
 `--port` smbus port

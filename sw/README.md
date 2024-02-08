@@ -22,7 +22,7 @@ python3 quality_check.py --port 7 --address 0x50 --req_freq 1000 --max_deviation
 
 ## Prerequirements 
 * python3
-* [pymlab](https://github.com/MLAB-project/pymlab)
+* [pymlab](https://github.com/MLAB-project/pymlab) with installed I2C drivers e.g. smbus2
 * curses
 * argparse 
 

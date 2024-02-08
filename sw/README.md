@@ -7,7 +7,7 @@ Expected Linux kernel module: i2c_dev
 
 ## Build
 
-Set Bus and Address in source code.
+Set the Bus and Address in the source code.
 
     gcc rtc_1.c i2c_functions.c
 
@@ -22,7 +22,7 @@ python3 quality_check.py --port 7 --address 0x50 --req_freq 1000 --max_deviation
 
 ## Prerequirements 
 * python3
-* pymlab
+* [pymlab](https://github.com/MLAB-project/pymlab)
 * curses
 * argparse 
 

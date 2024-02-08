@@ -17,12 +17,13 @@ Set the Bus and Address in the source code.
 
 ```
 cd pymlab_interactive
-python3 quality_check.py --port 7 --address 0x50 --req_freq 1000 --max_deviation 500
+python3 quality_check.py --port 9 --address 0x50 --req_freq 489 --max_deviation 10
 ```
 
 ## Prerequirements 
 * python3
 * [pymlab](https://github.com/MLAB-project/pymlab) with installed I2C drivers e.g. smbus2
+* [beepy](https://pypi.org/project/beepy/)
 * curses
 * argparse 
 

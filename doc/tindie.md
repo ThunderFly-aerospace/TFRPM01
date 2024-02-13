@@ -1,6 +1,6 @@
 # General Description
 
-TFRPM01 is an open-source frequency sensor [tachometer](https://en.wikipedia.org/wiki/Tachometer) intended for the measurement of the speed of rotational actuators on drones. The TFRPM01 sensor itself does not contain a sensing probe. It needs to be connected externally. This allows you to connect a number of different probes based on different technologies. For basic diagnostics, the sensor is equipped with an LED indicator that shows the logic state of the input pin.
+TFRPM01 is an open-source frequency sensor [tachometer](https://en.wikipedia.org/wiki/Tachometer) intended for the measurement of the speed of rotational actuators on drones. The TFRPM01 sensor itself does not contain a sensing probe. It needs to be connected externally. This allows you to connect many different probes based on different technologies. For basic diagnostics, the sensor is equipped with an LED indicator that shows the logic state of the input pin.
 
 TFRPM01 is supported by Pixhawk autopilots with up-to-date PX4 firmware. For the correct setting of the sensor, see the [official documentation](https://docs.px4.io/master/en/sensor/thunderfly_tachometer.html). The sensor is designed to be able to count high frequencies without overloading the autopilot CPU.
 
@@ -8,9 +8,9 @@ TFRPM01 is supported by Pixhawk autopilots with up-to-date PX4 firmware. For the
 
 The sensor is based on I²C pulse counter IO [PCF8583](https://www.nxp.com/docs/en/data-sheet/PCF8583.pdf). 
 
-The I2C connector is a 4-pin JST-GH connector compliant with [Pixhawk Reference Standards](https://pixhawk.org/standards/). The second I2C connector can be used as a thought-pass I2C output and allows to connect another sensor. 
+The I2C connector is a 4-pin JST-GH connector compliant with [Pixhawk Reference Standards](https://pixhawk.org/standards/). The second I2C connector can be used as a thought-pass I2C output and allows to connection of another sensor on the same bus. 
 
-There can be two sensors on one bus. The default sensor address is 0x50. It can be changed to 0x51 by the use of soldering iron. A sensor with a different address is available on request.
+There can be up to two TFRPM sensors on one bus. The default sensor address is 0x50 and it can be changed to 0x51 by the use of soldering iron. A sensor with a different address is available on request.
 
 For connecting the probe, the sensor is equipped with a standard three-pin header connector. The connector contains a power and signal pin. The order of pins is GND 5V Signal. It supports 5V TTL signals. The maximum pulse frequency of IO is 20 kHz with a 50% duty cycle. Maximal measured frequency and accuracy depend on the driver setting.
 
@@ -19,7 +19,7 @@ For connecting the probe, the sensor is equipped with a standard three-pin heade
 
 ## Hall-Effect Sensor Probe
 
-Hall-Effect sensors (magnetically operated) are ideal for harsh environments, where dirt, dust, and water can contact the sensed rotor.
+Hall-effect sensors (magnetically operated) are ideal for harsh environments, where dirt, dust, and water can contact the sensed rotor.
 
 Many different hall-effect sensors are commercially available. For example, a 5100 Miniature Flange Mounting Proximity Sensor is a good choice. 
 
@@ -67,15 +67,18 @@ The sensing element is also not included in the TFRPM01 sensor package. We sell 
   * Omnipolar magnetic and reflective optical probe [TFPROBE01](https://github.com/ThunderFly-aerospace/TFPROBE01) [Buy at Tindie](https://www.tindie.com/products/thunderfly/tfprobe-ir-and-magnetic-probe-for-rpm-measurement/)
 
 
-# Versions
+# Product changelog
 The product is gradually evolving and improving based on user requirements. Currently (as of 05/2023), the TFRPM01D revision is being shipped. In the development process, we keep backward compatibility, for example by keeping the same form factor or communication interface. The complete list of changes is in [releases](https://github.com/ThunderFly-aerospace/TFRPM01/releases).
+
+#### TFRPM01D (from 06/2023)
+Roll-back to sticker version with a hole for the screw, to allow user disassembly. 
 
 #### TFRPM01D (from 05/2023)
  * Green case
  * Added an LED indicating the sensor power supply
  * Improved PCB layout
 
-Note: The TFRPM01D sensors shipped from 8. 5. 2023 does not have a hole in the bottom sticker for accessing the screw for disassembling the plastic case. To change the I2C device address or output voltage, it is necessary to remove the bottom sticker and unscrew the screw. (bottom sticker is a sticker with a QR code)
+Note: The TFRPM01D sensors shipped from 8. 5. 2023 does not have a hole in the bottom sticker for accessing the screw for disassembling the plastic case. To change the I2C device address or output voltage, it is necessary to remove the bottom sticker and unscrew the screw. (The bottom sticker is a sticker with a QR code)
 
 #### TFRPM01C (from 03/2021) 
  * Gray case

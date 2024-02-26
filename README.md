@@ -78,7 +78,7 @@ The default configuration of the junction corresponds to the following picture, 
 
 ## Mounting options
 
-The device is designed to be mounted with or without a plastic case. The 3D printed case is intended to be modifiable to particular sensor mount options. The supplied variant of the 3D-printed case supports two mount options:
+The device is designed to be mounted with or without a plastic case. The 3D-printed case is intended to be adjustable to particular sensor mount options. The supplied variant of the 3D-printed case supports two mount options:
 
   * By default the case could be mounted by the screw on a flat surface (the original screw needs to be replaced by a longer one)
   * The second option is the use of [double-sided adhesive tape](https://www.3m.com/3M/en_US/vhb-tapes-us/) or [reclosable fastener](https://www.3m.com/3M/en_US/dual-lock-reclosable-fasteners-us/) stuck on the side of the TFRPM01 case.
@@ -108,7 +108,7 @@ Technically TFRPM01 could be used by every probe with pulsed output with amplitu
 
 ![TFRPM01B probe input circuit](/doc/img/TFRPM01_pulse_counter_input.png)
 
-As can be seen from the schematics the default probe power selection is +5V, protected by resistor R2 to about 61 mA short-circuit current. The pull-up resistor R1 with default value 22 kOhm is quite hard and it is generally unsuitable to most optical probes with open-collector outputs. Therefore the resistor R1 should be interchanged to a more suitable (usually increased) value. It is depending on the selected material for the optical sensor this value might need further fine-tuning. (The specific resistor value could be requested during the order process in case of ordering a larger quantity).
+As can be seen from the schematics the default probe power selection is +5V, protected by resistor R2 to about 61 mA short-circuit current. The pull-up resistor R1 with a default value of 22 kOhm is quite hard and it is generally unsuitable to most optical probes with open-collector outputs. Therefore the resistor R1 should be interchanged to a more suitable (usually increased) value. It is depending on the selected material for the optical sensor this value might need further fine-tuning. (The specific resistor value could be requested during the order process in case of ordering a larger quantity).
 
 ## Software configuration
 

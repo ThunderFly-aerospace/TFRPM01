@@ -32,9 +32,9 @@ The TFRPM is a device designed for measuring revolutions per minute (RPM) in UAV
 ![Bottom view on I2C RPM sensor](doc/img/TFRPM01D_pcb_bot.jpg)
 
 <a href="https://www.tindie.com/products/thunderfly/tfrpm01-drone-rpm-tachometer-sensor/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="200" align="right"></a>
-### Where to Get It?
 
-TFRPM can be bought directly from us via our contact [email](https://www.thunderfly.cz/contact-us.html). The email can also be used if there are specific requirements for custom modifications or if the product will be inquired in large quantities. TFRPM is also available for online purchase through the [Tindie store](https://www.tindie.com/products/thunderfly/tfrpm01-drone-rpm-tachometer-sensor/).
+### Where to Get It?
+TFRPM can be bought directly from ThunderFly via [email contact](https://www.thunderfly.cz/contact-us.html). The email can also be used if there are specific requirements for custom modifications or if the product will be inquired in significant quantities. TFRPM is also available for online purchase through the [Tindie store](https://www.tindie.com/products/thunderfly/tfrpm01-drone-rpm-tachometer-sensor/).
 
 ### Connection to Pixhawk Autopilot
 Follows the [Pixhawk connector standard](https://github.com/pixhawk/Pixhawk-Standards/blob/master/DS-009%20Pixhawk%20Connector%20Standard.pdf) with specific color coding.
@@ -50,13 +50,14 @@ The device can be mounted with or without a provided 3D-printed case.
 ![TFRPM01 PCB dimensions](doc/img/TFRPM01_PCB_dimensions.png)
 
 ### Sensor Probe Selection
-Compatible with multiple probe types, including Hall effect and optical probes.
 
+Compatible with multiple probe types, including Hall effect and optical probes. See the [TFPROBE01](https://github.com/ThunderFly-aerospace/TFPROBE01) and [TFRPM01 documentation](https://docs.thunderfly.cz/avionics/TFRPM01/) for details.
+
+Thirdparty hall probe sensor could be also used, here is example of suitable generic hall probe with mounting fladge.
 ![TFRPM01B hall effect magnetic sensor](/doc/img/TFRPM01B_hall_sensor.jpg)
 
-![TFRPM01B hall effect magnetic sensor connection](/doc/img/TFRPM01B_hall_connection.jpg)
-
 ## Software Configuration
+
 Supported by PX4 firmware. Setup instructions are available on the [PX4 documentation](https://docs.px4.io/main/en/sensor/thunderfly_tachometer.html#software-setup).
 
 ![TFRPM01 measuring rotor RPM during the flight](/doc/img/rpm_graph.png)

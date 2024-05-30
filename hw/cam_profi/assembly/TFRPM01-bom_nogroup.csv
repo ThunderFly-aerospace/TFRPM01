@@ -1,0 +1,18 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,ust_id,color
+1,Unpolarized capacitor,C,C4C5C6,100nF,C_0603_1608Metric,3,~,5c70984812875079b91f8bf2,
+2,Unpolarized capacitor,C,C1,1uF,C_0603_1608Metric,1,~,5c70984812875079b91f8bc2,
+3,Unpolarized capacitor,C,C2C3,10uF,C_0603_1608Metric,2,~,5c70984812875079b91f8bf5,
+4,,D_ZENER,D1,BZX585-B5V6.115,D_SOD-523,1,,60879d38128750769ee58e48,
+5,Light emitting diode,LED,D3,KPTR-3216CGCK,LED_1206_2,1,~,,Green
+6,Light emitting diode,LED,D2,KPTR-3216SURCK,LED_1206_2,1,~,,Red
+7,1x03 2.54 mm pitch header,HEADER_1x03,J1,DS1022-1*40RDF11-B,PinHeader_1x03_P2.54mm_Horizontal,1,5c70984412875079b91f879d,,
+8,,SM04B-GHS-TB_1,J2,SM04B-GHS-TB,JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal,1,,5c86273d1287500b4e0280be,
+9,,SM04B-GHS-TB,J3,SM04B-GHS-TB,JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal,1,,5c86273d1287500b4e0280be,
+10,Resistor,R,R4,51R,R_0603_1608Metric,1,~,5c70984512875079b91f8953,
+11,Resistor,R,R2,82R,R_0805_2012Metric,1,~,5c70984512875079b91f8976,
+12,Resistor,R,R5,130R,R_0603_1608Metric,1,~,5cd08b17128750448e4542b1,
+13,Resistor,R,R3R10,10k,R_0603_1608Metric,2,~,5c70984512875079b91f8962,
+14,Resistor,R,R1,22k,R_0805_2012Metric,1,~,5c70984712875079b91f8a87,
+15,"300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23",MIC5504-3.3YM5,U3,MIC5504-3.3YM5,SOT-23-5,1,http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf,5c7255e81287500b4e112ea2,
+16,,PCF8583,U1,PCF8583T,SOT176-1,1,https://www.nxp.com/docs/en/data-sheet/PCF8583.pdf,5c70984712875079b91f8b59,
+17,Hex inverter schmitt trigger,74AHC1G14GV,U2,SN74LVC1G14QDCKRQ1,SOT-353_SC-70-5,1,http://www.ti.com/lit/gpn/sn74HC14,604b05e1128750769e5b106e,

@@ -1,4 +1,4 @@
-Ref,Val,Package,PosX,PosY,Rot,Side
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 "C1","1uF","C_0603_1608Metric",-0.2920,6.7751,90.0000,bottom
 "C2","10uF","C_0603_1608Metric",6.7900,6.5251,90.0000,bottom
 "C3","10uF","C_0603_1608Metric",-14.9860,1.2700,180.0000,bottom
@@ -8,6 +8,11 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "D1","BZX585-B5V6.115","D_SOD-523",-14.9860,-1.0160,180.0000,bottom
 "D2","KPTR-3216SURCK","LED_1206_2",0.0000,-7.0000,0.0000,bottom
 "D3","KPTR-3216CGCK","LED_1206_2",-10.0000,-7.0000,0.0000,bottom
+"FID1","Fiducial","Fiducial_0.5mm_Mask1.5mm",13.5000,6.5000,0.0000,bottom
+"FID2","Fiducial","Fiducial_0.5mm_Mask1.5mm",13.5000,-7.0000,0.0000,bottom
+"FID3","Fiducial","Fiducial_0.5mm_Mask1.5mm",-14.0000,-8.0000,90.0000,bottom
+"G1","LOGO","TF",-9.9912,5.1533,0.0000,top
+"J1","DS1022-1*40RDF11-B","PinHeader_1x03_P2.54mm_Horizontal",5.7150,-2.5400,0.0000,bottom
 "J2","SM04B-GHS-TB","JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",-18.4380,4.8061,90.0000,bottom
 "J3","SM04B-GHS-TB","JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",-18.4380,-4.7689,90.0000,bottom
 "R1","22k","R_0805_2012Metric",9.0080,6.5251,-90.0000,bottom

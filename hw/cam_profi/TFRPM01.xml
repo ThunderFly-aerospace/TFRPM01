@@ -2,8 +2,8 @@
 <export version="E">
   <design>
     <source>/github/workspace/hw/sch_pcb/TFRPM01.kicad_sch</source>
-    <date>Sun Jul 23 00:42:31 2023</date>
-    <tool>Eeschema 6.0.11+dfsg-1~bpo11+1</tool>
+    <date>Thu May 30 16:55:56 2024</date>
+    <tool>Eeschema 7.0.11+1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>TFRPM01D</title>
@@ -35,6 +35,8 @@
       <property name="UST_ID" value="5c70984812875079b91f8bc2"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005debf498</tstamps>
     </comp>
@@ -49,6 +51,8 @@
       <property name="UST_ID" value="5c70984812875079b91f8bf5"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005de9100e</tstamps>
     </comp>
@@ -63,6 +67,8 @@
       <property name="UST_ID" value="5c70984812875079b91f8bf5"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffc6a8</tstamps>
     </comp>
@@ -77,6 +83,8 @@
       <property name="UST_ID" value="5c70984812875079b91f8bf2"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005562302c</tstamps>
     </comp>
@@ -91,6 +99,8 @@
       <property name="UST_ID" value="5c70984812875079b91f8bf2"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005deabd1a</tstamps>
     </comp>
@@ -105,6 +115,8 @@
       <property name="UST_ID" value="5c70984812875079b91f8bf2"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005deba31c</tstamps>
     </comp>
@@ -125,21 +137,21 @@
     <comp ref="D2">
       <value>KPTR-3216SURCK</value>
       <footprint>Mlab_D:LED_1206_2</footprint>
-      <datasheet>https://www.tme.eu/Document/abfabb2e369b55022af776cff528b52b/kptr-3216surck.pdf</datasheet>
       <fields>
         <field name="Color">Red</field>
       </fields>
-      <libsource lib="" part="LED_1" description="Light emitting diode"/>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Color" value="Red"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005b1bc617</tstamps>
     </comp>
     <comp ref="D3">
       <value>KPTR-3216CGCK</value>
       <footprint>Mlab_D:LED_1206_2</footprint>
-      <datasheet>https://www.tme.eu/Document/283cf8402cc8d70fa16840405395cb5a/kptr-3216cgck.pdf</datasheet>
       <fields>
         <field name="Color">Green</field>
       </fields>
@@ -147,8 +159,56 @@
       <property name="Color" value="Green"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode"/>
+      <property name="ki_keywords" value="LED diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>158af5df-cc1b-4506-bbe6-cb7505295b5b</tstamps>
+    </comp>
+    <comp ref="FID1">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_0.5mm_Mask1.5mm</footprint>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="Fiducial Marker"/>
+      <property name="ki_keywords" value="fiducial marker"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>457f929f-17ed-4eee-8eba-3af909e8c516</tstamps>
+    </comp>
+    <comp ref="FID2">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_0.5mm_Mask1.5mm</footprint>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="Fiducial Marker"/>
+      <property name="ki_keywords" value="fiducial marker"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5552a350-225a-4c3c-8643-df2be6c7b9a2</tstamps>
+    </comp>
+    <comp ref="FID3">
+      <value>Fiducial</value>
+      <footprint>Fiducial:Fiducial_0.5mm_Mask1.5mm</footprint>
+      <libsource lib="Mechanical" part="Fiducial" description="Fiducial Marker"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="Fiducial Marker"/>
+      <property name="ki_keywords" value="fiducial marker"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80ac0b57-0388-409c-bf8b-2ee44690ae03</tstamps>
+    </comp>
+    <comp ref="G1">
+      <value>LOGO</value>
+      <footprint>MLAB_LOGA:TF</footprint>
+      <libsource lib="MLAB_TF_LOGO" part="LOGO" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b5ac1c53-7ad8-40c9-a438-f85c926dc816</tstamps>
     </comp>
     <comp ref="J1">
       <value>DS1022-1*40RDF11-B</value>
@@ -157,6 +217,8 @@
       <libsource lib="MLAB_HEADER" part="HEADER_1x03" description="1x03 2.54 mm pitch header"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="1x03 2.54 mm pitch header"/>
+      <property name="ki_keywords" value="1x03, header, connector, pinheader"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005de84efb</tstamps>
     </comp>
@@ -188,6 +250,41 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005de8841c</tstamps>
     </comp>
+    <comp ref="JP1">
+      <value>SolderJumper_3_Bridged12</value>
+      <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
+      <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
+      <property name="ki_keywords" value="Solder Jumper SPDT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5ba25741-4f4a-4722-840d-a318fd156e0e</tstamps>
+    </comp>
+    <comp ref="JP2">
+      <value>SolderJumper_3_Bridged12</value>
+      <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm</footprint>
+      <libsource lib="Jumper" part="SolderJumper_3_Bridged12" description="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_description" value="3-pole Solder Jumper, pins 1+2 closed/bridged"/>
+      <property name="ki_keywords" value="Solder Jumper SPDT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e698e44-302e-427a-b240-48a7133a82dd</tstamps>
+    </comp>
+    <comp ref="M2">
+      <value>M3</value>
+      <footprint>Mlab_Mechanical:MountingHole_3mm</footprint>
+      <libsource lib="MLAB_MECHANICAL" part="HOLE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="HOLE, X, M"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000549d7628</tstamps>
+    </comp>
     <comp ref="R1">
       <value>22k</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
@@ -199,6 +296,8 @@
       <property name="UST_ID" value="5c70984712875079b91f8a87"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005b1c4727</tstamps>
     </comp>
@@ -213,6 +312,8 @@
       <property name="UST_ID" value="5c70984512875079b91f8976"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ded9c2d</tstamps>
     </comp>
@@ -227,6 +328,8 @@
       <property name="UST_ID" value="5c70984512875079b91f8962"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffb143</tstamps>
     </comp>
@@ -241,6 +344,8 @@
       <property name="UST_ID" value="5c70984512875079b91f8953"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005b1d2dc1</tstamps>
     </comp>
@@ -255,6 +360,8 @@
       <property name="UST_ID" value="5cd08b17128750448e4542b1"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>0f0d22b0-c2a7-436a-931c-fa4be6782d48</tstamps>
     </comp>
@@ -269,12 +376,15 @@
       <property name="UST_ID" value="5c70984512875079b91f8962"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-000059ffb1aa</tstamps>
     </comp>
     <comp ref="U1">
       <value>PCF8583T</value>
       <footprint>Mlab_IO:SOT176-1</footprint>
+      <datasheet>https://www.nxp.com/docs/en/data-sheet/PCF8583.pdf</datasheet>
       <fields>
         <field name="UST_ID">5c70984712875079b91f8b59</field>
       </fields>
@@ -293,10 +403,11 @@
         <field name="UST_ID">604b05e1128750769e5b106e</field>
       </fields>
       <libsource lib="MLAB_IO" part="74AHC1G14GV" description="Hex inverter schmitt trigger"/>
-      <property name="UST_id" value=""/>
       <property name="UST_ID" value="604b05e1128750769e5b106e"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="Hex inverter schmitt trigger"/>
+      <property name="ki_keywords" value="HCMOS not inverter"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005ded0588 00000000-0000-0000-0000-00005b1b4dea</tstamps>
     </comp>
@@ -308,33 +419,16 @@
         <field name="UST_ID">5c7255e81287500b4e112ea2</field>
       </fields>
       <libsource lib="Regulator_Linear" part="MIC5504-3.3YM5" description="300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23"/>
-      <property name="UST_id" value=""/>
       <property name="UST_ID" value="5c7255e81287500b4e112ea2"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TFRPM01.kicad_sch"/>
+      <property name="ki_description" value="300mA Low-dropout Voltage Regulator, Vout 3.3V, Vin up to 5.5V, SOT-23"/>
+      <property name="ki_keywords" value="Micrel LDO voltage regulator"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005de928cf</tstamps>
     </comp>
   </components>
   <libparts>
-    <libpart lib="" part="LED_1">
-      <description>Light emitting diode</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>LED*</fp>
-        <fp>LED_SMD:*</fp>
-        <fp>LED_THT:*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">D</field>
-        <field name="Value">LED_1</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="K" type="passive"/>
-        <pin num="2" name="A" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="" part="SM04B-GHS-TB_1">
       <fields>
         <field name="Reference">J</field>
@@ -347,23 +441,6 @@
         <pin num="3" name="" type="input"/>
         <pin num="4" name="" type="input"/>
         <pin num="MP" name="" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="" part="SolderJumper_3_Bridged12_1">
-      <description>3-pole Solder Jumper, pins 1+2 closed/bridged</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>SolderJumper*Bridged12*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">JP</field>
-        <field name="Value">SolderJumper_3_Bridged12_1</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="C" type="passive"/>
-        <pin num="3" name="B" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="C">
@@ -581,6 +658,8 @@
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="JP1" pin="3" pinfunction="B" pintype="passive"/>
+      <node ref="JP2" pin="3" pinfunction="B" pintype="passive"/>
       <node ref="R10" pin="1" pintype="passive"/>
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="VDD" pintype="power_in"/>
@@ -594,6 +673,7 @@
       <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="J2" pin="1" pintype="input"/>
       <node ref="J3" pin="1" pintype="input"/>
+      <node ref="JP2" pin="1" pinfunction="A" pintype="passive"/>
       <node ref="U3" pin="1" pinfunction="VIN" pintype="power_in"/>
       <node ref="U3" pin="3" pinfunction="EN" pintype="input"/>
     </net>
@@ -628,6 +708,8 @@
       <node ref="J2" pin="MP" pintype="input"/>
       <node ref="J3" pin="4" pintype="input"/>
       <node ref="J3" pin="MP" pintype="input"/>
+      <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="M2" pin="1" pintype="input"/>
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="VSS" pintype="power_in"/>
       <node ref="U2" pin="3" pinfunction="GND" pintype="input"/>
@@ -638,33 +720,35 @@
       <node ref="J1" pin="2" pintype="input"/>
       <node ref="R2" pin="1" pintype="passive"/>
     </net>
-    <net code="8" name="Net-(D2-Pad2)">
+    <net code="8" name="Net-(D2-A)">
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R4" pin="2" pintype="passive"/>
     </net>
-    <net code="9" name="Net-(D3-Pad1)">
+    <net code="9" name="Net-(D3-K)">
       <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
     </net>
-    <net code="10" name="Net-(JP1-Pad2)">
+    <net code="10" name="Net-(JP1-C)">
+      <node ref="JP1" pin="2" pinfunction="C" pintype="passive"/>
       <node ref="U1" pin="3" pinfunction="A0" pintype="input"/>
     </net>
-    <net code="11" name="Net-(JP2-Pad2)">
+    <net code="11" name="Net-(JP2-C)">
+      <node ref="JP2" pin="2" pinfunction="C" pintype="passive"/>
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="R2" pin="2" pintype="passive"/>
     </net>
-    <net code="12" name="Net-(R4-Pad1)">
+    <net code="12" name="Net-(U1-OSCI)">
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="OSCI" pintype="input"/>
       <node ref="U2" pin="4" pintype="output"/>
     </net>
-    <net code="13" name="unconnected-(U1-Pad2)">
-      <node ref="U1" pin="2" pinfunction="OSCO" pintype="output+no_connect"/>
-    </net>
-    <net code="14" name="unconnected-(U1-Pad7)">
+    <net code="13" name="unconnected-(U1-#INT-Pad7)">
       <node ref="U1" pin="7" pinfunction="#INT" pintype="output+no_connect"/>
     </net>
-    <net code="15" name="unconnected-(U3-Pad4)">
+    <net code="14" name="unconnected-(U1-OSCO-Pad2)">
+      <node ref="U1" pin="2" pinfunction="OSCO" pintype="output+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(U3-NC-Pad4)">
       <node ref="U3" pin="4" pinfunction="NC" pintype="no_connect"/>
     </net>
   </nets>

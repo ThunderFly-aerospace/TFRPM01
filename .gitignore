@@ -10,6 +10,7 @@
 *.kicad_prl
 *.kicad_sch-bak
 *.lck
+*.orig
 *.sch-bak
 *.ses
 *.tmp

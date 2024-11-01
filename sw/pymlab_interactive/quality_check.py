@@ -40,10 +40,14 @@ def main(screen):
         try:
             print("Connecting...")
             if error:
+                print("Configuring device...")  # Ladicí výpis
+                
+                # Ladicí výpis: vstupní parametry
+                print(f"Port: {args.port}, Address: {address}")
                 cfg = config.Config(
                     i2c = {
                         "port": args.port,
-                        #"driver": "smbus",
+                        "device": "smbus2",
                     },
                     bus = [
                         {
@@ -54,16 +58,31 @@ def main(screen):
                     ]
                 )
 
+                # Ladicí výpis: počátek inicializace konfigurace
+                print("Initializing configuration...")
                 cfg.initialize()
+                
+                # Ladicí výpis: získávání zařízení
+                print("Getting TFRPM01 device...")
                 TFRPM01 = cfg.get_device("TFRPM01")
+                print("Initializing TFRPM01...")
                 TFRPM01.initialize()
+
+                # Nastavení konfigurace zařízení
+                print("Setting device configuration...")
                 TFRPM01.set_config(TFRPM01.FUNCT_MODE_count)
+
+                # Resetování čítače
+                print("Resetting counter...")
                 TFRPM01.reset_counter()
+
+                # Získání čítače a výpis jeho hodnoty
                 count = TFRPM01.get_count()
-                old_range = None
+                print(f"Initial count value: {count}")
 
                 connected = datetime.datetime.now()
                 error = False
+                print("Device connected successfully.")
                 beepy.beep(sound=1)
 
             while True:
@@ -101,26 +120,24 @@ def main(screen):
                 #    #time.sleep(0.1)
                 #    #screen.addstr(10, 0, "Counter reset due to integration time exceeded")
 
-        except IOError:
-            print("ERROR... ")
+        except IOError as ioe:
+            print(f"IO ERROR: {ioe}")  # Ladicí výpis chyby
             if not error:
                 screen.clear()
-                screen.addstr(0, 0, f"IO ERROR...")
+                screen.addstr(0, 0, "IO ERROR: Check connection.")
                 time.sleep(0.5)
                 
                 error = True
 
         except Exception as e:
-            print("ERROR... ", e)
+            print(f"ERROR: {e}")  # Obecný výpis chyby
             if not error:
                 screen.clear()
-                screen.addstr(0, 0, f"IO ERROR...")
+                screen.addstr(0, 0, f"General ERROR: {str(e)}")
                 time.sleep(0.5)
                 
                 error = True
 
-
-    
     curses.nocbreak()
     screen.keypad(False)
     curses.echo()

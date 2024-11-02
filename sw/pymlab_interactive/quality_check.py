@@ -40,9 +40,8 @@ def main(screen):
         try:
             print("Connecting...")
             if error:
-                print("Configuring device...")  # Ladicí výpis
+                print("Configuring device...")
                 
-                # Ladicí výpis: vstupní parametry
                 print(f"Port: {args.port}, Address: {address}")
                 cfg = config.Config(
                     i2c = {
@@ -58,25 +57,19 @@ def main(screen):
                     ]
                 )
 
-                # Ladicí výpis: počátek inicializace konfigurace
                 print("Initializing configuration...")
                 cfg.initialize()
                 
-                # Ladicí výpis: získávání zařízení
                 print("Getting TFRPM01 device...")
                 TFRPM01 = cfg.get_device("TFRPM01")
                 print("Initializing TFRPM01...")
                 TFRPM01.initialize()
 
-                # Nastavení konfigurace zařízení
                 print("Setting device configuration...")
                 TFRPM01.set_config(TFRPM01.FUNCT_MODE_count)
 
-                # Resetování čítače
                 print("Resetting counter...")
                 TFRPM01.reset_counter()
-
-                # Získání čítače a výpis jeho hodnoty
                 count = TFRPM01.get_count()
                 print(f"Initial count value: {count}")
 

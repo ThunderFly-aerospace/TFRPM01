@@ -79,15 +79,17 @@ def main(screen):
 
     while True:
         try:
-            print("Connecting...")
+            screen.addstr(0, 0, "Connecting...")
+            screen.refresh()
             if error:
-                print("Configuring device...")
+                screen.addstr(1, 0, "Configuring device...")
+                screen.addstr(2, 0, f"Port: {args.port}, Address: {address}")
+                screen.refresh()
                 
-                print(f"Port: {args.port}, Address: {address}")
                 cfg = config.Config(
                     i2c = {
                         "port": args.port,
-                        "device": "smbus",
+                        "device": "hid",
                     },
                     bus = [
                         {
@@ -98,25 +100,25 @@ def main(screen):
                     ]
                 )
 
-                print("Initializing configuration...")
+                #print("Initializing configuration...")
                 cfg.initialize()
                 
-                print("Getting TFRPM01 device...")
+                #print("Getting TFRPM01 device...")
                 TFRPM01 = cfg.get_device("TFRPM01")
-                print("Initializing TFRPM01...")
+                #print("Initializing TFRPM01...")
                 TFRPM01.initialize()
 
-                print("Setting device configuration...")
+                #print("Setting device configuration...")
                 TFRPM01.set_config(TFRPM01.FUNCT_MODE_count)
 
-                print("Resetting counter...")
+                #print("Resetting counter...")
                 TFRPM01.reset_counter()
                 count = TFRPM01.get_count()
-                print(f"Initial count value: {count}")
+                #print(f"Initial count value: {count}")
 
                 connected = datetime.datetime.now()
                 error = False
-                print("Device connected successfully.")
+                #print("Device connected successfully.")
                 connection_sound()  # Plays the success sound
 
             while True:
@@ -156,19 +158,20 @@ def main(screen):
                 #    #screen.addstr(10, 0, "Counter reset due to integration time exceeded")
 
         except IOError as ioe:
-            print(f"IO ERROR: {ioe}")  # Ladicí výpis chyby
             if not error:
                 screen.clear()
-                screen.addstr(0, 0, "IO ERROR: Check connection.")
+                screen.addstr(0, 0, "IO ERROR: Communication issue detected.")
+                screen.addstr(1, 0, f"Error details: {str(ioe)}")
+                screen.refresh()
                 time.sleep(0.5)
                 
                 error = True
 
         except Exception as e:
-            print(f"ERROR: {e}")  # Obecný výpis chyby
             if not error:
                 screen.clear()
                 screen.addstr(0, 0, f"General ERROR: {str(e)}")
+                screen.refresh()
                 time.sleep(0.5)
                 
                 error = True

@@ -3,7 +3,9 @@ import time, datetime
 from pymlab import config
 import argparse
 import os
-import beepy
+import numpy as np
+import sounddevice as sd
+
 
 # Zpracování vstupních argumentů
 parser = argparse.ArgumentParser(description='Callibration utility for TFRPM01 sensor')
@@ -22,6 +24,45 @@ address = args.address
 error = True
 connected = 0
 
+# Funkce pro generování pípnutí
+def generate_beep(frequency=440, duration=0.2, amplitude=0.3, sample_rate=44100):
+    """
+    Generates and plays a beep sound of specified frequency and duration.
+    """
+    t = np.linspace(0, duration, int(sample_rate * duration), endpoint=False)
+    wave = amplitude * np.sin(2 * np.pi * frequency * t)
+    sd.play(wave, samplerate=sample_rate)
+    sd.wait()
+
+
+def success_sound():
+    """
+    Plays a short melody for success/ok/ready.
+    """
+    # Sequence of frequencies to create a "success" melody
+    frequencies = [523, 659, 784]  # Notes C5, E5, G5
+    durations = [0.15, 0.15, 0.3]
+    for freq, dur in zip(frequencies, durations):
+        generate_beep(frequency=freq, duration=dur)
+
+def error_sound():
+    """
+    Plays a sound indicating failure/error.
+    """
+    # A lower tone repeated to create a "error" effect
+    frequencies = [300, 300]  # Lower frequency for error
+    durations = [0.4, 0.4]
+    for freq, dur in zip(frequencies, durations):
+        generate_beep(frequency=freq, duration=dur)
+
+def connection_sound():
+    """
+    Plays a simple connection sound to indicate device connection.
+    """
+    frequencies = [440, 494]  # A4, B4 (stoupající tón)
+    durations = [0.2, 0.3]
+    for freq, dur in zip(frequencies, durations):
+        generate_beep(frequency=freq, duration=dur)
 
 def main(screen):
     global error, req_freq, max_deviation
@@ -46,7 +87,7 @@ def main(screen):
                 cfg = config.Config(
                     i2c = {
                         "port": args.port,
-                        "device": "smbus2",
+                        "device": "smbus",
                     },
                     bus = [
                         {
@@ -76,7 +117,7 @@ def main(screen):
                 connected = datetime.datetime.now()
                 error = False
                 print("Device connected successfully.")
-                beepy.beep(sound=1)
+                connection_sound()  # Plays the success sound
 
             while True:
                 count = TFRPM01.get_count()
@@ -97,9 +138,10 @@ def main(screen):
                 in_range = bool(req_freq - max_deviation <= freq <= req_freq + max_deviation)
                 if in_range:
                     screen.addstr(11, 0, "In range: OK", curses.color_pair(2))
-                    beepy.beep(sound=5)
+                    success_sound()  # Plays the success sound
                 else:
                     screen.addstr(11, 0, "In range: ERROR", curses.color_pair(3))
+                    error_sound()
 
                 screen.refresh()
                 time.sleep(0.2)

@@ -51,14 +51,14 @@ In applications where multiple TFRPM01 are needed, the [TFI2CADT01](https://www.
 
 ## Optionally
 - I2C silicone cable (TFCABxxI2C01) in lengths of 15cm, 30cm, 40cm
-- Sensing probe ([TFPROBE01](https://github.com/ThunderFly-aerospace/TFPROBE01) or Hall probe 55100)
+- Sensing probe ([TFPROBE01](https://docs.thunderfly.cz/avionics/TFCAB01/) or Hall probe 55100)
 
 # Accessories
 
 ## I2C cables
-I2C cables for connecting to the autopilot are not included in the package. You will need to purchase the cables separately from our [tindie catalog](https://www.tindie.com/stores/thunderfly/). We offer high-quality cables that are compatible with the [Pixhawk standard](https://raw.githubusercontent.com/pixhawk/Pixhawk-Standards/master/DS-009%20Pixhawk%20Connector%20Standard.pdf) and with a [ThunderFly color](https://docs.px4.io/main/en/assembly/cable_wiring.html#i2c-cables) scheme for easy signal identification. Our cables are specifically designed with improved resistance to electromagnetic interference and a silicone insulator that makes them highly flexible.
+You may need to additonal [I2C cables separately](https://www.tindie.com/products/30113/). We offer high-quality cables that are compatible with the [Pixhawk standard](https://raw.githubusercontent.com/pixhawk/Pixhawk-Standards/master/DS-009%20Pixhawk%20Connector%20Standard.pdf) and with a [ThunderFly color scheme](https://docs.px4.io/main/en/assembly/cable_wiring.html#i2c-cables) for easy signal type identification. ThunderFly cables are specifically designed with improved resistance to electromagnetic interference and a silicone insulator that makes them highly flexible.
 
-  * [TFCAB15I2C01](https://github.com/ThunderFly-aerospace/TFCAB01) [Buy at Tindie](https://www.tindie.com/products/thunderfly/tfcabxxi2c01-i2c-cable-for-pixhawk-drones/)
+  * [TFCAB15I2C01](https://docs.thunderfly.cz/avionics/TFCAB01/) [Buy at Tindie](https://www.tindie.com/products/30113/)
 
 ## Sensor probe
 The sensing element is also not included in the TFRPM01 sensor package. We sell and have tested the following two probes, which can be directly connected to the TFRPM01 sensor board:

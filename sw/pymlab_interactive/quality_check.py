@@ -6,6 +6,10 @@ import os
 import numpy as np
 import sounddevice as sd
 
+# Use a larger output buffer/latency so short beeps don't underrun the ALSA
+# buffer (heard as crackling, and reported by ALSA as "PCM" errors on stderr).
+sd.default.latency = 'high'
+
 
 # Zpracování vstupních argumentů
 parser = argparse.ArgumentParser(description='Callibration utility for TFRPM01 sensor')
@@ -24,15 +28,47 @@ address = args.address
 error = True
 connected = 0
 
-# Funkce pro generování pípnutí
-def generate_beep(frequency=440, duration=0.2, amplitude=0.3, sample_rate=44100):
+SAMPLE_RATE = 44100
+GAP_DURATION = 0.02  # short silence between notes, to avoid clicks merging notes together
+
+# Kept open for the whole program run: opening/closing a stream per beep was
+# causing the ALSA device to underrun (audible crackle + "PCM" errors on
+# stderr) on every beep, since the device barely had time to warm up.
+_audio_stream = sd.OutputStream(samplerate=SAMPLE_RATE, channels=1, dtype="float32", latency="high")
+_audio_stream.start()
+
+
+def generate_wave(frequency, duration, amplitude=0.3, sample_rate=SAMPLE_RATE):
     """
-    Generates and plays a beep sound of specified frequency and duration.
+    Generates a beep waveform of specified frequency and duration, with a
+    short fade in/out to avoid clicks at the edges.
     """
-    t = np.linspace(0, duration, int(sample_rate * duration), endpoint=False)
+    n_samples = int(sample_rate * duration)
+    t = np.linspace(0, duration, n_samples, endpoint=False)
     wave = amplitude * np.sin(2 * np.pi * frequency * t)
-    sd.play(wave, samplerate=sample_rate)
-    sd.wait()
+
+    fade_samples = min(n_samples // 2, int(sample_rate * 0.005))
+    if fade_samples > 0:
+        fade = np.linspace(0, 1, fade_samples)
+        wave[:fade_samples] *= fade
+        wave[-fade_samples:] *= fade[::-1]
+
+    return wave
+
+
+def play_melody(frequencies, durations, sample_rate=SAMPLE_RATE):
+    """
+    Concatenates all notes into a single waveform and writes it to the
+    already-running output stream in one go, so there is no audible
+    gap/stutter between notes and no per-beep stream open/close.
+    """
+    gap = np.zeros(int(sample_rate * GAP_DURATION))
+    segments = []
+    for freq, dur in zip(frequencies, durations):
+        segments.append(generate_wave(freq, dur, sample_rate=sample_rate))
+        segments.append(gap)
+    wave = np.concatenate(segments).astype(np.float32).reshape(-1, 1)
+    _audio_stream.write(wave)
 
 
 def success_sound():
@@ -42,8 +78,7 @@ def success_sound():
     # Sequence of frequencies to create a "success" melody
     frequencies = [523, 659, 784]  # Notes C5, E5, G5
     durations = [0.15, 0.15, 0.3]
-    for freq, dur in zip(frequencies, durations):
-        generate_beep(frequency=freq, duration=dur)
+    play_melody(frequencies, durations)
 
 def error_sound():
     """
@@ -52,8 +87,7 @@ def error_sound():
     # A lower tone repeated to create a "error" effect
     frequencies = [300, 300]  # Lower frequency for error
     durations = [0.4, 0.4]
-    for freq, dur in zip(frequencies, durations):
-        generate_beep(frequency=freq, duration=dur)
+    play_melody(frequencies, durations)
 
 def connection_sound():
     """
@@ -61,12 +95,11 @@ def connection_sound():
     """
     frequencies = [440, 494]  # A4, B4 (stoupající tón)
     durations = [0.2, 0.3]
-    for freq, dur in zip(frequencies, durations):
-        generate_beep(frequency=freq, duration=dur)
+    play_melody(frequencies, durations)
 
 def main(screen):
     global error, req_freq, max_deviation
-    
+
     curses.start_color()
     curses.init_pair(1, curses.COLOR_WHITE, curses.COLOR_BLACK)
     curses.init_pair(2, curses.COLOR_BLACK, curses.COLOR_GREEN)
@@ -146,7 +179,6 @@ def main(screen):
                     error_sound()
 
                 screen.refresh()
-                time.sleep(0.2)
 
                 #if count >= TFRPM01.MAX_COUNT / 2:
                 #    TFRPM01.reset_counter()
@@ -163,18 +195,20 @@ def main(screen):
                 screen.addstr(0, 0, "IO ERROR: Communication issue detected.")
                 screen.addstr(1, 0, f"Error details: {str(ioe)}")
                 screen.refresh()
-                time.sleep(0.5)
-                
+
                 error = True
+
+            time.sleep(0.5)
 
         except Exception as e:
             if not error:
                 screen.clear()
                 screen.addstr(0, 0, f"General ERROR: {str(e)}")
                 screen.refresh()
-                time.sleep(0.5)
-                
+
                 error = True
+
+            time.sleep(0.5)
 
     curses.nocbreak()
     screen.keypad(False)

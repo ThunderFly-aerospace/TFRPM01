@@ -1,7 +1,7 @@
 <a href="https://certification.oshwa.org/cz000009.html" title="Open Source Hardware Association Certificate"><img align="right" src="https://raw.githubusercontent.com/oshwa/certification-mark-generator/gh-pages/premade/certification-template.svg" alt="Open Source Hardware Association Certificate"></a>
 
 
-# TFRPM01 - RPM Measuring Device
+# TFRPM01 - RPM Measuring UAV Avionics Device
 
 ![Top view on I2C RPM sensor](/doc/img/TFRPM01D.jpg)
 
@@ -14,7 +14,7 @@ The TFRPM is designed to measure revolutions per minute (RPM) in UAVs. It connec
 - **Schmitt Trigger Input**: To shape non-uniform signals from RPM sensing elements.
 - **Self-Counting and Memory**: Offloads the flight controller's MCU.
 - **LED Indicator**: Optionally visible in daylight for input status.
-- **Protection**: Short circuit protection on the probe connector.
+- **Protection**: Short-circuit protection on the probe connector.
 - **I²C Connectors**: Pass-through connectors for daisy-chaining sensors.
 - **Design**: Robust and repairable.
 
@@ -53,12 +53,12 @@ The device can be mounted with or without a provided 3D-printed case.
 
 Compatible with multiple probe types, including Hall effect and optical probes. See the [TFPROBE01](https://github.com/ThunderFly-aerospace/TFPROBE01) and [TFRPM01 documentation](https://docs.thunderfly.cz/avionics/TFRPM01/) for details.
 
-Third-party hall probe sensors could be also used, here is an example of a suitable generic hall probe with a mounting flange.
+Third-party hall probe sensors could also be used; here is an example of a suitable generic hall probe with a mounting flange.
 ![TFRPM01B hall effect magnetic sensor](/doc/img/TFRPM01B_hall_sensor.jpg)
 
 ## Software Configuration
 
-Supported by PX4 firmware. Setup instructions are available on the [PX4 documentation](https://docs.px4.io/main/en/sensor/thunderfly_tachometer.html#software-setup).
+Supported by PX4 firmware. Setup instructions are available in the [PX4 documentation](https://docs.px4.io/main/en/sensor/thunderfly_tachometer.html#software-setup).
 
 ![TFRPM01 measuring rotor RPM during the flight](/doc/img/rpm_graph.png)
 
